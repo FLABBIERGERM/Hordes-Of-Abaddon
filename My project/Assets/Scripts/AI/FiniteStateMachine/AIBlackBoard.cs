@@ -13,7 +13,7 @@ public class AIBlackBoard : Blackboard
 
     [Header("Chase AI")]
     [Tooltip("The transform of the object the AI is navigating towards")]
-    public Transform chaseTarget;
+    public Transform chaseTarget ; // gotta figure this bit out  for new instanced enemys. losing my got damn mind about it now to.
 
     public float attackRange = 2.0f;
 
