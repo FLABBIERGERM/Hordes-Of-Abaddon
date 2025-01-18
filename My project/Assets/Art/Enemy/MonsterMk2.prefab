@@ -288,7 +288,8 @@ MonoBehaviour:
     owningController: {fileID: 1600476149048572082}
     stateTimeElapsed: 0
     navMeshAgent: {fileID: 2839217772903072840}
-    chaseTarget: {fileID: 0}
+    chaseTarget: {fileID: 6354081051511685991, guid: 0bd940e13228f6a48a159f7e8a04e2f9,
+      type: 3}
     attackRange: 2
     eyes: {fileID: 4977289754366275043}
     lookRange: 8

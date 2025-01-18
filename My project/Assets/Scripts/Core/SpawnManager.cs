@@ -11,6 +11,9 @@ public class SpawnManager : MonoBehaviour
 
     [SerializeField] private GameObject enemyMonster;
 
+    [SerializeField] public Transform playerToFollow;
+
+    private AIBlackBoard aiBlackboard;
 
     private Queue<GameObject> enemiesToSpawn = new Queue<GameObject>();
 
@@ -42,6 +45,7 @@ public class SpawnManager : MonoBehaviour
         {
             Debug.Log("We are in the while loop of the enemies to spawn coroutine.");
             GameObject enemy = Instantiate(
+
                 enemiesToSpawn.Dequeue(),
                 spawnPoints[Random.Range(0,spawnPoints.Length)].position,
                 Quaternion.identity);

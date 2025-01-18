@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0ea083df1ca56c44b0acedcc41cd38c, type: 3}
   m_Name: Spawn
   m_EditorClassIdentifier: 
-  enterActions:
-  - {fileID: 11400000, guid: ddabe81606137084c890634c3061c891, type: 2}
+  enterActions: []
   updateActions:
   - {fileID: 11400000, guid: ddabe81606137084c890634c3061c891, type: 2}
   exitActions: []
