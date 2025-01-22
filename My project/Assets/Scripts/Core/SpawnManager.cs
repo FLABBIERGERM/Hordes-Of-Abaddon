@@ -13,7 +13,7 @@ public class SpawnManager : MonoBehaviour
 
     [SerializeField] public Transform playerToFollow;
 
-    private AIBlackBoard aiBlackboard;
+   // private AIBlackBoard aiBlackboard;
 
     private Queue<GameObject> enemiesToSpawn = new Queue<GameObject>();
 
@@ -29,7 +29,7 @@ public class SpawnManager : MonoBehaviour
 
     public void StartSpawning(int round)
     {
-        int numOfEnemies = round * 10; // change number later based on difficulty
+        int numOfEnemies = round * 2; // change number later based on difficulty
         Debug.Log(" So we are doing StartSpawning and the num of enemies there should be is :" + numOfEnemies);
         for (int i = 0; i < numOfEnemies; i++) 
         { 
@@ -50,14 +50,20 @@ public class SpawnManager : MonoBehaviour
                 spawnPoints[Random.Range(0,spawnPoints.Length)].position,
                 Quaternion.identity);
 
+
+            AiStateController stateController = enemy.GetComponent<AiStateController>();
+            if (stateController != null && stateController.aiBlackboard != null)
+            {
+                stateController.aiBlackboard.chaseTarget = playerToFollow;
+            }
             animatorM.SetBool("Spawned", false);
             enemiesRemaining++;
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(8f);
         }
         RoundManager.Instance.currentRoundState = RoundManager.RoundState.RoundPlaying;
     }
 
-    private void EnemyKill()
+    public void EnemyKill()
     {
         enemiesRemaining--;
 
