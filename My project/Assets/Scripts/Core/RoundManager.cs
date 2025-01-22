@@ -38,11 +38,11 @@ public class RoundManager : MonoBehaviour
             RoundEnd();
     }
 
-    private void RoundEnd()
+    public void RoundEnd()
     {
         currentRoundState = RoundState.RoundEnd;
 
-        Invoke(nameof(RoundState), 5f);// adds a delay of 5 seconds between rounds or atleast should.
+        Invoke(nameof(currentRoundState), 5f);// adds a delay of 5 seconds between rounds or atleast should.
 
         currentRound++;
     }

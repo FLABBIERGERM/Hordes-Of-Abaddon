@@ -2,24 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseStats : MonoBehaviour
+public class BaseStats : MonoBehaviour, IDamageAble
 {
-
+    SpawnManager spawnManager = new SpawnManager();
     public float zDamage;
-    public int zHealth;
-    public int zMaxHealth;
+    public float zHealth;
+   // public float zMaxHealth;
 
-    public bool IsAlive => currentZHP > 0;
+    public bool IsAlive => zHealth > 0;
 
-    int currentZHP;
-    public void Hurt(int damage)// damage the zombie
+    //float currentZHP;
+    private void Start()
     {
-        currentZHP = Mathf.Clamp(currentZHP - damage, 0, zMaxHealth);
-
-        if (currentZHP > 0)
+        //currentZHP = zMaxHealth;
+    }
+    public void Damage(float damage)// damage the zombie
+    {
+        //currentZHP = Mathf.Clamp(currentZHP - damage, 0, zMaxHealth);
+        zHealth -= damage;
+        Debug.Log("Remaing Zombie HP" + zHealth);
+        if (zHealth <= 0)
         {
+            spawnManager.EnemyKill();
             Debug.Log("Okay the zombie has died"); // go b ack through all the code and remember where the zombie dying is
-            
+            Destroy(gameObject);
         }
     }
 }

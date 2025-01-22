@@ -13,14 +13,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private BaseMovement baseMovement;
     [SerializeField] private CharacterMovement characterMovement;
     [SerializeField] private CharacterInteractManager characterInteractManager;
+
     [SerializeField] private WeaponData gunData;
+    [SerializeField] private Transform muzzle;
+    [SerializeField] private Transform rifle;
+
 
     float timeSinceLastShot;
-    private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate/60f);
+    private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate / 60f);
 
     private void Update()
     {
         timeSinceLastShot += Time.deltaTime;
+        Debug.DrawRay(muzzle.position,gunData.maxDist * muzzle.forward, Color.red );
     }
     private void Awake()
     {
@@ -60,8 +65,12 @@ public class PlayerController : MonoBehaviour
         playerInputActions.Player.TogglePause.performed += TogglePauseActionPerformed;
         playerInputActions.UI.TogglePause.performed += TogglePauseActionPerformed;
 
+
+
         playerInputActions.Player.Shoot.performed += Shoot;
-        playerInputActions.Player.Reload.performed += Reload;
+        playerInputActions.Player.Reload.performed += StartReload;
+
+
        // playerInputActions.Player.CameraSwap.performed += ToggleCameraPerformed;
 
        // playerInputActions.Player.Dance.performed += DancingTime;
@@ -81,7 +90,7 @@ public class PlayerController : MonoBehaviour
         playerInputActions.UI.TogglePause.performed -= TogglePauseActionPerformed;
 
         playerInputActions.Player.Shoot.performed -= Shoot;
-        playerInputActions.Player.Reload.performed -= Reload;
+        playerInputActions.Player.Reload.performed -= StartReload;
 
         // playerInputActions.Player.CameraSwap.performed -= ToggleCameraPerformed;
 
@@ -113,23 +122,27 @@ public class PlayerController : MonoBehaviour
                 break;
         }
     }
-    private void DancingTime(InputAction.CallbackContext context)
+    private void DancingTime(InputAction.CallbackContext context )
     {
         baseMovement.Dance();
     }
 
     private void Shoot(InputAction.CallbackContext context)
     {
-        Debug.Log("Gun is firing");
+        //Debug.Log("Gun is firing");
         if(gunData.currentAmmo > 0)
         {
             if (CanShoot())
             {
-                if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hitInfo, gunData.maxDist))
+                if (Physics.Raycast(muzzle.position, transform.forward, out RaycastHit hitInfo, gunData.maxDist))
                 {
-                    Debug.Log(hitInfo.transform.name);// tells me what its hitting
-                }
 
+                    Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
+
+                    IDamageAble damageable = hitInfo.transform.GetComponent<IDamageAble>();   
+                    damageable?.Damage(gunData.damage);
+                }
+                //Debug.Log("Miss");
                 gunData.currentAmmo--;
                 timeSinceLastShot = 0;
                 OnGunShot();
@@ -138,22 +151,31 @@ public class PlayerController : MonoBehaviour
     }
     private void OnGunShot()
     {
+        //Debug.Log("Gun has made it to the end of the if can shoot statement");
+    }
+    private IEnumerator Reload()
+    {
+        gunData.reloading = true; 
 
+        yield return new WaitForSeconds(gunData.reloadTime);
+        gunData.currentAmmo = gunData.magSize;
+        gunData.reloading = false;
     }
 
-        private void Reload(InputAction.CallbackContext context)
+    private void StartReload(InputAction.CallbackContext context)
     {
-        Debug.Log("Gun is reloading");
+       // Debug.Log("Gun is reloading");
+        StartCoroutine(Reload());   
     }
     private void MoveAction(InputAction.CallbackContext context)
     {
         movementInput = context.ReadValue<Vector2>();
-        Debug.Log("We  are atempting the move action");
+       // Debug.Log("We  are atempting the move action");
         baseMovement.SetMovementInput(movementInput);
     }
     private void JumpActionPerformed(InputAction.CallbackContext context)
     {
-        Debug.Log("Well we are actually jumping..");
+      //  Debug.Log("Well we are actually jumping..");
 
         baseMovement.Jump();
     }

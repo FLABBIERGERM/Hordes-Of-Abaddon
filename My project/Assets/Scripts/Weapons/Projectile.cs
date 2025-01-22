@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public int Damage;
+    public float Damage;
     public float bulletDespawn;
 
     private void start()
@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
 
             if (holder != null)
             {
-                holder.Hurt(Damage);
+                holder.Damage(Damage);
                 Destroy(gameObject);
             }
         }
