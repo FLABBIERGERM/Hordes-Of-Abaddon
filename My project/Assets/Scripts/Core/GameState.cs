@@ -27,9 +27,6 @@ public class GameState : MonoBehaviour
     public UnityEvent GameStarts;
     public UnityEvent GameQuit;
 
-    public UnityEvent RoundOver;
-    public UnityEvent NewRound;
-
 
     public UnityEvent damageTaken;
     public DamageOverlay damageOverlay;
@@ -80,12 +77,7 @@ public class GameState : MonoBehaviour
             case GameStatus.GameQuit:
                 GameQuit.Invoke();
                 break;
-            case GameStatus.RoundStart:
-                NewRound.Invoke();
-                break;
-            case GameStatus.RoundEnd:
-                RoundOver.Invoke();
-                break;
+
             default:
                 Debug.LogError("Unhandled Game status this should not happen.");
                 break;
@@ -107,9 +99,7 @@ public class GameState : MonoBehaviour
         Debug.Log("Reseting Game state");
         CurrentGameStatus = GameStatus.Paused;
 
-        RoundOver.RemoveAllListeners();
 
-        NewRound.RemoveAllListeners();
 
         OnGameResumed.RemoveAllListeners();
         OnGamePaused.RemoveAllListeners();
@@ -135,8 +125,6 @@ public enum GameStatus
     PlayerLost,
     Credit,
     GameStart,
-    GameQuit,
-    RoundEnd,
-    RoundStart
+    GameQuit
 }
 
