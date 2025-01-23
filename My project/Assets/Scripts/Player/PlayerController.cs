@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform muzzle;
     [SerializeField] private Transform rifle;
 
+    [SerializeField] private AudioClip gunNoise;
 
     float timeSinceLastShot;
     private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate / 60f);
@@ -134,6 +135,8 @@ public class PlayerController : MonoBehaviour
         {
             if (CanShoot())
             {
+                characterMovement.GunShotNoise();
+
                 if (Physics.Raycast(muzzle.position, transform.forward, out RaycastHit hitInfo, gunData.maxDist))
                 {
 
