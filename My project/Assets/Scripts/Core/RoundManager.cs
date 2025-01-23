@@ -28,6 +28,8 @@ public class RoundManager : MonoBehaviour
     }
     public void RoundStart()
     {
+
+        Debug.Log("The current round is: " + currentRound + " total enemys are" + currentRound * 2);
         currentRoundState = RoundState.RoundBegin;
 
         SpawnManager.Instance.StartSpawning(currentRound);
@@ -42,7 +44,7 @@ public class RoundManager : MonoBehaviour
     {
         currentRoundState = RoundState.RoundEnd;
 
-        Invoke(nameof(currentRoundState), 5f);// adds a delay of 5 seconds between rounds or atleast should.
+        Invoke(nameof(RoundStart), 5f);// adds a delay of 5 seconds between rounds or atleast should.
 
         currentRound++;
     }

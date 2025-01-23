@@ -835,6 +835,7 @@ MonoBehaviour:
   getsHit: {fileID: 8300000, guid: 06f587a67220a3f449fe15fcb607c1e6, type: 3}
   jumpNoise: {fileID: 8300000, guid: 734af6450e1ad054bb13b977078587ff, type: 3}
   landingNoise: {fileID: 8300000, guid: 8c31788468600fe46a62909370d72cc4, type: 3}
+  gunNoise: {fileID: 8300000, guid: 4baa8963591707945b135dd12475d167, type: 3}
 --- !u!114 &902663402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,6 +854,7 @@ MonoBehaviour:
   gunData: {fileID: 11400000, guid: 79fa4666132375e438f841c4823c4f0b, type: 2}
   muzzle: {fileID: 1307780770}
   rifle: {fileID: 2019489234}
+  gunNoise: {fileID: 0}
 --- !u!1001 &982677877
 PrefabInstance:
   m_ObjectHideFlags: 0
