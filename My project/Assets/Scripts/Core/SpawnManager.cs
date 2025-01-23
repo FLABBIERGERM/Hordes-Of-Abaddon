@@ -29,7 +29,7 @@ public class SpawnManager : MonoBehaviour
 
     public void StartSpawning(int round)
     {
-        int numOfEnemies = round * 2; // change number later based on difficulty
+        int numOfEnemies = round *  2; // change number later based on difficulty
         Debug.Log(" So we are doing StartSpawning and the num of enemies there should be is :" + numOfEnemies);
         for (int i = 0; i < numOfEnemies; i++) 
         { 

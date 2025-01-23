@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
 
+    private float timeSinceHit = 0f;
     public static GameManager Instance
     {
         get { return _instance; }

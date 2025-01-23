@@ -71,10 +71,6 @@ public class PlayerController : MonoBehaviour
         playerInputActions.Player.Shoot.performed += Shoot;
         playerInputActions.Player.Reload.performed += StartReload;
 
-
-       // playerInputActions.Player.CameraSwap.performed += ToggleCameraPerformed;
-
-       // playerInputActions.Player.Dance.performed += DancingTime;
         playerInputActions.Player.Interact.performed += InteractActionPerformed;
        // playerInputActions.Player.Spray.performed += SprayActionPerformed;
     }
@@ -93,9 +89,6 @@ public class PlayerController : MonoBehaviour
         playerInputActions.Player.Shoot.performed -= Shoot;
         playerInputActions.Player.Reload.performed -= StartReload;
 
-        // playerInputActions.Player.CameraSwap.performed -= ToggleCameraPerformed;
-
-        //playerInputActions.Player.Dance.performed -= DancingTime;
         playerInputActions.Player.Interact.performed -= InteractActionPerformed;
         //playerInputActions.Player.Spray.performed -= SprayActionPerformed;
     }
@@ -123,21 +116,17 @@ public class PlayerController : MonoBehaviour
                 break;
         }
     }
-    private void DancingTime(InputAction.CallbackContext context )
-    {
-        baseMovement.Dance();
-    }
+
 
     private void Shoot(InputAction.CallbackContext context)
     {
         //Debug.Log("Gun is firing");
-        if(gunData.currentAmmo > 0)
+        //if(gunData.currentAmmo > 0)
         {
             if (CanShoot())
             {
-                characterMovement.GunShotNoise();
 
-                if (Physics.Raycast(muzzle.position, transform.forward, out RaycastHit hitInfo, gunData.maxDist))
+                if (Physics.Raycast(muzzle.position, muzzle.forward, out RaycastHit hitInfo, gunData.maxDist))
                 {
 
                     Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
@@ -154,6 +143,8 @@ public class PlayerController : MonoBehaviour
     }
     private void OnGunShot()
     {
+        characterMovement.GunShotNoise();
+
         //Debug.Log("Gun has made it to the end of the if can shoot statement");
     }
     private IEnumerator Reload()
