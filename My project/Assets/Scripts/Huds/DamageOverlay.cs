@@ -36,5 +36,12 @@ public class DamageOverlay : MonoBehaviour
             vignette.intensity.value = Mathf.Clamp(vignette.intensity.value + intensity, 0f, 1f);
         }
     }
-
+    public void DecreaseVignette(float intensity)
+    {
+        if (vignette != null)
+        {
+            vignette.intensity.overrideState = true;
+            vignette.intensity.value = Mathf.Clamp(vignette.intensity.value - intensity, 0f, 1f);
+        }
+    }
 }
