@@ -88,7 +88,14 @@ public class GameState : MonoBehaviour
     public void ChangePlayerHealth(int healthDelta)
     {
         playerHealth += healthDelta;
-        damageOverlay.IncreaseVignette(0.2f);
+        if(healthDelta < 0)
+        {
+            damageOverlay.IncreaseVignette(0.2f);
+        }
+        if (healthDelta > 0)
+        {
+            damageOverlay.DecreaseVignette(0.2f);
+        }
         if(playerHealth <= 0)
         {
             GameManager.Instance.PlayerLost();

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
 
     private float timeSinceHit = 0f;
+    public float essence;
     public static GameManager Instance
     {
         get { return _instance; }
@@ -44,7 +45,7 @@ public class GameManager : MonoBehaviour
 
     public void PassiveRegen() // add this based of time since last damage taken.
     {
-
+        gameState.ChangePlayerHealth(1);
     }
     public void PauseGame()
     {

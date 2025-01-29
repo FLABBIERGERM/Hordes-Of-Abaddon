@@ -8,7 +8,7 @@ public class BaseStats : MonoBehaviour, IDamageAble
     public float zDamage;
     public float zHealth;
    // public float zMaxHealth;
-
+    GameManager gameManager;
     public bool IsAlive => zHealth > 0;
 
     //float currentZHP;
@@ -23,6 +23,7 @@ public class BaseStats : MonoBehaviour, IDamageAble
         Debug.Log("Remaing Zombie HP" + zHealth);
         if (zHealth <= 0)
         {
+            gameManager.essence += 25f;
             spawnManager.EnemyKill();
             Debug.Log("Okay the zombie has died"); // go b ack through all the code and remember where the zombie dying is
             Destroy(gameObject);
