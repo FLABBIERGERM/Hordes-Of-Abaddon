@@ -329,74 +329,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &808906716
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7036861013377298119, guid: 8b087f3c942e7fc41925adfdf4309093,
-        type: 3}
-      propertyPath: m_Name
-      value: MonsterMk2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704571973159253117, guid: 8b087f3c942e7fc41925adfdf4309093,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.125318
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704571973159253117, guid: 8b087f3c942e7fc41925adfdf4309093,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.2300005
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704571973159253117, guid: 8b087f3c942e7fc41925adfdf4309093,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -4.2982373
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704571973159253117, guid: 8b087f3c942e7fc41925adfdf4309093,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704571973159253117, guid: 8b087f3c942e7fc41925adfdf4309093,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704571973159253117, guid: 8b087f3c942e7fc41925adfdf4309093,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704571973159253117, guid: 8b087f3c942e7fc41925adfdf4309093,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704571973159253117, guid: 8b087f3c942e7fc41925adfdf4309093,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704571973159253117, guid: 8b087f3c942e7fc41925adfdf4309093,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704571973159253117, guid: 8b087f3c942e7fc41925adfdf4309093,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8b087f3c942e7fc41925adfdf4309093, type: 3}
 --- !u!1 &860603923
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +671,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.2
   m_Height: 1.8
@@ -907,7 +839,7 @@ PrefabInstance:
     - target: {fileID: -7813590141776298306, guid: 8e9ddbc824d3b4948aa601e51370c18c,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7657966619581158213, guid: 8e9ddbc824d3b4948aa601e51370c18c,
         type: 3}
@@ -1196,7 +1128,7 @@ PrefabInstance:
     - target: {fileID: 5822821947120931875, guid: 8e9ddbc824d3b4948aa601e51370c18c,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6240733294840144465, guid: 8e9ddbc824d3b4948aa601e51370c18c,
         type: 3}
@@ -1703,7 +1635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff7839d0e2107e438b48b7f2f93465d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  owningCharacter: {fileID: 0}
+  owningCharacter: {fileID: 902663401}
   OnInteractablesExist:
     m_PersistentCalls:
       m_Calls: []
@@ -1869,9 +1801,6 @@ MonoBehaviour:
   enemyMonster: {fileID: 7036861013377298119, guid: 8b087f3c942e7fc41925adfdf4309093,
     type: 3}
   playerToFollow: {fileID: 902663396}
-  enemyKilled:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1663416252
 Transform:
   m_ObjectHideFlags: 0
@@ -2265,5 +2194,4 @@ SceneRoots:
   - {fileID: 1054018808}
   - {fileID: 1083196624}
   - {fileID: 1549518855}
-  - {fileID: 808906716}
   - {fileID: 1322985893}

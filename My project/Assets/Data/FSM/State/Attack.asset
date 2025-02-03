@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0ea083df1ca56c44b0acedcc41cd38c, type: 3}
-  m_Name: Spawn
+  m_Name: Attack
   m_EditorClassIdentifier: 
-  enterActions: []
-  updateActions:
-  - {fileID: 11400000, guid: ddabe81606137084c890634c3061c891, type: 2}
+  enterActions:
+  - {fileID: 11400000, guid: a20bdca0a2725f14b9d3b630714a92f4, type: 2}
+  updateActions: []
   exitActions: []
-  transitions: []
+  transitions:
+  - condition: {fileID: 11400000, guid: eadf67aefe6266b4f8bc6e8e5d7b685f, type: 2}
+    nextState: {fileID: 11400000, guid: 55c1ffd9513c9584c85cea196772458e, type: 2}

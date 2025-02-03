@@ -49,7 +49,6 @@ public class SpawnManager : MonoBehaviour
         {
             //Debug.Log("We are in the while loop of the enemies to spawn coroutine.");
             GameObject enemy = Instantiate(
-
                 enemiesToSpawn.Dequeue(),
                 spawnPoints[Random.Range(0,spawnPoints.Length)].position,
                 Quaternion.identity);
@@ -58,6 +57,8 @@ public class SpawnManager : MonoBehaviour
             {
                 stateController.aiBlackboard.chaseTarget = playerToFollow;
             }
+            // this is the area to add more to i think, adding in the total enemy count and then have it lower tracking it
+            // or add in, inside of the round manager instead of spawn manager a way to check the rounds . Otherwise i need to track enemies better and i cant figure out why its not working correctly.
             BaseStats enemyStats = enemy.GetComponent<BaseStats>();
             if(enemyStats != null && HudScore.Instance != null)
             {
@@ -68,11 +69,13 @@ public class SpawnManager : MonoBehaviour
             Debug.Log("Enemys remaining" + enemiesRemaining);
             yield return new WaitForSeconds(3f);
         }
-        if(enemiesRemaining <= 0 || totalEnemies <=0)
+        RoundManager.Instance.currentRoundState = RoundManager.RoundState.RoundPlaying;
+
+        if (enemiesRemaining <= 0 || totalEnemies <=0)
         {
             Debug.Log("enemies died to fast good job!");
 
-            RoundManager.Instance.EnemyDefeated();
+            RoundManager.Instance.AllEnemysDefeated();
         }
 
     }
@@ -84,7 +87,7 @@ public class SpawnManager : MonoBehaviour
        // Debug.Log("Total Enemies" + totalEnemies);
         if (enemiesRemaining <= 0 && RoundManager.Instance.currentRoundState == RoundManager.RoundState.RoundPlaying)
         {
-            RoundManager.Instance.EnemyDefeated();
+            RoundManager.Instance.AllEnemysDefeated();
         }
     }
 
