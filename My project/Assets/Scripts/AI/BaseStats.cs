@@ -12,8 +12,8 @@ public class BaseStats : MonoBehaviour, IDamageAble
     public float zDamage;
     public float zHealth;
     public UnityEvent enemyKilled;
+    public UnityEvent enemyHit;
 
-    // public float zMaxHealth;
     public bool IsAlive => zHealth > 0;
 
     private void Awake()
@@ -23,11 +23,7 @@ public class BaseStats : MonoBehaviour, IDamageAble
             Instance = this;
         }
     }
-    //float currentZHP;
-    private void Start()
-    {
-        //currentZHP = zMaxHealth;
-    }
+
     public void Damage(float damage)// damage the zombie
     {
         //currentZHP = Mathf.Clamp(currentZHP - damage, 0, zMaxHealth);
