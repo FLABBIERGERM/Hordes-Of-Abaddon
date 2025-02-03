@@ -54,19 +54,6 @@ public class HudScore : MonoBehaviour
     {
         killHolder = kills;
         scoreLabel.text = killHolder.ToString();
-        //if(killHolder < kills)
-        //{
-        //    scoreLabel.text = kills.ToString();
-        //}
-        //if (killHolder > kills)
-        //{
-        //    scoreLabel.text = killHolder.ToString();
-        //}
-        //else
-        //{
-        //    scoreLabel.text = killHolder.ToString();
-        //}
-
 
     }
     private void RecivedOnEnemyKill()

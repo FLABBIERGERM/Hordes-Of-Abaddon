@@ -28,13 +28,14 @@ public class RoundManager : MonoBehaviour
     }
     public void RoundStart()
     {
-
         Debug.Log("The current round is: " + currentRound + " total enemys are" + currentRound * 3);
         currentRoundState = RoundState.RoundBegin;
+        StartCoroutine(RoundWait());
+        currentRoundState = RoundState.RoundPlaying;
         SpawnManager.Instance.StartSpawning(currentRound);
     }
 
-    public void EnemyDefeated()
+    public void AllEnemysDefeated()
     {
             RoundEnd();
     }
@@ -47,4 +48,8 @@ public class RoundManager : MonoBehaviour
 
         currentRound++;
     }
+    private IEnumerator RoundWait()
+    {
+        yield return new WaitForSeconds(5f);
+    }// new idea to just make a round wait for round start and then while playing have spawning.
 }
