@@ -12,4 +12,5 @@ public class Transition
 
     [Tooltip(" the state to transition to if condition is true")]
     public State nextState;
+
 }

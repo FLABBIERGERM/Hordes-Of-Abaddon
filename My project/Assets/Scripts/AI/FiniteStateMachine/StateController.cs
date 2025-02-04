@@ -32,25 +32,21 @@ public class StateController : MonoBehaviour
 
     public bool TransitionToState(State nextState)
     {
-        if(nextState!= null)
+        if(nextState != null)
         {
             currentState.ExitState(blackboard);
 
             blackboard.ResetStateTime();
 
             Debug.Log("Transition to state:" + nextState);
-
             currentState.EnterState(blackboard);
-
             return true;
-            
         }
         return false;
     }
 
     private void OnDrawGizmos()
     {
-
         if(currentState != null)
         {
             GUIStyle handlesStyle = new GUIStyle();
