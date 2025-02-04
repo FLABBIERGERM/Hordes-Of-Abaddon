@@ -54,7 +54,6 @@ public class HudScore : MonoBehaviour
     {
         killHolder = kills;
         scoreLabel.text = killHolder.ToString();
-
     }
     private void RecivedOnEnemyKill()
     {

@@ -168,7 +168,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 821219d7e31113946a54f112dd5f0b05, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -176,8 +176,8 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
+  Priority: 113
+  DopplerLevel: 0.983
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -229,7 +229,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.06138889
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -298,7 +298,7 @@ MonoBehaviour:
     navMeshAgent: {fileID: 2839217772903072840}
     chaseTarget: {fileID: 6354081051511685991, guid: 0bd940e13228f6a48a159f7e8a04e2f9,
       type: 3}
-    attackRange: 2
+    attackRange: 1
     eyes: {fileID: 4977289754366275043}
     lookRange: 8
     lookSphereCastRadius: 1
@@ -359,6 +359,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zDamage: 5
   zHealth: 100
+  enemyKilled:
+    m_PersistentCalls:
+      m_Calls: []
+  enemyhit: {fileID: 8300000, guid: 6f5b959b78871f64ca050a63237a723e, type: 3}
+  audioSource: {fileID: 6807227710265875420}
 --- !u!54 &1935558372175683865
 Rigidbody:
   m_ObjectHideFlags: 0

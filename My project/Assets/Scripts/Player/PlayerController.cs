@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform muzzle;
     [SerializeField] private Transform rifle;
 
-    [SerializeField] private AudioClip gunNoise;
 
     float timeSinceLastShot;
     private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate / 60f);
@@ -37,6 +36,7 @@ public class PlayerController : MonoBehaviour
     {
         GameState.Instance.OnGamePaused.AddListener(OnGamePausedReceived);
         GameState.Instance.OnGamePaused.AddListener(OnGameResumedReceived);
+        //BaseStats.Instance.enemyHit.AddListener(OnEnemyHitReceived);
 
     }
 
@@ -117,11 +117,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
+    private void OnEnemyHitReceived()
+    {
+        characterMovement.HitMarkerNoise();
+    }
     private void Shoot(InputAction.CallbackContext context)
     {
         //Debug.Log("Gun is firing");
-        //if(gunData.currentAmmo > 0)
+        if(gunData.currentAmmo > 0)
         {
             if (CanShoot())
             {

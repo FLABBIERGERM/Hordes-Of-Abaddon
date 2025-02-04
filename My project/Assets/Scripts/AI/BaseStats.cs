@@ -22,16 +22,17 @@ public class BaseStats : MonoBehaviour, IDamageAble
         {
             Instance = this;
         }
+       
     }
 
     public void Damage(float damage)// damage the zombie
     {
-        //currentZHP = Mathf.Clamp(currentZHP - damage, 0, zMaxHealth);
         zHealth -= damage;
+        enemyHit.Invoke();
         Debug.Log("Remaing Zombie HP" + zHealth);
         if (zHealth <= 0)
         {        
-            spawnManager.EnemyKill();
+            //spawnManager.EnemyKill();
             Debug.Log("Okay the zombie has died"); // go b ack through all the code and remember where the zombie dying is
             enemyKilled.Invoke();
             Destroy(gameObject);

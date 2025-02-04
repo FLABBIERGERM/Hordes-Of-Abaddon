@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Ammo-Holder" style="flex-grow: 1; justify-content: flex-start; align-items: flex-start; align-self: auto; flex-direction: row; -unity-font: url(&quot;project://database/Assets/Art/Hud/CloisterBlackLight-axjg.ttf?fileID=12800000&amp;guid=b4bfddc248c4ff2479ea7f60917bd444&amp;type=3#CloisterBlackLight-axjg&quot;); -unity-font-definition: initial; font-size: 24px;">
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Ammo" style="align-items: flex-start; justify-content: center; align-self: center;" />
+    </ui:VisualElement>
+</ui:UXML>

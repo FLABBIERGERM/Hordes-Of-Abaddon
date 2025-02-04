@@ -16,7 +16,6 @@ public class ChaseAction : Action
         if(blackboard is AIBlackBoard aIBlackBoard && aIBlackBoard.chaseTarget != null)
         {
             aIBlackBoard.navMeshAgent.destination = aIBlackBoard.chaseTarget.position;
-
             aIBlackBoard.navMeshAgent.isStopped = false;
 
         }

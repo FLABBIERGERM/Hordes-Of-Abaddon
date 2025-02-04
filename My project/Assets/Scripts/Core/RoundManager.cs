@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class RoundManager : MonoBehaviour
 {
-    public static RoundManager Instance;
+    public static RoundManager Instance { get; private set; }
     public enum RoundState { RoundBegin, RoundPlaying, RoundEnd}
 
     public RoundState currentRoundState;
 
+    private int enemySpawned;
+    private int enemyAlive;
     private int currentRound = 1;
     private void Awake()
     {
@@ -22,23 +24,43 @@ public class RoundManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
-    private void Start()
+    public void Start()
     {
+        SpawnManager.Instance.enemySpawned.AddListener(OnenemySpawnedReceived);
+
         RoundStart();
+    }
+    public void RegisterEnemy(BaseStats enemyStats)
+    {
+        enemyStats.enemyKilled.AddListener(RecivedOnEnemyKill);
+    }
+    private void FixedUpdate()
+    {
+        enemyAlive = enemySpawned;
     }
     public void RoundStart()
     {
         Debug.Log("The current round is: " + currentRound + " total enemys are" + currentRound * 3);
-        currentRoundState = RoundState.RoundBegin;
+        currentRoundState = RoundState.RoundBegin;  
         StartCoroutine(RoundWait());
         currentRoundState = RoundState.RoundPlaying;
         SpawnManager.Instance.StartSpawning(currentRound);
     }
 
-    public void AllEnemysDefeated()
+    public void RecivedOnEnemyKill()
     {
+        enemyAlive -= 1;
+        if(enemyAlive <= 0 && currentRoundState == RoundState.RoundPlaying)
+        {
             RoundEnd();
+        }
     }
+    public void OnenemySpawnedReceived()
+    {
+        enemySpawned += 1;
+        Debug.Log("Onenemyspawned works" + enemySpawned);
+    }
+
 
     public void RoundEnd()
     {
