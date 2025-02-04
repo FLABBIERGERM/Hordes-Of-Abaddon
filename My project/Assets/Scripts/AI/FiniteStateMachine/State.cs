@@ -30,6 +30,7 @@ public class State : ScriptableObject
         {
             updateAction.Act(blackboard);
         }
+        CheckTransitions(blackboard);
     }
 
     public void ExitState(Blackboard blackboard)
@@ -39,7 +40,7 @@ public class State : ScriptableObject
             exitAction.Act(blackboard);
         }
     }
-    private void CheckTransitions(Blackboard blackboard)
+    public void CheckTransitions(Blackboard blackboard)
     {
         foreach (Transition transition in transitions)
         {

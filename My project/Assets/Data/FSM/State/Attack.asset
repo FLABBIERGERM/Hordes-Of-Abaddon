@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0ea083df1ca56c44b0acedcc41cd38c, type: 3}
   m_Name: Attack
   m_EditorClassIdentifier: 
-  enterActions:
-  - {fileID: 11400000, guid: a20bdca0a2725f14b9d3b630714a92f4, type: 2}
+  enterActions: []
   updateActions: []
   exitActions: []
   transitions:

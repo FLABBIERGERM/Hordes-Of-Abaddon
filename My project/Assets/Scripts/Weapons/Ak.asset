@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Ak
   m_EditorClassIdentifier: 
   name: Automatic Rifle
-  damage: 22
-  maxDist: 120
-  currentAmmo: 30
+  damage: 25
+  maxDist: 180
+  currentAmmo: 20
   magSize: 30
   fireRate: 600
   reloadTime: 2
+  fullAuto: 0
   reloading: 0
