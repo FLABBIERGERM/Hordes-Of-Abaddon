@@ -9,9 +9,10 @@ public class RoundManager : MonoBehaviour
 
     public RoundState currentRoundState;
 
-    private int enemySpawned;
-    private int enemyAlive;
-    private int currentRound = 1;
+    public int enemySpawned = 0;
+    public int enemyAlive = 0;
+    public int currentRound = 1;
+    public int totalEnemies = 0;
     private void Awake()
     {
         if(Instance == null)
@@ -41,16 +42,17 @@ public class RoundManager : MonoBehaviour
     public void RoundStart()
     {
         Debug.Log("The current round is: " + currentRound + " total enemys are" + currentRound * 3);
+        totalEnemies = currentRound * 3;
         currentRoundState = RoundState.RoundBegin;  
         StartCoroutine(RoundWait());
-        currentRoundState = RoundState.RoundPlaying;
-        SpawnManager.Instance.StartSpawning(currentRound);
+
     }
 
     public void RecivedOnEnemyKill()
     {
         enemyAlive -= 1;
-        if(enemyAlive <= 0 && currentRoundState == RoundState.RoundPlaying)
+        totalEnemies -= 1;
+        if( totalEnemies <= 0  && currentRoundState == RoundState.RoundPlaying)
         {
             RoundEnd();
         }
@@ -73,5 +75,7 @@ public class RoundManager : MonoBehaviour
     private IEnumerator RoundWait()
     {
         yield return new WaitForSeconds(5f);
+        currentRoundState = RoundState.RoundPlaying;
+        SpawnManager.Instance.StartSpawning(currentRound);
     }// new idea to just make a round wait for round start and then while playing have spawning.
 }
