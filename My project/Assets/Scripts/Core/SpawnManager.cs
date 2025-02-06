@@ -14,9 +14,9 @@ public class SpawnManager : MonoBehaviour
 
     [SerializeField] public Transform playerToFollow;
 
-   // private AIBlackBoard aiBlackboard;
+    // private AIBlackBoard aiBlackboard;
 
-    private Queue<GameObject> enemiesToSpawn = new Queue<GameObject>();
+    private Queue<GameObject> enemiesToSpawn = null;
 
     private int enemiesRemaining = 0 ;
 
@@ -41,9 +41,10 @@ public class SpawnManager : MonoBehaviour
     }
 
 
-
+        
     public void StartSpawning(int round)
     {
+        enemiesToSpawn = new Queue<GameObject>();
         int numOfEnemies = round *  3; // change number later based on difficulty
         Debug.Log(" So we are doing StartSpawning and the num of enemies there should be is :" + numOfEnemies);
         for (int i = 0; i < numOfEnemies; i++) 
@@ -75,6 +76,7 @@ public class SpawnManager : MonoBehaviour
             if (enemyStats != null && HudScore.Instance != null)
             {
                 HudScore.Instance.RegisterEnemy(enemyStats);
+                RoundManager.Instance.RegisterEnemy(enemyStats);
             }
             //animatorM.SetBool("Spawned", false);
             //enemySpawned.Invoke();
@@ -91,10 +93,9 @@ public class SpawnManager : MonoBehaviour
 
         //    RoundManager.Instance.AllEnemysDefeated();
         //}
-
     }
-    public void EnemyKill()
-    {
+    //public void EnemyKill()
+    //{
         //enemyDefeated.Invoke();
         //totalEnemies--;
         //enemiesRemaining -= 1;
@@ -104,6 +105,6 @@ public class SpawnManager : MonoBehaviour
         //{
         //    RoundManager.Instance.AllEnemysDefeated();
         //}
-    }
+    //}
 
 }
