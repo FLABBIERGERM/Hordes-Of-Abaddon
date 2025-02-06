@@ -13,7 +13,7 @@ public class BaseStats : MonoBehaviour, IDamageAble
     public float zHealth;
     public UnityEvent enemyKilled;
     public UnityEvent enemyHit;
-
+    public bool dead = false;
     public bool IsAlive => zHealth > 0;
 
     private void Awake()
@@ -22,7 +22,6 @@ public class BaseStats : MonoBehaviour, IDamageAble
         {
             Instance = this;
         }
-       
     }
 
     public void Damage(float damage)// damage the zombie
@@ -35,8 +34,12 @@ public class BaseStats : MonoBehaviour, IDamageAble
             //spawnManager.EnemyKill();
             Debug.Log("Okay the zombie has died"); // go b ack through all the code and remember where the zombie dying is
             enemyKilled.Invoke();
-            Destroy(gameObject);
-            
+            dead = true;
+            if (dead == true)
+            {
+                Destroy(gameObject);
+            }
+
         }
     }
 }
