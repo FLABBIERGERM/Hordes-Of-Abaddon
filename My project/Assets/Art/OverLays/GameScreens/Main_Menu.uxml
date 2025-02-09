@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Main-Menu-Holder" style="flex-grow: 1; -unity-font-definition: initial; -unity-font: url(&quot;project://database/Assets/Art/OverLays/CloisterBlackLight-axjg.ttf?fileID=12800000&amp;guid=b4bfddc248c4ff2479ea7f60917bd444&amp;type=3#CloisterBlackLight-axjg&quot;); font-size: 28px; color: rgb(255, 255, 255); -unity-text-align: middle-center; background-color: rgb(0, 0, 0); -unity-font-style: normal; flex-direction: column;">
+        <ui:Label tabindex="-1" text="Heralds Horns" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="-unity-background-image-tint-color: rgb(92, 92, 92); background-color: rgb(255, 255, 255); top: 168px; color: rgb(171, 8, 0);" />
+        <ui:Button text="Start Game" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Start-Game" style="background-color: rgb(92, 92, 92); top: 250px;" />
+        <ui:Button text="Game Controls " parse-escape-sequences="true" display-tooltip-when-elided="true" name="How-To-Play" style="background-color: rgb(92, 92, 92); top: 300px;" />
+        <ui:Button text="Credits" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Credits" style="background-color: rgb(92, 92, 92); top: 350px;" />
+        <ui:Button text="Quit Game" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Quit-Game" style="background-color: rgb(91, 91, 91); top: 400px;" />
+    </ui:VisualElement>
+</ui:UXML>
