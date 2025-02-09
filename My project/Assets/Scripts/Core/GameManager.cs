@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
     }
     public void TookDamage(int HurtMe)
     {
+        Debug.Log("Took damage in gameManager is working");
         gameState.ChangePlayerHealth(HurtMe);
     }
 
@@ -77,7 +78,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayerLost()
     {
-        gameState.UpdateGameStatus(GameStatus.PlayerWon);
+        gameState.UpdateGameStatus(GameStatus.PlayerLost);
     }
     public void GameQuit()
     {

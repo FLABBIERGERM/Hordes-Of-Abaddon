@@ -33,8 +33,8 @@ public class Death : MonoBehaviour
     {
         Debug.Log("Okay we have lost");
 
-        loseMenu.style.display = DisplayStyle.Flex;
-        DeathNoise();
+        //loseMenu.style.display = DisplayStyle.Flex;
+       // DeathNoise();
         Time.timeScale = 0f;
 
         // gonna have to implement a scene change that happens after x seconds

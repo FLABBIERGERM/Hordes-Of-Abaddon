@@ -33,12 +33,13 @@ public class StateController : MonoBehaviour
     public bool TransitionToState(State nextState)
     {
         if(nextState != null)
-        {
+        {   
             currentState.ExitState(blackboard);
 
             blackboard.ResetStateTime();
 
             Debug.Log("Transition to state:" + nextState);
+            currentState = nextState;
             currentState.EnterState(blackboard);
             return true;
         }

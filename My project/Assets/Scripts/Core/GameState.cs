@@ -16,7 +16,7 @@ public class GameState : MonoBehaviour
 
     public GameStatus CurrentGameStatus { get; private set; }
 
-    private int playerHealth = 3;
+    public int playerHealth = 15;
 
     public UnityEvent OnGamePaused;
  
@@ -87,16 +87,10 @@ public class GameState : MonoBehaviour
 
     public void ChangePlayerHealth(int healthDelta)
     {
-        playerHealth += healthDelta;
-        if(healthDelta < 0)
-        {
-            damageOverlay.IncreaseVignette(0.2f);
-        }
-        if (healthDelta > 0)
-        {
-            damageOverlay.DecreaseVignette(0.2f);
-        }
-        if(playerHealth <= 0)
+        Debug.Log("Current Player Health" + playerHealth);
+        playerHealth -= healthDelta;
+        damageOverlay.IncreaseVignette(0.2f);
+        if (playerHealth <= 0)
         {
             GameManager.Instance.PlayerLost();
         }

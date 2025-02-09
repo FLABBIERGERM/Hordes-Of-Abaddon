@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class RoundManager : MonoBehaviour
 {
     public static RoundManager Instance { get; private set; }
-    public enum RoundState { RoundBegin, RoundPlaying, RoundEnd}
-
+    public enum RoundState { RoundBegin, RoundPlaying, RoundEnd }
+    public UnityEvent roundIncrease;// gonna have this send out a ping letting a hud for rounds know what is going on with it. 
+    // speaking of which you as in me will have to compile all of those huds sooner or later as theres no reason to have 1 for score, ammo, and rounds
     public RoundState currentRoundState;
 
     public int enemySpawned = 0;

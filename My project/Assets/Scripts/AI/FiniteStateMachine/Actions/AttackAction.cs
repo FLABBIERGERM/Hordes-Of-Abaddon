@@ -24,16 +24,18 @@ public class AttackAction : Action
     private void PlayAttackAnimation(AIBlackBoard aiBlackboard)
     {
         aiBlackboard.owningController.GetComponent<Animator>()?.SetTrigger("Punched");
+
     }
 
     private void PerformAttack(AIBlackBoard aiBlackboard)
     {
         AudioSource audioSource = aiBlackboard.owningController.GetComponent<AudioSource>();
+        aiBlackboard.owningController.GetComponent<Animator>()?.SetBool("Attacking", true);
 
-        if(audioSource != null && audioSource.clip != null)
+        if (audioSource != null && audioSource.clip != null)
         {
             aiBlackboard.attackAudioSource.Play();
-            GameManager.Instance.TookDamage(-5);
+            GameManager.Instance.TookDamage(5);
         }
         else
         {
