@@ -24,10 +24,6 @@ public class SpawnManager : MonoBehaviour
     public UnityEvent enemySpawned;
     public UnityEvent enemyDefeated;
 
-    //public static SpawnManager Instance
-    //{
-    //    get { return _instance; }
-    //}
     private void Awake()
     {
         if (Instance == null)
@@ -78,33 +74,14 @@ public class SpawnManager : MonoBehaviour
                 HudScore.Instance.RegisterEnemy(enemyStats);
                 RoundManager.Instance.RegisterEnemy(enemyStats);
             }
-            //animatorM.SetBool("Spawned", false);
             //enemySpawned.Invoke();
             enemiesRemaining++;
-            //Debug.Log("Enemys remaining" + enemiesRemaining);
             yield return new WaitForSeconds(3f);
         }
        // Debug.Log("Enemies remaining after coroutiennne" + enemiesRemaining);
         RoundManager.Instance.currentRoundState = RoundManager.RoundState.RoundPlaying;
 
-        //if (enemiesRemaining <= 0 || totalEnemies <=0)
-        //{
-        //    Debug.Log("enemies died to fast good job!");
-
-        //    RoundManager.Instance.AllEnemysDefeated();
-        //}
     }
-    //public void EnemyKill()
-    //{
-        //enemyDefeated.Invoke();
-        //totalEnemies--;
-        //enemiesRemaining -= 1;
-        //Debug.Log("New enemies remaining" + enemiesRemaining);
-        //Debug.Log("Total Enemies" + totalEnemies);
-        //if (enemiesRemaining <= 0 && RoundManager.Instance.currentRoundState == RoundManager.RoundState.RoundPlaying)
-        //{
-        //    RoundManager.Instance.AllEnemysDefeated();
-        //}
-    //}
+
 
 }
