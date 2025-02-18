@@ -25,7 +25,6 @@ public class RoundManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
     }
     public void Start()
     {

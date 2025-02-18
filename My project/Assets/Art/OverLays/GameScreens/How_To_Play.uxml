@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Control-Holder" style="flex-grow: 1; -unity-font-definition: initial; -unity-font: url(&quot;project://database/Assets/Art/OverLays/CloisterBlackLight-axjg.ttf?fileID=12800000&amp;guid=b4bfddc248c4ff2479ea7f60917bd444&amp;type=3#CloisterBlackLight-axjg&quot;); font-size: 35px; color: rgb(255, 255, 255);">
+        <ui:Label tabindex="-1" text="Controls" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center;" />
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Forward: W " parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="-unity-text-align: upper-left;" />
+            <ui:Label tabindex="-1" text="Backward: S" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Left: A" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Right: D" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Jump: Space" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Shoot: Left Click" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" />
+            <ui:Label tabindex="-1" text="Reload: R" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" />
+            <ui:Label tabindex="-1" text="Reload: R" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; -unity-font-definition: initial; -unity-font: url(&quot;project://database/Assets/Art/OverLays/CloisterBlackLight-axjg.ttf?fileID=12800000&amp;guid=b4bfddc248c4ff2479ea7f60917bd444&amp;type=3#CloisterBlackLight-axjg&quot;); font-size: 35px; color: rgb(137, 137, 137);">
+        <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button" style="color: rgb(229, 229, 229); background-color: rgb(0, 0, 0);" />
+    </ui:VisualElement>
+</ui:UXML>

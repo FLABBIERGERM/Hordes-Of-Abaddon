@@ -9,15 +9,17 @@ public class Attack_Condition : Condition
     [SerializeField] private float attackCoolDown = 1.25f;
     private float lastAttackTime;
 
-    public override bool Evaluate(Blackboard blackboard) { 
-        if(blackboard is AIblackboard aIblackboard)
+    public override bool Evaluate(Blackboard blackboard)
+    {
+        if (blackboard is AIBlackBoard aIblackboard)
         {
-            bool canAttack = Vector3.Distance(aIblackboard.navMeshAgen.transform.position, aIblackboard.chaseTarget.position) <= aIblackboard._attackCoolDown;
-            if (canAttack && Time.time >= latAttackTime + attackCoolDown)
+            bool canAttack = Vector3.Distance(aIblackboard.navMeshAgent.transform.position, aIblackboard.chaseTarget.position) <= aIblackboard.attackRange;
+            if (canAttack && Time.time >= lastAttackTime + attackCoolDown)
             {
                 lastAttackTime = Time.time;
                 return true;
             }
-    }
+        }
         return false;
+    }
 }

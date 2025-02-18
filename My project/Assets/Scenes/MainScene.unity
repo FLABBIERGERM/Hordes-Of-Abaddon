@@ -608,6 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenuSceneName: MainMenu
+  playerHealth: 15
   OnGamePaused:
     m_PersistentCalls:
       m_Calls: []
@@ -627,12 +628,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   GameQuit:
-    m_PersistentCalls:
-      m_Calls: []
-  RoundOver:
-    m_PersistentCalls:
-      m_Calls: []
-  NewRound:
     m_PersistentCalls:
       m_Calls: []
   damageTaken:
@@ -1106,6 +1101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68272884674c0c0438f8e0af94c8df7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  essence: 0
 --- !u!4 &1686789039
 Transform:
   m_ObjectHideFlags: 0
@@ -1158,6 +1154,12 @@ MonoBehaviour:
   enemyMonster: {fileID: 7036861013377298119, guid: 8b087f3c942e7fc41925adfdf4309093,
     type: 3}
   playerToFollow: {fileID: 2104105677}
+  enemySpawned:
+    m_PersistentCalls:
+      m_Calls: []
+  enemyDefeated:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1752031906
 Transform:
   m_ObjectHideFlags: 0
@@ -1280,7 +1282,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f9c588b7477fb94880db7b19ebbfdbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roundIncrease:
+    m_PersistentCalls:
+      m_Calls: []
   currentRoundState: 0
+  enemySpawned: 0
+  enemyAlive: 0
+  currentRound: 1
+  totalEnemies: 0
 --- !u!4 &2053938711
 Transform:
   m_ObjectHideFlags: 0

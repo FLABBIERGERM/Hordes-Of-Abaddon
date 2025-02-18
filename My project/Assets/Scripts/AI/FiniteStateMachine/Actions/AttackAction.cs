@@ -35,7 +35,7 @@ public class AttackAction : Action
         if (audioSource != null && audioSource.clip != null)
         {
             aiBlackboard.attackAudioSource.Play();
-            GameManager.Instance.TookDamage(5);
+            GameManager.Instance.TookDamage(-5);
         }
         else
         {
