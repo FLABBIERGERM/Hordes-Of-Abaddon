@@ -1,27 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class Death : MonoBehaviour
 {
+    [SerializeField] private GameState gameState;
     [SerializeField] private AudioSource myAudio = null;
 
     private UIDocument uiDocument;
     private VisualElement loseMenu;
 
+
+    private Button restartGame;
+    private Button mainMenu;
+    
     private void Awake()
+    {
+
+    }
+
+    void Start()
     {
         uiDocument = GetComponent<UIDocument>();
 
         loseMenu = uiDocument.rootVisualElement.Q<VisualElement>("lose-menu");
 
         loseMenu.style.display = DisplayStyle.None;
+        GameState.Instance.OnPlayerLost.AddListener(RecivedOnGameLost);
+        restartGame = loseMenu.Q<Button>("Restart-Game");
+        mainMenu = loseMenu.Q<Button>("Main-Menu");
+        restartGame.clicked += RestartGamePressed;
+        mainMenu.clicked += MainMenuPressed;
+    }
+    private void OnDestroy()
+    {
+        restartGame.clicked -= RestartGamePressed;
+        mainMenu.clicked -= MainMenuPressed;
     }
 
-    void Start()
+    private void RestartGamePressed()
     {
-        GameState.Instance.OnPlayerLost.AddListener(RecivedOnGameLost);
+        loseMenu.style.display = DisplayStyle.None;
+        UnityEngine.Cursor.visible = false;
+        GameManager.Instance.GameStart();
+        SceneManager.LoadScene("ActualMainScene");
+    }
+    private void MainMenuPressed()
+    {
+        SceneManager.LoadScene("MainMenu");
+        loseMenu.style.display = DisplayStyle.None;
+        UnityEngine.Cursor.visible = false;
+
     }
 
     private void DeathNoise()
@@ -33,8 +65,10 @@ public class Death : MonoBehaviour
     {
         Debug.Log("Okay we have lost");
 
-        //loseMenu.style.display = DisplayStyle.Flex;
-       // DeathNoise();
+        loseMenu.style.display = DisplayStyle.Flex;
+        UnityEngine.Cursor.visible = true;
+        UnityEngine.Cursor.lockState = CursorLockMode.None;
+        DeathNoise();
         Time.timeScale = 0f;
 
         // gonna have to implement a scene change that happens after x seconds
