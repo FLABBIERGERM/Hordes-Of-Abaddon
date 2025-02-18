@@ -6,7 +6,8 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
 
-    private float timeSinceHit = 0f;
+    private float timeHit;
+    private float RegenCD = 5.0f;
     public float essence;
     public static GameManager Instance
     {
@@ -30,6 +31,19 @@ public class GameManager : MonoBehaviour
         gameState = GameState.Instance;
         ResumeGame();
     }
+
+    private void FixedUpdate()
+    {
+        CheckIfRegenAble();
+    }
+
+    private void CheckIfRegenAble()
+    {
+        if (Time.time >= timeHit + RegenCD)
+        {
+            PassiveRegen();
+        }
+    }
     public void CreditsPlaying()
     {
         bool didCredit = gameState.UpdateGameStatus(GameStatus.Credit);
@@ -40,6 +54,7 @@ public class GameManager : MonoBehaviour
     }
     public void TookDamage(int HurtMe)
     {
+        timeHit = Time.time;
         Debug.Log("Took damage in gameManager is working");
         gameState.ChangePlayerHealth(HurtMe);
     }
@@ -82,7 +97,7 @@ public class GameManager : MonoBehaviour
     }
     public void GameQuit()
     {
-        gameState.UpdateGameStatus(GameStatus.GameQuit);
+        gameState.UpdateGameStatus(GameStatus.GameQuit);// add the credits after this in this part haha.
     }
     public void GameStart()
     {

@@ -37,7 +37,7 @@ public class GameState : MonoBehaviour
         if (_instance == null)
         {
             _instance = this;
-            DontDestroyOnLoad(gameObject);
+           // DontDestroyOnLoad(gameObject); // dont need this at the moment as theres one level figure out full implementation of this at a later date.
         }
         else
         {
@@ -88,8 +88,21 @@ public class GameState : MonoBehaviour
     public void ChangePlayerHealth(int healthDelta)
     {
         Debug.Log("Current Player Health" + playerHealth);
-        playerHealth -= healthDelta;
-        damageOverlay.IncreaseVignette(0.2f);
+
+        if(healthDelta < 0)
+        {
+            playerHealth += healthDelta;
+            damageOverlay.IncreaseVignette(0.2f);
+        }
+        if (healthDelta > 0)
+        {
+            playerHealth += healthDelta;
+            damageOverlay.DecreaseVignette(0.2f);
+        }
+        else
+        {
+            Debug.LogWarning("Some how damage done to player is equal to 0");
+        }
         if (playerHealth <= 0)
         {
             GameManager.Instance.PlayerLost();
