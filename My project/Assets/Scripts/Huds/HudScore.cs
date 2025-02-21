@@ -10,6 +10,8 @@ public class HudScore : MonoBehaviour
     private UIDocument uiDocument;
     private VisualElement scoreBoard;
     private Label scoreLabel;
+    private Label roundLabel;
+    private int roundNumber = 1;
 
     public int kills;
     private int killHolder;
@@ -42,7 +44,13 @@ public class HudScore : MonoBehaviour
             Debug.LogError("Score Label Not found");
             return;
         }
+        roundLabel = scoreBoard.Q<Label>("Round-Holder");   
         scoreBoard.style.display = DisplayStyle.Flex; // this is un needed as it never leaves but i want to leave it to potentially change later.
+    }
+
+    private void Start()
+    {
+        RoundManager.Instance.roundIncrease.AddListener(RoundUp);
     }
     //private void Start() => BaseStats.Instance.enemyKilled.AddListener(RecivedOnEnemyKill);
 
@@ -54,10 +62,15 @@ public class HudScore : MonoBehaviour
     {
         killHolder = kills;
         scoreLabel.text = killHolder.ToString();
+        roundLabel.text = ("Round: ") + roundNumber.ToString();
     }
     private void RecivedOnEnemyKill()
     {
         Debug.Log("We are killing and recieving");
         kills += 1;
+    }
+    private void RoundUp()
+    {
+        roundNumber += 1;
     }
 }

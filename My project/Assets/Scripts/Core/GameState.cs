@@ -29,8 +29,6 @@ public class GameState : MonoBehaviour
 
 
     public UnityEvent damageTaken;
-    public DamageOverlay damageOverlay;
-
 
     private void Awake()
     {
@@ -85,29 +83,7 @@ public class GameState : MonoBehaviour
         return true;
     }
 
-    public void ChangePlayerHealth(int healthDelta)
-    {
-        Debug.Log("Current Player Health" + playerHealth);
 
-        if(healthDelta < 0)
-        {
-            playerHealth += healthDelta;
-            damageOverlay.IncreaseVignette(0.2f);
-        }
-        if (healthDelta > 0)
-        {
-            playerHealth += healthDelta;
-            damageOverlay.DecreaseVignette(0.2f);
-        }
-        else
-        {
-            Debug.LogWarning("Some how damage done to player is equal to 0");
-        }
-        if (playerHealth <= 0)
-        {
-            GameManager.Instance.PlayerLost();
-        }
-    }
     public void ResetGameState()
     {
         Debug.Log("Reseting Game state");

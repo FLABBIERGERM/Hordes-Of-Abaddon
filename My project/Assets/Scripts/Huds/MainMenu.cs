@@ -70,9 +70,9 @@ public class MainMenu : MonoBehaviour
     }
     private void BackPressed()
     {
-        Back.style.display = DisplayStyle.None;
         currentVE.style.display = DisplayStyle.None;
         Mainm.style.display = DisplayStyle.Flex;
+        Back.style.display = DisplayStyle.None;
         currentVE = Mainm;
     }
     private void StartGamePressed()
@@ -85,12 +85,9 @@ public class MainMenu : MonoBehaviour
     private void HTPpressed()
     {
         Mainm.style.display = DisplayStyle.None;
-        Back.style.display = DisplayStyle.Flex;
+        Back.style.display= DisplayStyle.Flex;
         currentVE = HTPve;
-
         HTPve.style.display = DisplayStyle.Flex;
-      
-
     }
     private void CreditButtonPressed()
     {

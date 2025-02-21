@@ -47,6 +47,8 @@ public class PauseMenu : MonoBehaviour
 
     private void ReceivedOnGamePaused()
     {
+        UnityEngine.Cursor.visible = true;
+        UnityEngine.Cursor.lockState = CursorLockMode.None;
         root.style.visibility = Visibility.Visible;
     }
 
