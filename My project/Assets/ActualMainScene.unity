@@ -886,7 +886,6 @@ MonoBehaviour:
   jumpNoise: {fileID: 8300000, guid: 734af6450e1ad054bb13b977078587ff, type: 3}
   landingNoise: {fileID: 8300000, guid: 8c31788468600fe46a62909370d72cc4, type: 3}
   gunNoise: {fileID: 8300000, guid: 4baa8963591707945b135dd12475d167, type: 3}
-  hitIndicator: {fileID: 8300000, guid: 6f5b959b78871f64ca050a63237a723e, type: 3}
 --- !u!114 &902663402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,6 +904,8 @@ MonoBehaviour:
   gunData: {fileID: 11400000, guid: 79fa4666132375e438f841c4823c4f0b, type: 2}
   muzzle: {fileID: 1307780770}
   rifle: {fileID: 2019489234}
+  audioSource: {fileID: 902663398}
+  reloadingSound: {fileID: 8300000, guid: 31cfe5922eb5c114588d7fd037838c5a, type: 3}
 --- !u!1 &920735133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,6 +1659,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec69c0d764d7a6448beebbcd9b2bb01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 902663398}
+  gunNoise: {fileID: 8300000, guid: 31cfe5922eb5c114588d7fd037838c5a, type: 3}
   kills: 0
 --- !u!114 &1322985892
 MonoBehaviour:
@@ -2352,9 +2355,32 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
         type: 3}
+      propertyPath: animatorM
+      value: 
+      objectReference: {fileID: 120320753032409914, guid: ed37767fa1b27d94e89659c70079f7ae,
+        type: 3}
+    - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
+        type: 3}
+      propertyPath: bruiserEnemy
+      value: 
+      objectReference: {fileID: 6629451957131490298, guid: ed37767fa1b27d94e89659c70079f7ae,
+        type: 3}
+    - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
+        type: 3}
+      propertyPath: enemyMonster
+      value: 
+      objectReference: {fileID: 7036861013377298119, guid: 8b087f3c942e7fc41925adfdf4309093,
+        type: 3}
+    - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
+        type: 3}
       propertyPath: playerToFollow
       value: 
-      objectReference: {fileID: 902663396}
+      objectReference: {fileID: 982677878}
+    - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
+        type: 3}
+      propertyPath: bruiserEnemyChance
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
         type: 3}
       propertyPath: spawnPoints.Array.data[0]

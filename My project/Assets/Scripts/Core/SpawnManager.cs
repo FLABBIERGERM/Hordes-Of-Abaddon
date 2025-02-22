@@ -7,13 +7,17 @@ public class SpawnManager : MonoBehaviour
 {
     public static SpawnManager Instance;
 
-    [SerializeField] private Animator animatorM;
+   // [SerializeField] private Animator animatorM;
+
+
     [SerializeField] private Transform[] spawnPoints;
 
     [SerializeField] private GameObject enemyMonster;
+    [SerializeField] private GameObject bruiserEnemy;
 
     [SerializeField] public Transform playerToFollow;
 
+    public float bruiserEnemyChance = 0.5f;
     // private AIBlackBoard aiBlackboard;
 
     private Queue<GameObject> enemiesToSpawn = null;
@@ -44,8 +48,9 @@ public class SpawnManager : MonoBehaviour
         int numOfEnemies = round *  3; // change number later based on difficulty
         Debug.Log(" So we are doing StartSpawning and the num of enemies there should be is :" + numOfEnemies);
         for (int i = 0; i < numOfEnemies; i++) 
-        { 
-            enemiesToSpawn.Enqueue(enemyMonster);
+        {
+            GameObject enemyToSpawn = Random.value < bruiserEnemyChance ? bruiserEnemy : enemyMonster;
+            enemiesToSpawn.Enqueue(enemyToSpawn);
         }
         totalEnemies = enemiesToSpawn.Count;
         StartCoroutine(SpawningEnemies());
