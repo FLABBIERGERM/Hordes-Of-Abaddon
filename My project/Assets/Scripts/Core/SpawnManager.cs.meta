@@ -5,8 +5,9 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - animatorM: {instanceID: 0}
-  - enemyMonster: {fileID: 7036861013377298119, guid: 8b087f3c942e7fc41925adfdf4309093,
+  - enemyMonster: {fileID: 7883020383373556081, guid: 01c7d85ca8920fa48a66a6a23cc96049,
       type: 3}
+  - playerToFollow: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

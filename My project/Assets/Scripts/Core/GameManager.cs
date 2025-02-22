@@ -12,10 +12,9 @@ public class GameManager : MonoBehaviour
 
     public float essence;
 
-    private const float RegenCD = 5.0f;
-    private int PlayerMaxHp = 15;
-    private int playerHP = 15;
-    private int PlayerCurrentHP;
+    private float RegenCD = 5.0f;
+    private int playerMaxHp = 15;
+    public int PlayerCurrentHP;
     public DamageOverlay damageOverlay;
 
     public static GameManager Instance
@@ -34,15 +33,18 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
     private void Start()
     {
+        PlayerCurrentHP = playerMaxHp;
+
         gameState = GameState.Instance;
-        PlayerCurrentHP = playerHP;
+        Debug.Log("Current HP:" + PlayerCurrentHP);
         ResumeGame();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         CheckIfRegenAble();
     }
@@ -52,32 +54,35 @@ public class GameManager : MonoBehaviour
         yield  return new  WaitForSeconds(ifTime);
         canTakeDamage = true;
     }
-    private void CheckIfRegenAble()
+    public void CheckIfRegenAble()
     {
-        if (Time.time >= timeHit + RegenCD && PlayerCurrentHP < PlayerMaxHp)
+        //Debug.Log("Current Player Health in regen" + playerHP);
+        //Debug.Log(Time.time);
+        if ( Time.time >= timeHit + RegenCD  && PlayerCurrentHP < playerMaxHp)
         {
+            Debug.Log("Okay we should be regening hp now");
             PassiveRegen();
         }
     }
+
     public void ChangePlayerHealth(int healthDelta)
     {
-        Debug.Log("Current Player Health" + playerHP);
+        Debug.Log("Current Player Health" + PlayerCurrentHP);
 
         if (healthDelta < 0)
         {
-            playerHP += healthDelta;
+            PlayerCurrentHP += healthDelta;
+          
             damageOverlay.IncreaseVignette(0.2f);
+            Debug.Log("Current Player Health" + PlayerCurrentHP);
         }
         if (healthDelta > 0)
         {
-            playerHP += healthDelta;
+            PlayerCurrentHP += healthDelta;
             damageOverlay.DecreaseVignette(0.2f);
+            Debug.Log("Current Player Health" + PlayerCurrentHP);
         }
-        else
-        {
-            Debug.LogWarning("Some how damage done to player is equal to 0");
-        }
-        if (playerHP <= 0)
+        if (PlayerCurrentHP <= 0)
         {
             GameManager.Instance.PlayerLost();
         }
@@ -100,7 +105,7 @@ public class GameManager : MonoBehaviour
         {
             canTakeDamage = false;
             timeHit = Time.time;
-            Debug.Log("Took damage in gameManager is working");
+            Debug.Log("Took damage in gameManager is working" + timeHit);
             ChangePlayerHealth(HurtMe);
             StartCoroutine(Iframes());
         }
@@ -108,7 +113,10 @@ public class GameManager : MonoBehaviour
 
     public void PassiveRegen() // add this based of time since last damage taken.
     {
-        ChangePlayerHealth(1);
+       // if(PlayerCurrentHP < PlayerMaxHp)
+        
+            ChangePlayerHealth(1);// figure out how to make this a more stead regen rather than all or nothing.
+           //ChangePlayerHealth(0.1f);
     }
     public void PauseGame()
     {
