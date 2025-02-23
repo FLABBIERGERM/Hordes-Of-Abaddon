@@ -12,9 +12,12 @@ public class StateController : MonoBehaviour
     [Tooltip("saved info field for our context typically called blackbaord")]
     public Blackboard blackboard;
 
+
+
     private void Awake()
     {
         InitializeStateController();
+        
     }
 
     private void Update()
@@ -46,14 +49,14 @@ public class StateController : MonoBehaviour
         return false;
     }
 
-    private void OnDrawGizmos()
-    {
-        if(currentState != null)
-        {
-            GUIStyle handlesStyle = new GUIStyle();
-            handlesStyle.normal.textColor = Color.red;
-            handlesStyle.fontSize = 24;
-            UnityEditor.Handles.Label(transform.position, currentState.name, handlesStyle);
-        }
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    if(currentState != null)
+    //    {
+    //        GUIStyle handlesStyle = new GUIStyle();
+    //        handlesStyle.normal.textColor = Color.red;
+    //        handlesStyle.fontSize = 24;
+    //        UnityEditor.Handles.Label(transform.position, currentState.name, handlesStyle);
+    //    }
+    //}
 }

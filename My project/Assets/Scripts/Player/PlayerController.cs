@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         GameState.Instance.OnGamePaused.AddListener(OnGamePausedReceived);
         GameState.Instance.OnGamePaused.AddListener(OnGameResumedReceived);
+        GameState.Instance.GameStarts.AddListener(OnGameStartsReceived);
 
     }
 
@@ -159,7 +160,7 @@ public class PlayerController : MonoBehaviour
     private void StartReload(InputAction.CallbackContext context)
     {
        // Debug.Log("Gun is reloading");
-       audioSource.PlayOneShot(reloadingSound);
+        audioSource.PlayOneShot(reloadingSound);
         StartCoroutine(Reload());   
     }
     private void MoveAction(InputAction.CallbackContext context)
@@ -203,5 +204,9 @@ public class PlayerController : MonoBehaviour
     private void OnGameResumedReceived()
     {
         SwitchActionMap("Player");
+    }
+    private void OnGameStartsReceived()
+    {
+        gunData.currentAmmo = gunData.magSize;
     }
 }
