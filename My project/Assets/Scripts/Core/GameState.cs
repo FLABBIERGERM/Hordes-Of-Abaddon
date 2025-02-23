@@ -88,9 +88,6 @@ public class GameState : MonoBehaviour
     {
         Debug.Log("Reseting Game state");
         CurrentGameStatus = GameStatus.Paused;
-
-
-
         OnGameResumed.RemoveAllListeners();
         OnGamePaused.RemoveAllListeners();
         OnPlayerLost.RemoveAllListeners();
@@ -105,6 +102,10 @@ public class GameState : MonoBehaviour
         if(scene.name == mainMenuSceneName)
         {
             ResetGameState();
+        }
+        else
+        {
+            UpdateGameStatus(GameStatus.GameStart);
         }
     }
 }

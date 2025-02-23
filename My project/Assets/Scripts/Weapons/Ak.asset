@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Automatic Rifle
   damage: 25
-  maxDist: 180
+  maxDist: 350
   currentAmmo: 30
   magSize: 30
   fireRate: 600
-  reloadTime: 2
+  reloadTime: 1.5
   fullAuto: 0
   reloading: 0

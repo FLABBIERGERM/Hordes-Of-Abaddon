@@ -207,6 +207,9 @@ public class PlayerController : MonoBehaviour
     }
     private void OnGameStartsReceived()
     {
-        gunData.currentAmmo = gunData.magSize;
+        if(gunData.currentAmmo < gunData.magSize)
+        {
+            gunData.currentAmmo = gunData.magSize;
+        }
     }
 }
