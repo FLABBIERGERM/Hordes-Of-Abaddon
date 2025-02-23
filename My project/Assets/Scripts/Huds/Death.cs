@@ -30,6 +30,7 @@ public class Death : MonoBehaviour
 
         loseMenu.style.display = DisplayStyle.None;
         GameState.Instance.OnPlayerLost.AddListener(RecivedOnGameLost);
+        UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         restartGame = loseMenu.Q<Button>("Restart-Game");
         mainMenu = loseMenu.Q<Button>("Main-Menu");
         restartGame.clicked += RestartGamePressed;
