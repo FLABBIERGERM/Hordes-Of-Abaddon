@@ -98,6 +98,7 @@ public class GameState : MonoBehaviour
         OnPlayerWin.RemoveAllListeners();
 
         damageTaken.RemoveAllListeners();
+        GameStarts.RemoveAllListeners(); 
     }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
