@@ -14,7 +14,7 @@ public class CharacterMovement : BaseMovement
 
     private bool isSprinting = false;
 
-    [SerializeField] private int maxJumps = 2;
+    [SerializeField] private int maxJumps = 1;
 
     private int currentJump = 0;
 
