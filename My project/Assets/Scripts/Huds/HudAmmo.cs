@@ -15,7 +15,7 @@ public class HudAmmo : MonoBehaviour
     public int totalAmmo;
     public int currentAmmo;
 
-    private void Awake()
+    private void Awake()    
     {
         uiDocument = GetComponent<UIDocument>();
 

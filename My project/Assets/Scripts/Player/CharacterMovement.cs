@@ -36,6 +36,9 @@ public class CharacterMovement : BaseMovement
 
     [SerializeField] private CinemachineCamera Camera1;
 
+
+    [SerializeField] private AudioSource bulletAudioSource;
+
     [SerializeField] private AudioClip footStepSoundClip;
 
     [SerializeField] private AudioClip getsHit;
@@ -79,7 +82,7 @@ public class CharacterMovement : BaseMovement
     }
     public void GunShotNoise()
     {
-        audioSource.PlayOneShot(gunNoise);
+        bulletAudioSource.PlayOneShot(gunNoise);
     }
     void CalculateCameraRelativeInput()
     {

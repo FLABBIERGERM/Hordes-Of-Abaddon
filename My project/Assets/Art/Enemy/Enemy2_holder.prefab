@@ -102,6 +102,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: b6be07db70e0f274e9fada566b299814, type: 2}
     - target: {fileID: 5866666021909216657, guid: 05a0c6a951870974cbe8c3a3b254894f,
         type: 3}
+      propertyPath: m_CullingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 05a0c6a951870974cbe8c3a3b254894f,
+        type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
@@ -206,7 +211,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -265,7 +270,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: -0.078
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &797040006056827785
