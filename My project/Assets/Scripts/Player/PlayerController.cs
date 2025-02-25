@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance { get; private set; }
+
     [Header("PlayerInput")]
     private PlayerInputActions playerInputActions;
     private Vector2 movementInput;
@@ -20,6 +23,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip reloadingSound;
 
+    public UnityEvent reloadingStarted;
+    public UnityEvent reloadingFinished;    
+
     float timeSinceLastShot;
     private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate / 60f);
 
@@ -30,6 +36,14 @@ public class PlayerController : MonoBehaviour
     }
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         playerInputActions = new PlayerInputActions();
     }
 
@@ -150,11 +164,12 @@ public class PlayerController : MonoBehaviour
     }
     private IEnumerator Reload()
     {
-        gunData.reloading = true; 
-
+        gunData.reloading = true;
+        reloadingStarted.Invoke();
         yield return new WaitForSeconds(gunData.reloadTime);
         gunData.currentAmmo = gunData.magSize;
         gunData.reloading = false;
+        reloadingFinished.Invoke();
     }
 
     private void StartReload(InputAction.CallbackContext context)
