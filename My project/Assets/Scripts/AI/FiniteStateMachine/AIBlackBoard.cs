@@ -41,5 +41,9 @@ public class AIBlackBoard : Blackboard
     // will have to change a bit of this as i dont actually need them to not know where the player is
     // otherwise its just chase, attack and then die i guess
     public AudioSource attackAudioSource;
+
+    public bool spawned = false;
+
+
 }
 

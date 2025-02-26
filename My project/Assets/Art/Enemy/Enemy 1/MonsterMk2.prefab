@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46022f9e6e8f8bd42a529d3824bacea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 11400000, guid: 55c1ffd9513c9584c85cea196772458e, type: 2}
+  currentState: {fileID: 11400000, guid: cc8ace6993f0e4549859c6624813cf90, type: 2}
   blackboard:
     owningController: {fileID: 0}
     stateTimeElapsed: 0
@@ -306,6 +306,7 @@ MonoBehaviour:
     searchDuration: 8
     searchingTurnSpeed: 120
     attackAudioSource: {fileID: 6807227710265875420}
+    spawned: 0
 --- !u!114 &9195411467401301757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,6 +323,8 @@ MonoBehaviour:
   animator: {fileID: 4326850620983848455}
   footstepSoundclip: {fileID: 6807227710265875420}
   stepin: {fileID: 8300000, guid: be1f915c5c5150b44bcc6e57cb8f66ff, type: 3}
+  aiStateController: {fileID: 1600476149048572082}
+  spawned: 0
 --- !u!136 &9124074383426762119
 CapsuleCollider:
   m_ObjectHideFlags: 0
