@@ -80,10 +80,18 @@ public class HudScore : MonoBehaviour
         PlayerController.Instance.reloadingStarted.AddListener(ReloadingReceived);
         PlayerController.Instance.reloadingFinished.AddListener(ReloadingFinishedReceived);
         RoundManager.Instance.roundIncrease.AddListener(RoundUp);
+        GameState.Instance.OnPlayerLost.AddListener(RecivedOnGameLost);
+
     }
     //private void Start() => BaseStats.Instance.enemyKilled.AddListener(RecivedOnEnemyKill);
 
-
+    private void RecivedOnGameLost()
+    {
+        scoreBoard.style.display = DisplayStyle.Flex; // this is un needed as it never leaves but i want to leave it to potentially change later.
+        hitMarker.style.display = DisplayStyle.None;
+        reloadingLabel.style.display = DisplayStyle.None;
+        reticleMarker.style.display = DisplayStyle.None;
+    }
     public void RegisterEnemy(BaseStats enemyStats)
     {
         enemyStats.enemyKilled.AddListener(RecivedOnEnemyKill);
