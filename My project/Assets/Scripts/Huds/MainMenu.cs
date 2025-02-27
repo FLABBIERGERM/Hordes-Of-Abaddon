@@ -46,7 +46,8 @@ public class MainMenu : MonoBehaviour
         HTPve.style.display = DisplayStyle.None;
 
         GameState.Instance.GameQuit.AddListener(ReceivedQuit);
-        if(currentVE == Mainm)
+
+        if (currentVE == Mainm)
         {
             Back.style.display = DisplayStyle.None;
         }
@@ -62,6 +63,7 @@ public class MainMenu : MonoBehaviour
         GameState.Instance.GameQuit.RemoveListener(ReceivedQuit);
 
     }
+
 
     private void QuitGamePressed()
     {

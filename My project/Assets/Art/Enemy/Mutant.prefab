@@ -224,8 +224,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 3.5
+  m_Acceleration: 5
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -233,7 +233,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: -0.078
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &658301661641084913
@@ -248,16 +248,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46022f9e6e8f8bd42a529d3824bacea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 11400000, guid: 55c1ffd9513c9584c85cea196772458e, type: 2}
+  currentState: {fileID: 11400000, guid: cc8ace6993f0e4549859c6624813cf90, type: 2}
   blackboard:
-    owningController: {fileID: 658301661641084913}
+    owningController: {fileID: 0}
     stateTimeElapsed: 0
   aiBlackboard:
     owningController: {fileID: 658301661641084913}
     stateTimeElapsed: 0
     navMeshAgent: {fileID: 7054977551980847663}
     chaseTarget: {fileID: 0}
-    attackRange: 1
+    attackRange: 2
     eyes: {fileID: 0}
     lookRange: 8
     lookSphereCastRadius: 1
@@ -265,6 +265,7 @@ MonoBehaviour:
     searchDuration: 8
     searchingTurnSpeed: 120
     attackAudioSource: {fileID: 8773720404442361677}
+    spawned: 0
 --- !u!114 &4207489673034871273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,6 +282,10 @@ MonoBehaviour:
   animator: {fileID: 120320753032409914}
   footstepSoundclip: {fileID: 8773720404442361677}
   stepin: {fileID: 8300000, guid: be1f915c5c5150b44bcc6e57cb8f66ff, type: 3}
+  aiStateController: {fileID: 658301661641084913}
+  mutantSpawn: {fileID: 0}
+  gruntSpawn: {fileID: 0}
+  spawned: 0
 --- !u!114 &2516724550255076623
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -319,6 +319,9 @@ MonoBehaviour:
   animator: {fileID: 3049002734520387489}
   footstepSoundclip: {fileID: 8537417667583185858}
   stepin: {fileID: 8300000, guid: be1f915c5c5150b44bcc6e57cb8f66ff, type: 3}
+  aiStateController: {fileID: 797040006056827785}
+  mutantSpawn: {fileID: 0}
+  gruntSpawn: {fileID: 0}
   spawned: 0
 --- !u!114 &6552150802537735223
 MonoBehaviour:
