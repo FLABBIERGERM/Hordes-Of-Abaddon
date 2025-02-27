@@ -17,10 +17,7 @@ public class Death : MonoBehaviour
     private Button restartGame;
     private Button mainMenu;
     
-    private void Awake()
-    {
 
-    }
 
     void Start()
     {

@@ -8,7 +8,6 @@ public class Blackboard
     // state controller that owns this blackboard
     public StateController owningController;
 
-
     // timer value that indicates how long the FSM has been in current state
 
     public float stateTimeElapsed;
