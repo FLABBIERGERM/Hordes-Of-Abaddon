@@ -15,7 +15,7 @@ public class AIBlackBoard : Blackboard
     [Tooltip("The transform of the object the AI is navigating towards")]
     public Transform chaseTarget ; // gotta figure this bit out  for new instanced enemys. losing my got damn mind about it now to.
 
-    public float attackRange = 2.0f;
+    public float attackRange = 3.0f;
 
     [Header("perception")]
     [Tooltip("position from which ai performs visual perception like looking")]

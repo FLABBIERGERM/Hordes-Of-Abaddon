@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "FSM/AI/COnditions/DistanceConditions", fileName = "C_Distance")]
 public class DistanceCondition : Condition
 {
-    [SerializeField] private float attackRange = 1.0f;
+    [SerializeField] private float attackRange = 3.0f;
 
     public override bool Evaluate(Blackboard blackboard)
     {
