@@ -36,6 +36,8 @@ public class CharacterMovement : BaseMovement
 
     [SerializeField] private CinemachineCamera Camera1;
 
+    [SerializeField] private Animator gunAnimations;
+
 
     [SerializeField] private AudioSource bulletAudioSource;
 
@@ -239,5 +241,12 @@ public class CharacterMovement : BaseMovement
     {
         return new Vector3(rigidbody.velocity.x, 0f, rigidbody.velocity.z);
     }
-
+    public void GunRecoil()
+    {
+        gunAnimations.SetTrigger("RecoilTrigger");
+    }
+    public void ReloadingAnimation()
+    {
+        gunAnimations.SetTrigger("GunReloading");
+    }
 }
