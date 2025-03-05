@@ -159,6 +159,7 @@ public class PlayerController : MonoBehaviour
     private void OnGunShot()
     {
         characterMovement.GunShotNoise();
+        characterMovement.GunRecoil();
 
         //Debug.Log("Gun has made it to the end of the if can shoot statement");
     }
@@ -174,8 +175,11 @@ public class PlayerController : MonoBehaviour
 
     private void StartReload(InputAction.CallbackContext context)
     {
-       // Debug.Log("Gun is reloading");
+        // Debug.Log("Gun is reloading");
+        characterMovement.ReloadingAnimation();
+
         audioSource.PlayOneShot(reloadingSound);
+
         StartCoroutine(Reload());   
     }
     private void MoveAction(InputAction.CallbackContext context)
