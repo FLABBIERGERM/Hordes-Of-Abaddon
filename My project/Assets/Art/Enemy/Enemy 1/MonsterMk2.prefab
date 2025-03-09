@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46022f9e6e8f8bd42a529d3824bacea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 11400000, guid: 55c1ffd9513c9584c85cea196772458e, type: 2}
+  currentState: {fileID: 11400000, guid: cc8ace6993f0e4549859c6624813cf90, type: 2}
   blackboard:
     owningController: {fileID: 0}
     stateTimeElapsed: 0
@@ -304,6 +304,7 @@ MonoBehaviour:
     canSeePlayer: 0
     searchDuration: 8
     searchingTurnSpeed: 120
+    enemyDamage: 3
     attackAudioSource: {fileID: 6807227710265875420}
     spawned: 0
 --- !u!114 &9195411467401301757
@@ -362,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zDamage: 5
-  zHealth: 100
+  zHealth: 75
   enemyKilled:
     m_PersistentCalls:
       m_Calls: []

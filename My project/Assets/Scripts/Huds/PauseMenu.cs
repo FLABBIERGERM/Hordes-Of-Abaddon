@@ -38,6 +38,7 @@ public class PauseMenu : MonoBehaviour
     private void ResumeButtonPressed()
     {
         GameManager.Instance.ResumeGame();
+
     }
 
     private void QuitButtonPressed()
@@ -47,13 +48,16 @@ public class PauseMenu : MonoBehaviour
 
     private void ReceivedOnGamePaused()
     {
+        root.style.visibility = Visibility.Visible;
         UnityEngine.Cursor.visible = true;
         UnityEngine.Cursor.lockState = CursorLockMode.None;
-        root.style.visibility = Visibility.Visible;
+ 
     }
 
     private void ReceivedOnGameResumed()
     {
         root.style.visibility = Visibility.Hidden;
+        UnityEngine.Cursor.visible = false;
+        UnityEngine.Cursor.lockState = CursorLockMode.Locked;
     }
 }

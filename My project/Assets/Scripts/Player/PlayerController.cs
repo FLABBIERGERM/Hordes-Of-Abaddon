@@ -155,6 +155,10 @@ public class PlayerController : MonoBehaviour
                 OnGunShot();
             }
         }
+        if(gunData.currentAmmo <= 0)
+        {
+            StartReload(context);
+        }
     }
     private void OnGunShot()
     {
@@ -176,11 +180,12 @@ public class PlayerController : MonoBehaviour
     private void StartReload(InputAction.CallbackContext context)
     {
         // Debug.Log("Gun is reloading");
-        characterMovement.ReloadingAnimation();
-
-        audioSource.PlayOneShot(reloadingSound);
-
-        StartCoroutine(Reload());   
+        if(gunData.reloading == false && gunData.currentAmmo != gunData.magSize)
+        {
+            characterMovement.ReloadingAnimation();
+            audioSource.PlayOneShot(reloadingSound);
+            StartCoroutine(Reload());
+        }
     }
     private void MoveAction(InputAction.CallbackContext context)
     {
