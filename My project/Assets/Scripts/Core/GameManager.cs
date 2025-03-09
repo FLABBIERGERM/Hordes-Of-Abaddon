@@ -99,6 +99,7 @@ public class GameManager : MonoBehaviour
     {
         if(canTakeDamage == false)
         {
+            Debug.Log("Cannot get hit for a moment");
             return;
         }
         if (canTakeDamage == true)

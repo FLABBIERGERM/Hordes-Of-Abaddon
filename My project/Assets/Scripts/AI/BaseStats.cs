@@ -23,7 +23,7 @@ public class BaseStats : MonoBehaviour, IDamageAble
         }
     }
 
-    public void Damage(float damage)// damage the zombie
+    public void Damage(float damage)// damage the enemy not the player.
     {
         zHealth -= damage;
         enemyHit.Invoke();
