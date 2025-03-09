@@ -87,7 +87,7 @@ public class GameState : MonoBehaviour
     public void ResetGameState()
     {
         Debug.Log("Reseting Game state");
-        CurrentGameStatus = GameStatus.Paused;
+        //CurrentGameStatus = GameStatus.Paused;
         OnGameResumed.RemoveAllListeners();
         OnGamePaused.RemoveAllListeners();
         OnPlayerLost.RemoveAllListeners();

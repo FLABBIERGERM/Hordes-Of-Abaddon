@@ -35,6 +35,9 @@ public class AIBlackBoard : Blackboard
     public float searchingTurnSpeed = 120f;
 
 
+    [Tooltip("This will be the enemy damage per enemy")]
+    public int enemyDamage; // i want to change all of these to floats for health idk why but i do.
+
     [Tooltip("This will be the spawning information like where to spawn")]
     private List<GameObject> spawnSpots;
 

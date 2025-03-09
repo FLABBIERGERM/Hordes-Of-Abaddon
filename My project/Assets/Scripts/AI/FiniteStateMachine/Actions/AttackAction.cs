@@ -8,7 +8,8 @@ using UnityEngine.UIElements;
 public class AttackAction : Action
 {
 
-    [SerializeField] private int damageAmount = 10;
+
+    
 
 
 
@@ -31,11 +32,11 @@ public class AttackAction : Action
     {
         AudioSource audioSource = aiBlackboard.owningController.GetComponent<AudioSource>();
         aiBlackboard.owningController.GetComponent<Animator>()?.SetBool("Attacking", true);
-
+        
         if (audioSource != null && audioSource.clip != null)
         {
             aiBlackboard.attackAudioSource.Play();
-            GameManager.Instance.TookDamage(-damageAmount);
+            GameManager.Instance.TookDamage(-aiBlackboard.enemyDamage);
         }
         else
         {
