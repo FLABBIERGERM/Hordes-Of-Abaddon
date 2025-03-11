@@ -70,9 +70,12 @@ public class HudScore : MonoBehaviour
         totalAmmo = gunData.magSize;
         reticleMarker= uiDocument.rootVisualElement.Q<VisualElement>("Reticle");
         reloadingLabel = reticleMarker.Q<Label>("Reloading-Holder");
+
         reloadingLabel.style.display = DisplayStyle.None;
         hitMarker.style.display = DisplayStyle.None;
         scoreBoard.style.display = DisplayStyle.Flex; // this is un needed as it never leaves but i want to leave it to potentially change later.
+
+
     }
 
     private void Start()
@@ -81,6 +84,8 @@ public class HudScore : MonoBehaviour
         PlayerController.Instance.reloadingFinished.AddListener(ReloadingFinishedReceived);
         RoundManager.Instance.roundIncrease.AddListener(RoundUp);
         GameState.Instance.OnPlayerLost.AddListener(RecivedOnGameLost);
+        //UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+        UnityEngine.Cursor.lockState = CursorLockMode.Confined;
 
     }
     //private void Start() => BaseStats.Instance.enemyKilled.AddListener(RecivedOnEnemyKill);
