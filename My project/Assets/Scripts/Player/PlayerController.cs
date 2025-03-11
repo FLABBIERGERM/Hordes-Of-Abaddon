@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip reloadingSound;
 
+    [SerializeField] private ParticleSystem onHitParticle;
+    [SerializeField] private ParticleSystem gunFiredParticle;
     public UnityEvent reloadingStarted;
     public UnityEvent reloadingFinished;    
 
@@ -143,13 +145,14 @@ public class PlayerController : MonoBehaviour
 
                 if (Physics.Raycast(muzzle.position, muzzle.forward, out RaycastHit hitInfo, gunData.maxDist))
                 {
-
+                    Instantiate(onHitParticle, hitInfo.point, Quaternion.identity);
                     Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
 
                     IDamageAble damageable = hitInfo.transform.GetComponent<IDamageAble>();   
                     damageable?.Damage(gunData.damage);
                 }
                 //Debug.Log("Miss");
+                Instantiate(gunFiredParticle,muzzle.position, Quaternion.identity);
                 gunData.currentAmmo--;
                 timeSinceLastShot = 0;
                 OnGunShot();

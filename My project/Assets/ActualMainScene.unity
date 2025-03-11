@@ -1107,6 +1107,10 @@ MonoBehaviour:
   rifle: {fileID: 2019489234}
   audioSource: {fileID: 902663398}
   reloadingSound: {fileID: 8300000, guid: 31cfe5922eb5c114588d7fd037838c5a, type: 3}
+  onHitParticle: {fileID: 7198347410806676087, guid: f7e834c0f0e67e94e8233dbfef69f44b,
+    type: 3}
+  gunFiredParticle: {fileID: 6396108105057732845, guid: 8347d0e14fd9118458de240a75e2053f,
+    type: 3}
   reloadingStarted:
     m_PersistentCalls:
       m_Calls: []

@@ -20,7 +20,7 @@ public class WeaponData : ScriptableObject
 
     public bool fullAuto;
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool reloading;
 
 

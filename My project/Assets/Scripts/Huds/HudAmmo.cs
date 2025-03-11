@@ -29,11 +29,11 @@ public class HudAmmo : MonoBehaviour
 
     public void FixedUpdate()
     {
-        ammoUpdate();
+        AmmoUpdate();
         
         ammoAmount.text = ("Ammo:" + totalAmmo + ("/") + currentAmmo);
     }
-    private void ammoUpdate()
+    private void AmmoUpdate()
     {
         currentAmmo = gunData.currentAmmo;
     }
