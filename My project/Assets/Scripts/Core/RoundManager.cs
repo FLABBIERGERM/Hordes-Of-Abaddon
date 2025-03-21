@@ -55,7 +55,6 @@ public class RoundManager : MonoBehaviour
         StartCoroutine(RoundWait());
 
     }
-
     public void RecivedOnEnemyKill()
     {
         enemyAlive -= 1;
@@ -70,18 +69,18 @@ public class RoundManager : MonoBehaviour
         enemySpawned += 1;
         Debug.Log("Onenemyspawned works" + enemySpawned);
     }
-
-
     public void RoundEnd()
     {
         currentRoundState = RoundState.RoundEnd;
 
-        Invoke(nameof(RoundStart), 2f);// adds a delay of 5 seconds between rounds or atleast should.
+        Invoke(nameof(RoundStart), 2f);// adds a delay of 5 seconds between rounds or atleast should. The wait is in the actual numerator so idk what the 2f is for honestly now that im looking back at it.
 
         currentRound++;
     }
     private IEnumerator RoundWait()
     {
+        //Add in a audio play here.
+        // audioSorce.PlayOneShot(newRoundClip);
         yield return new WaitForSeconds(5f);
         currentRoundState = RoundState.RoundPlaying;
         SpawnManager.Instance.StartSpawning(currentRound);
