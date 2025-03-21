@@ -9,7 +9,7 @@ public class AIBlackBoard : Blackboard
 
     [Tooltip("The navmesh agent that the owning AIstatecontroller uses for movement and navigation")]
     public NavMeshAgent navMeshAgent;
-
+    public Rigidbody rigidBody;
 
     [Header("Chase AI")]
     [Tooltip("The transform of the object the AI is navigating towards")]
@@ -47,6 +47,10 @@ public class AIBlackBoard : Blackboard
 
     public bool spawned = false;
 
+    public Vector3 chargeLocation ;
 
+    public float chargeCd = 45 ;
+
+    public bool chargeOver = false;
 }
 

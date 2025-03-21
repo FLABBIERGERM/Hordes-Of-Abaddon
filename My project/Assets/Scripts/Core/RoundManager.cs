@@ -49,8 +49,8 @@ public class RoundManager : MonoBehaviour
         //    audioSorce.PlayOneShot(Audioclip);
         //}
         roundIncrease.Invoke();
-        Debug.Log("The current round is: " + currentRound + " total enemys are" + currentRound * 3);
-        totalEnemies = currentRound * 3;
+        Debug.Log("The current round is: " + currentRound + " total enemys are" + currentRound * 7);
+        totalEnemies = currentRound * 7;
         currentRoundState = RoundState.RoundBegin;  
         StartCoroutine(RoundWait());
 

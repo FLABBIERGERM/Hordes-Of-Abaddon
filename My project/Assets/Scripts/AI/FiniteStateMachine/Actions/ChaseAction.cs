@@ -15,7 +15,7 @@ public class ChaseAction : Action
 
         if (blackboard.owningController is not AiStateController controller) return;
 
-        if(blackboard is AIBlackBoard aIBlackBoard && aIBlackBoard.chaseTarget != null)
+            if(blackboard is AIBlackBoard aIBlackBoard && aIBlackBoard.chaseTarget != null)
         {
             aIBlackBoard.owningController.GetComponent<Animator>()?.SetBool("Attacking", false);
 

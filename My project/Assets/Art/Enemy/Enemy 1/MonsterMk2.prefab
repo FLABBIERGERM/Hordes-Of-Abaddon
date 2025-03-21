@@ -296,6 +296,7 @@ MonoBehaviour:
     owningController: {fileID: 1600476149048572082}
     stateTimeElapsed: 0
     navMeshAgent: {fileID: 2839217772903072840}
+    rigidBody: {fileID: 1935558372175683865}
     chaseTarget: {fileID: 0}
     attackRange: 2
     eyes: {fileID: 4977289754366275043}
@@ -307,6 +308,9 @@ MonoBehaviour:
     enemyDamage: 3
     attackAudioSource: {fileID: 6807227710265875420}
     spawned: 0
+    chargeLocation: {x: 0, y: 0, z: 0}
+    chargeCd: 0
+    chargeOver: 1
 --- !u!114 &9195411467401301757
 MonoBehaviour:
   m_ObjectHideFlags: 0
