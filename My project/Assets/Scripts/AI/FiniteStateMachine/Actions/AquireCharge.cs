@@ -11,13 +11,9 @@ public class AquireCharge : Action
     {
         if (blackboard is AIBlackBoard aIBlackBoard)
         {
-            SetBull(aIBlackBoard);
+            aIBlackBoard.chargeOver = true;
+            aIBlackBoard.chargeLocation = aIBlackBoard.chaseTarget.position;
+        
         }
     }
-    private void SetBull(AIBlackBoard aIBlackBoard)
-    {
-        //aIBlackBoard.chargeOver = false;
-        aIBlackBoard.chargeLocation = aIBlackBoard.chaseTarget.transform.position;
-    }
-
 }

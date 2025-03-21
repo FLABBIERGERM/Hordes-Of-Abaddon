@@ -8,34 +8,30 @@ using UnityEngine;
 
 public class ChargeAttack : Action
 {
-    private float chargeCd = 45;
+
     public override void Act(Blackboard blackboard)
     {
-
         if (blackboard is AIBlackBoard aiBlackboard)
         {
-            ChargeA(aiBlackboard);
+            Chargeattack(aiBlackboard);
         }
     }
-
-    private void ChargeA(AIBlackBoard aiBlackboard)
+    
+    private void Chargeattack(AIBlackBoard aiBlackBoard)
     {
-        var originalSpeed = aiBlackboard.navMeshAgent.speed;
+        var originalSpeed = aiBlackBoard.navMeshAgent.speed;
 
-        aiBlackboard.navMeshAgent.speed = aiBlackboard.navMeshAgent.speed * 3;
-        aiBlackboard.navMeshAgent.isStopped = false;
-
-   
-        while (aiBlackboard.navMeshAgent.transform.position != aiBlackboard.chargeLocation)
+        if (!aiBlackBoard.chargeOver)
         {
-            Debug.Log("Well its inside the while statment so it should be moving but i guess not");
-            aiBlackboard.navMeshAgent.destination = aiBlackboard.chargeLocation;
-            break;  
+            aiBlackBoard.navMeshAgent.speed = originalSpeed * 3;
+            aiBlackBoard.navMeshAgent.isStopped = false;
+            aiBlackBoard.navMeshAgent.destination = aiBlackBoard.chargeLocation;
         }
-        if (aiBlackboard.navMeshAgent.transform.position == aiBlackboard.chargeLocation) {
-            aiBlackboard.chargeCd = chargeCd;
-            aiBlackboard.chargeOver = true;
-            aiBlackboard.navMeshAgent.speed = originalSpeed;
+
+        if(Vector3.Distance(aiBlackBoard.navMeshAgent.transform.position, aiBlackBoard.chargeLocation) < 2f)
+        {
+            aiBlackBoard.chargeOver = true;
+            aiBlackBoard.navMeshAgent.speed = originalSpeed;
         }
     }
 

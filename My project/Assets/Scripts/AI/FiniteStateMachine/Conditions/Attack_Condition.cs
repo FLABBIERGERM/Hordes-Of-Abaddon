@@ -15,21 +15,10 @@ public class Attack_Condition : Condition
         {
             bool canAttack = Vector3.Distance(aIblackboard.navMeshAgent.transform.position, aIblackboard.chaseTarget.position) <= aIblackboard.attackRange;
            
-            if (canAttack && canHitAgain)
+            if (canAttack && aIblackboard.IsattackCDR())
             {
-                canHitAgain = false;
+                aIblackboard.ResetACD();
                 return true;
-            }
-            while(canHitAgain == false)
-            {
-                attackCoolDown -= Time.deltaTime;
-                if(attackCoolDown <= 0)
-                {
-                    canHitAgain = true;
-                    attackCoolDown = 2.25f;
-                }
-                break;
-
             }
         }
         return false;

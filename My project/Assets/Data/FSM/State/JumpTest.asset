@@ -19,4 +19,4 @@ MonoBehaviour:
   exitActions: []
   transitions:
   - condition: {fileID: 11400000, guid: d9c0f0af59180d241bf9983e29287c90, type: 2}
-    nextState: {fileID: 11400000, guid: 55c1ffd9513c9584c85cea196772458e, type: 2}
+    nextState: {fileID: 11400000}

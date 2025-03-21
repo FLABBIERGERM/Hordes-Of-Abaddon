@@ -248,13 +248,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46022f9e6e8f8bd42a529d3824bacea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 11400000, guid: cc8ace6993f0e4549859c6624813cf90, type: 2}
+  currentState: {fileID: 11400000, guid: 1a818ed43cb53374f9e63c86318ff043, type: 2}
   blackboard:
     owningController: {fileID: 0}
     stateTimeElapsed: 0
   aiBlackboard:
     owningController: {fileID: 658301661641084913}
     stateTimeElapsed: 0
+    attackCoolDown: 2.25
+    nextAttack: 0
+    chargeCoolDown: 5
+    nextCharge: 0
     navMeshAgent: {fileID: 7054977551980847663}
     rigidBody: {fileID: 0}
     chaseTarget: {fileID: 0}
@@ -269,7 +273,6 @@ MonoBehaviour:
     attackAudioSource: {fileID: 8773720404442361677}
     spawned: 0
     chargeLocation: {x: 0, y: 0, z: 0}
-    chargeCd: 45
     chargeOver: 0
 --- !u!114 &4207489673034871273
 MonoBehaviour:
