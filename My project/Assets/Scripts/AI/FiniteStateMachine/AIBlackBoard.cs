@@ -7,6 +7,31 @@ using UnityEngine.AI;
 public class AIBlackBoard : Blackboard
 {
 
+    [Tooltip("The attack cooldown section")]
+    public float attackCoolDown = 2.25f;
+    public float nextAttack = 0.0f;
+    public float chargeCoolDown = 5f;
+    public float nextCharge = 0.0f;
+
+    public bool IsattackCDR()
+    {
+        return Time.time >= nextAttack;
+    }
+    public void ResetACD()
+    {
+        nextAttack = Time.time + attackCoolDown;
+    }
+
+    public bool IsChargeCDR()
+    {
+        return Time.time >= nextCharge;
+    }
+    public void ResetCCD()
+    {
+        nextCharge = Time.time + chargeCoolDown;
+    }
+
+
     [Tooltip("The navmesh agent that the owning AIstatecontroller uses for movement and navigation")]
     public NavMeshAgent navMeshAgent;
     public Rigidbody rigidBody;
@@ -47,9 +72,7 @@ public class AIBlackBoard : Blackboard
 
     public bool spawned = false;
 
-    public Vector3 chargeLocation ;
-
-    public float chargeCd = 45 ;
+    public Vector3 chargeLocation;
 
     public bool chargeOver = false;
 }

@@ -15,6 +15,8 @@ public class BaseStats : MonoBehaviour, IDamageAble
     public bool dead = false;
     public bool IsAlive => zHealth > 0;
 
+
+
     private void Awake()
     {
         if (Instance == null)
@@ -37,7 +39,7 @@ public class BaseStats : MonoBehaviour, IDamageAble
             {
                 Destroy(gameObject);
             }
-
         }
     }
+
 }

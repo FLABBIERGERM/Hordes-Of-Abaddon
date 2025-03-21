@@ -25,9 +25,7 @@ public class AttackAction : Action
     private void PlayAttackAnimation(AIBlackBoard aiBlackboard)
     {
         aiBlackboard.owningController.GetComponent<Animator>()?.SetTrigger("Punched");
-
     }
-
     private void PerformAttack(AIBlackBoard aiBlackboard)
     {
         AudioSource audioSource = aiBlackboard.owningController.GetComponent<AudioSource>();
