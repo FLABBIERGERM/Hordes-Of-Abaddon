@@ -28,7 +28,7 @@ public class HudScore : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip hitNoise;
     [SerializeField] private WeaponData gunData;
-    private  float essence = 0;
+    public  float essence = 0;
 
     public int kills;
     private int killHolder;

@@ -7,12 +7,16 @@ using UnityEngine.UIElements;
 
 public class Death : MonoBehaviour
 {
+    public static Death Instance { get; private set; }
+
     [SerializeField] private GameState gameState;
     [SerializeField] private AudioSource myAudio = null;
 
     private UIDocument uiDocument;
     private VisualElement loseMenu;
 
+    private Label Score;
+    private Label Kills;
 
     private Button restartGame;
     private Button mainMenu;
@@ -28,12 +32,19 @@ public class Death : MonoBehaviour
         loseMenu.style.display = DisplayStyle.None;
         GameState.Instance.OnPlayerLost.AddListener(RecivedOnGameLost);
 
+        Score = loseMenu.Q<Label>("Points");
+        Kills = loseMenu.Q<Label>("Kills");
 
 
         restartGame = loseMenu.Q<Button>("Restart-Game");
         mainMenu = loseMenu.Q<Button>("Main-Menu");
         restartGame.clicked += RestartGamePressed;
         mainMenu.clicked += MainMenuPressed;
+    }
+    private void Update()
+    {
+        Score.text = "Essence Collected: " + HudScore.Instance.essence.ToString();
+        Kills.text = "Enemies Fell: " + HudScore.Instance.kills.ToString();
     }
     private void OnDestroy()
     {
