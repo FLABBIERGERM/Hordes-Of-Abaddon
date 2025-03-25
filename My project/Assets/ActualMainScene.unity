@@ -3549,7 +3549,7 @@ PrefabInstance:
     - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
         type: 3}
       propertyPath: bruiserEnemyChance
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
         type: 3}

@@ -8,7 +8,6 @@ using UnityEngine;
 
 public class ChargeAttack : Action
 {
-
     public override void Act(Blackboard blackboard)
     {
         if (blackboard is AIBlackBoard aiBlackboard)
@@ -16,7 +15,6 @@ public class ChargeAttack : Action
             Chargeattack(aiBlackboard);
         }
     }
-    
     private void Chargeattack(AIBlackBoard aiBlackBoard)
     {
         var originalSpeed = aiBlackBoard.navMeshAgent.speed;
@@ -28,11 +26,12 @@ public class ChargeAttack : Action
             aiBlackBoard.navMeshAgent.destination = aiBlackBoard.chargeLocation;
         }
 
-        if(Vector3.Distance(aiBlackBoard.navMeshAgent.transform.position, aiBlackBoard.chargeLocation) < 2f)
+        if (Vector3.Distance(aiBlackBoard.navMeshAgent.transform.position, aiBlackBoard.chargeLocation) < 1f)
         {
+            Debug.Log("So it is checking the distance from the charge location");
             aiBlackBoard.chargeOver = true;
             aiBlackBoard.navMeshAgent.speed = originalSpeed;
+            Debug.log("Original speed" + aiBlackBoard.navMeshAgent.speed);
         }
     }
-
 }

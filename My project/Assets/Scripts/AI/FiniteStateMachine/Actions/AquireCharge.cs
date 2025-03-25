@@ -11,9 +11,8 @@ public class AquireCharge : Action
     {
         if (blackboard is AIBlackBoard aIBlackBoard)
         {
-            aIBlackBoard.chargeOver = true;
-            aIBlackBoard.chargeLocation = aIBlackBoard.chaseTarget.position;
-        
+              aIBlackBoard.chargeLocation = aIBlackBoard.chaseTarget.position;
+              //Debug.Log("New Target Position is" +  aIBlackBoard.chargeLocation); // this part is working as intended so i commented it out.
         }
     }
 }

@@ -10,10 +10,13 @@ public class ChargeCD : Condition
 
     public override bool Evaluate(Blackboard blackboard)
     {
-        if (blackboard is AIBlackBoard aIblackboard)
+        if (blackboard is AIBlackBoard aIblackboard)// this is now working perfectly
         {
-            
-            return aIblackboard.IsChargeCDR();
+            if (aIblackboard.chargeOver && aIblackboard.IsChargeCDR())
+            {
+                aIblackboard.ResetCCD();
+                return true;
+            }
         }
         return false;
     }
