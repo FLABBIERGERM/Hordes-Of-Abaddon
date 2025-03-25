@@ -9,7 +9,7 @@ public class ChargeOverCD : Condition
     {
         if (blackboard is AIBlackBoard aIblackboard)
         {
-            Debug.Log("We are trying to see if the charge is over or not");
+                Debug.Log("We are trying to see if the charge is over or not");
                 return aIblackboard.chargeOver;
         }
         return false;

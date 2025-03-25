@@ -12,7 +12,12 @@ public class AIBlackBoard : Blackboard
     public float nextAttack = 0.0f;
     public float chargeCoolDown = 5f;
     public float nextCharge = 0.0f;
+    public float chargeAfk = 2.0f;
+    public float chargeAfkOver = 0.0f;
 
+    public Vector3 chargeLocation;
+
+    public bool chargeOver = true;
     public bool IsattackCDR()
     {
         return Time.time >= nextAttack;
@@ -24,16 +29,26 @@ public class AIBlackBoard : Blackboard
 
     public bool IsChargeCDR()
     {
+        Debug.Log("This is the charge cool down being over or not" + (Time.time >= nextCharge));
         return Time.time >= nextCharge;
     }
     public void ResetCCD()
     {
         nextCharge = Time.time + chargeCoolDown;
+        Debug.Log("Reseting time actual time" + nextCharge);
     }
-
+    public bool ChargeAfkEnd()
+    {
+        return Time.time >= chargeAfk;
+    }
+    public void ChargingAfk()
+    {
+        chargeAfkOver = Time.time + chargeAfk;
+    }
 
     [Tooltip("The navmesh agent that the owning AIstatecontroller uses for movement and navigation")]
     public NavMeshAgent navMeshAgent;
+    
     public Rigidbody rigidBody;
 
     [Header("Chase AI")]
@@ -72,8 +87,6 @@ public class AIBlackBoard : Blackboard
 
     public bool spawned = false;
 
-    public Vector3 chargeLocation;
 
-    public bool chargeOver = false;
 }
 
