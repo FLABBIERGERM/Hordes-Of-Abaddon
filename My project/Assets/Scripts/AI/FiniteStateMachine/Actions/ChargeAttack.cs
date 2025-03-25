@@ -18,20 +18,18 @@ public class ChargeAttack : Action
     private void Chargeattack(AIBlackBoard aiBlackBoard)
     {
         var originalSpeed = aiBlackBoard.navMeshAgent.speed;
-
+        //if (Vector3.Distance(aiBlackBoard.navMeshAgent.transform.position, aiBlackBoard.chargeLocation) <= 2f)
+        //{
+        //    Debug.Log("So it is checking the distance from the charge location");
+        //    aiBlackBoard.chargeOver = true;
+        //    aiBlackBoard.navMeshAgent.speed = originalSpeed;
+        //    Debug.Log("Original speed" + aiBlackBoard.navMeshAgent.speed);
+        //}
         if (!aiBlackBoard.chargeOver)
         {
             aiBlackBoard.navMeshAgent.speed = originalSpeed * 3;
             aiBlackBoard.navMeshAgent.isStopped = false;
             aiBlackBoard.navMeshAgent.destination = aiBlackBoard.chargeLocation;
-        }
-
-        if (Vector3.Distance(aiBlackBoard.navMeshAgent.transform.position, aiBlackBoard.chargeLocation) < 1f)
-        {
-            Debug.Log("So it is checking the distance from the charge location");
-            aiBlackBoard.chargeOver = true;
-            aiBlackBoard.navMeshAgent.speed = originalSpeed;
-            Debug.log("Original speed" + aiBlackBoard.navMeshAgent.speed);
         }
     }
 }

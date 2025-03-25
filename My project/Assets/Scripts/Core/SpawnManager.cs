@@ -78,7 +78,7 @@ public class SpawnManager : MonoBehaviour
             {
                 stateController.aiBlackboard.chaseTarget = playerToFollow;
                 stateController.aiBlackboard.chargeLocation = playerToFollow.position;
-                stateController.aiBlackboard.chargeOver = false;
+               // stateController.aiBlackboard.chargeOver = false;
             }
             // this is the area to add more to i think, adding in the total enemy count and then have it lower tracking it
             // or add in, inside of the round manager instead of spawn manager a way to check the rounds . Otherwise i need to track enemies better and i cant figure out why its not working correctly.
