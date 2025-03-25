@@ -11,7 +11,11 @@ public class ChargeAfk_Condition : Condition
 
         if (blackboard is AIBlackBoard aiBlackBoard)
         {
-            return aiBlackBoard.afterChargeAFK;
+            if (aiBlackBoard.chargeOver && aiBlackBoard.AfterChargeAFK()){
+                aiBlackBoard.ChargingAfk();
+                aiBlackBoard.navMeshAgent.isStopped = false;
+                return true;
+            }
         }
         return false;
     }
