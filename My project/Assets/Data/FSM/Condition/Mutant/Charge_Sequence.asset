@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0001d1e73fb2b1d4fb45ee99be47883c, type: 3}
+  m_Name: Charge_Sequence
+  m_EditorClassIdentifier: 
+  conditions:
+  - {fileID: 11400000, guid: d9c0f0af59180d241bf9983e29287c90, type: 2}
+  - {fileID: 11400000, guid: 527611df0c8acd3469bd928befe7b4d0, type: 2}

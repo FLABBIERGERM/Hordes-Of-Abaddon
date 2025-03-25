@@ -10,14 +10,16 @@ public class AIBlackBoard : Blackboard
     [Tooltip("The attack cooldown section")]
     public float attackCoolDown = 2.25f;
     public float nextAttack = 0.0f;
-    public float chargeCoolDown = 5f;
+
+    public float chargeCoolDown = 45f;
     public float nextCharge = 0.0f;
+
     public float chargeAfk = 2.0f;
     public float chargeAfkOver = 0.0f;
 
     public Vector3 chargeLocation;
 
-    public bool chargeOver = true;
+    public bool chargeOver = false;
     public bool IsattackCDR()
     {
         return Time.time >= nextAttack;
@@ -37,9 +39,9 @@ public class AIBlackBoard : Blackboard
         nextCharge = Time.time + chargeCoolDown;
         Debug.Log("Reseting time actual time" + nextCharge);
     }
-    public bool ChargeAfkEnd()
+    public bool AfterChargeAFK()
     {
-        return Time.time >= chargeAfk;
+        return Time.time >= chargeAfkOver;
     }
     public void ChargingAfk()
     {

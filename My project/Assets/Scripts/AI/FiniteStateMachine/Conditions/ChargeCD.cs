@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(menuName = "FSM/AI/Conditions/chargecd_condition", fileName = "CCD_condition")]
+[CreateAssetMenu(menuName = "FSM/AI/Conditions/Charge cooldown", fileName = "C_ChargeCoolDown")]
 
 public class ChargeCD : Condition
 {
@@ -15,6 +15,7 @@ public class ChargeCD : Condition
             if (aIblackboard.chargeOver && aIblackboard.IsChargeCDR())
             {
                 aIblackboard.ResetCCD();
+                aIblackboard.chargeOver = false;
                 return true;
             }
         }
