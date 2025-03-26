@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Charge_AOE: MonoBehaviour
 {
-    public float damage = 5.0f;
+    public int damage = 5;
     public float duration = 1.0f;
     public string enemyTag = "Enemy";
 
@@ -19,11 +19,7 @@ public class Charge_AOE: MonoBehaviour
     {
         if (other.CompareTag(enemyTag))
         {
-            IDamageAble damageAble = other.GetComponent<IDamageAble>();
-            if (damageAble != null)
-            {
-                damageAble.Damage(5);
-            }
+            GameManager.Instance.TookDamage(-damage);
         }
 
     }

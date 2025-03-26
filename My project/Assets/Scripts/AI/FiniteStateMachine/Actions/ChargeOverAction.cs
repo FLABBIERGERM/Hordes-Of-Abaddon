@@ -22,6 +22,7 @@ public class ChargeOverAction : Action
             Instantiate(aiBlackBoard.chargeCrash,aiBlackBoard.chargeLocation, Quaternion.identity);
             aiBlackBoard.chargeOver = true;
             aiBlackBoard.navMeshAgent.speed = originalSpeed;
+            aiBlackBoard.ChargingAfk();
             Debug.Log("Original speed" + aiBlackBoard.navMeshAgent.speed);
         }
     }
