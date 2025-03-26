@@ -19,6 +19,7 @@ public class ChargeOverAction : Action
         if (Vector3.Distance(aiBlackBoard.navMeshAgent.transform.position, aiBlackBoard.chargeLocation) < 1f)
         {
             Debug.Log("So it is checking the distance from the charge location");
+            Instantiate(aiBlackBoard.chargeCrash,aiBlackBoard.chargeLocation, Quaternion.identity);
             aiBlackBoard.chargeOver = true;
             aiBlackBoard.navMeshAgent.speed = originalSpeed;
             Debug.Log("Original speed" + aiBlackBoard.navMeshAgent.speed);

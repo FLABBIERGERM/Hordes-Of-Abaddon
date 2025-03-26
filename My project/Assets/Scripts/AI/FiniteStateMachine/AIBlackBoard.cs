@@ -20,6 +20,8 @@ public class AIBlackBoard : Blackboard
     public Vector3 chargeLocation;
 
     public bool chargeOver = false;
+
+    public Object chargeCrash;                   
     public bool IsattackCDR()
     {
         return Time.time >= nextAttack;
