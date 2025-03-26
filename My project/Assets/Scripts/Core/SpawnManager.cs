@@ -17,6 +17,7 @@ public class SpawnManager : MonoBehaviour
 
     [SerializeField] public Transform playerToFollow;
 
+    [SerializeField] public int NumOfEnemies;
     public float bruiserEnemyChance = 0.2f;
     // private AIBlackBoard aiBlackboard;
 
@@ -45,7 +46,7 @@ public class SpawnManager : MonoBehaviour
     public void StartSpawning(int round)
     {
         enemiesToSpawn = new Queue<GameObject>();
-        int numOfEnemies = round *  7; // change number later based on difficulty
+        int numOfEnemies = round *  NumOfEnemies; // change number later based on difficulty
         Debug.Log(" So we are doing StartSpawning and the num of enemies there should be is :" + numOfEnemies);
         for (int i = 0; i < numOfEnemies; i++) 
         {

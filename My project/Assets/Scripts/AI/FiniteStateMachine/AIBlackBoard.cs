@@ -43,6 +43,7 @@ public class AIBlackBoard : Blackboard
     }
     public bool AfterChargeAFK()
     {
+     // Debug.Log("Checking the times for the charge to see if its good, heres Time.time: " + Time.time + "Heres the chargeAfk" + chargeAfk);
         return Time.time >= chargeAfkOver;
     }
     public void ChargingAfk()
