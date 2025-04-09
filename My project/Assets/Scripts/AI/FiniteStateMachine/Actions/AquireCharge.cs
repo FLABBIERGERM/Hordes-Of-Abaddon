@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 
@@ -14,6 +15,8 @@ public class AquireCharge : Action
               aIBlackBoard.chargeLocation = aIBlackBoard.chaseTarget.position;
             
               Debug.Log("New Target Position is" +  aIBlackBoard.chargeLocation); // this should only go off 1 time so we shall see if its the issue.
+               aIBlackBoard.owningController.GetComponent<Animator>()?.SetTrigger("Pre-Charging");
+
         }
     }
 }

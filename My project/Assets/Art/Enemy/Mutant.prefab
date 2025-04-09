@@ -250,7 +250,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 05a0c6a951870974cbe8c3a3b254894f,
         type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7542137907003004905, guid: 05a0c6a951870974cbe8c3a3b254894f,
         type: 3}
@@ -419,7 +419,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 6.5
-  m_Acceleration: 5
+  m_Acceleration: 3
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -504,6 +504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aafb1c4bba838344e92f565bc8dd08e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 120320753032409914}
+  NavAgent: {fileID: 7054977551980847663}
   zDamage: 10
   zHealth: 175
   enemyKilled:
