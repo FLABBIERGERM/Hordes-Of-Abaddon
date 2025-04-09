@@ -14,6 +14,8 @@ public class ChargeAfk_Condition : Condition
             if (aiBlackBoard.chargeOver && aiBlackBoard.AfterChargeAFK()){
                 aiBlackBoard.ChargingAfk();
                 aiBlackBoard.navMeshAgent.isStopped = false;
+                aiBlackBoard.owningController.GetComponent<Animator>()?.SetBool("Stunned", false);
+
                 return true;
             }
         }

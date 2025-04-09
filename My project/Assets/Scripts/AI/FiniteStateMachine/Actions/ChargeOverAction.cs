@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 [CreateAssetMenu(menuName = "FSM/AI/Actions/ChargeOver", fileName = "A_ChargeOver")]
 
@@ -19,8 +20,12 @@ public class ChargeOverAction : Action
         if (Vector3.Distance(aiBlackBoard.navMeshAgent.transform.position, aiBlackBoard.chargeLocation) < 1f)
         {
             Debug.Log("So it is checking the distance from the charge location");
+            aiBlackBoard.owningController.GetComponent<Animator>()?.SetTrigger("SlamAttack");
+
             Instantiate(aiBlackBoard.chargeCrash,aiBlackBoard.chargeLocation, Quaternion.identity);
             aiBlackBoard.chargeOver = true;
+            aiBlackBoard.owningController.GetComponent<Animator>()?.SetBool("Stunned", true);
+
             aiBlackBoard.navMeshAgent.speed = originalSpeed;
             aiBlackBoard.ChargingAfk();
             Debug.Log("Original speed" + aiBlackBoard.navMeshAgent.speed);

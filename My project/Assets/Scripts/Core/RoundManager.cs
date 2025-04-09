@@ -37,6 +37,7 @@ public class RoundManager : MonoBehaviour
     public void RegisterEnemy(BaseStats enemyStats)
     {
         enemyStats.enemyKilled.AddListener(RecivedOnEnemyKill);
+
     }
     private void FixedUpdate()
     {
