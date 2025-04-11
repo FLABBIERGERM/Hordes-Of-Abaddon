@@ -40,8 +40,9 @@ public class BaseStats : MonoBehaviour, IDamageAble
             dead = true;
             if (dead == true)
             {
-                animator.SetTrigger("Dying");
+                animator.SetBool("Dying",true);
                 NavAgent.speed = 0;
+                NavAgent.GetComponent<Collider>().enabled = false;
                 //gameObject.GetComponent<CapsuleCollider>().enabled = false; 
             }
         }

@@ -187,6 +187,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 05a0c6a951870974cbe8c3a3b254894f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Mutant
+      objectReference: {fileID: 0}
     - target: {fileID: 1082271958561512970, guid: 05a0c6a951870974cbe8c3a3b254894f,
         type: 3}
       propertyPath: m_Layer
@@ -418,7 +423,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 6.5
+  m_Speed: 5
   m_Acceleration: 3
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -459,8 +464,10 @@ MonoBehaviour:
     chargeOver: 1
     chargeCrash: {fileID: 7811465529190906489, guid: f3925d47d2ecbab479068a21f15b275e,
       type: 3}
+    mSpeed: 6
+    zSpeed: 7
     navMeshAgent: {fileID: 7054977551980847663}
-    rigidBody: {fileID: 0}
+    rigidBody: {fileID: 8223945946987765010}
     chaseTarget: {fileID: 0}
     attackRange: 2
     eyes: {fileID: 0}
@@ -472,6 +479,7 @@ MonoBehaviour:
     enemyDamage: 6
     attackAudioSource: {fileID: 8773720404442361677}
     spawned: 0
+    dead: 0
 --- !u!114 &4207489673034871273
 MonoBehaviour:
   m_ObjectHideFlags: 0

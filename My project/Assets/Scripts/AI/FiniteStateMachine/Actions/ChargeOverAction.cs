@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.AI;
 [CreateAssetMenu(menuName = "FSM/AI/Actions/ChargeOver", fileName = "A_ChargeOver")]
 
 public class ChargeOverAction : Action
@@ -28,6 +29,7 @@ public class ChargeOverAction : Action
 
             aiBlackBoard.navMeshAgent.speed = originalSpeed;
             aiBlackBoard.ChargingAfk();
+            aiBlackBoard.navMeshAgent.GetComponent<NavMeshAgent>().enabled = false;
             Debug.Log("Original speed" + aiBlackBoard.navMeshAgent.speed);
         }
     }

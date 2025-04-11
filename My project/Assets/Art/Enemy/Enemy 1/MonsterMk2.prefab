@@ -94,6 +94,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MonsterMk2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 51833ec2bdaa7754595ec84c035c74bb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Zombie
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 51833ec2bdaa7754595ec84c035c74bb,
         type: 3}
       propertyPath: m_Controller
@@ -102,7 +107,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 51833ec2bdaa7754595ec84c035c74bb,
         type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6749314087805099976, guid: 51833ec2bdaa7754595ec84c035c74bb,
         type: 3}
@@ -273,7 +278,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: -0.078
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1600476149048572082
@@ -295,6 +300,19 @@ MonoBehaviour:
   aiBlackboard:
     owningController: {fileID: 1600476149048572082}
     stateTimeElapsed: 0
+    attackCoolDown: 2.25
+    nextAttack: 0
+    chargeCoolDown: 45
+    nextCharge: 0
+    chargeAfk: 2
+    chargeAfkOver: 0
+    chargeLocation: {x: 0, y: 0, z: 0}
+    chargeOver: 1
+    chargeCrash: {fileID: 0}
+    mSpeed: 6
+    mAccel: 3
+    zSpeed: 7
+    zAccel: 5
     navMeshAgent: {fileID: 2839217772903072840}
     rigidBody: {fileID: 1935558372175683865}
     chaseTarget: {fileID: 0}
@@ -308,9 +326,7 @@ MonoBehaviour:
     enemyDamage: 3
     attackAudioSource: {fileID: 6807227710265875420}
     spawned: 0
-    chargeLocation: {x: 0, y: 0, z: 0}
-    chargeCd: 0
-    chargeOver: 1
+    dead: 0
 --- !u!114 &9195411467401301757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aafb1c4bba838344e92f565bc8dd08e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 4326850620983848455}
+  NavAgent: {fileID: 2839217772903072840}
   zDamage: 5
   zHealth: 75
   enemyKilled:

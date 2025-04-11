@@ -32,6 +32,11 @@ public class EnemyAnimationController : MonoBehaviour
     {
         footstepSoundclip.PlayOneShot(stepin);
     }
+    public void Dead()
+    {
+        aiStateController.aiBlackboard.dead = true;
+    }
+
 
     public void SpawnEnd()
     {

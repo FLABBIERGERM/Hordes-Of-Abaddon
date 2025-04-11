@@ -21,7 +21,13 @@ public class AIBlackBoard : Blackboard
 
     public bool chargeOver = false;
 
-    public Object chargeCrash;                   
+    public Object chargeCrash;
+
+    public float mSpeed = 5.0f;
+    public float mAccel = 3.0f;
+
+    public float zSpeed = 6.0f;
+    public float zAccel = 5.0f;
     public bool IsattackCDR()
     {
         return Time.time >= nextAttack;
@@ -91,6 +97,8 @@ public class AIBlackBoard : Blackboard
     public AudioSource attackAudioSource;
 
     public bool spawned = false;
+
+    public bool dead = false;   
 
 
 }
