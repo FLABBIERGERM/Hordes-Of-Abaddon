@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0ea083df1ca56c44b0acedcc41cd38c, type: 3}
-  m_Name: Spawning
+  m_Name: Dying
   m_EditorClassIdentifier: 
-  enterActions: []
+  enterActions:
+  - {fileID: 11400000, guid: df578c17427816b4b9d728887bbb04d5, type: 2}
   updateActions: []
   exitActions: []
-  transitions:
-  - condition: {fileID: 11400000, guid: 707fa9341c1bb06449659e0990890229, type: 2}
-    nextState: {fileID: 11400000, guid: 8c8cc4ac0820efe4da6560bf5b389d69, type: 2}
-  - condition: {fileID: 11400000, guid: 3e20fdad2f3e21b48b0ff5359dd1f085, type: 2}
-    nextState: {fileID: 11400000, guid: 55c1ffd9513c9584c85cea196772458e, type: 2}
+  transitions: []

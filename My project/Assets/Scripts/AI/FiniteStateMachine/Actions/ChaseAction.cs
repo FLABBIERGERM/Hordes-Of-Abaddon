@@ -21,7 +21,16 @@ public class ChaseAction : Action
 
             aIBlackBoard.navMeshAgent.destination = aIBlackBoard.chaseTarget.position;
             aIBlackBoard.navMeshAgent.isStopped = false;
-
+            if (aIBlackBoard.navMeshAgent.CompareTag("Zombie"))
+            {
+                aIBlackBoard.navMeshAgent.speed = aIBlackBoard.zSpeed;
+                aIBlackBoard.navMeshAgent.acceleration = aIBlackBoard.zAccel;
+            }
+            if(aIBlackBoard.navMeshAgent.CompareTag("Mutant"))
+            {
+                aIBlackBoard.navMeshAgent.speed = aIBlackBoard.mSpeed;
+                aIBlackBoard.navMeshAgent.acceleration = aIBlackBoard.mAccel;
+            }
         }
     }
 }
