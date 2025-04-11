@@ -17,7 +17,7 @@ public class Attack_Condition : Condition
            
             if (canAttack && aIblackboard.IsattackCDR())
             {
-                aIblackboard.ResetACD();
+               // aIblackboard.ResetACD();
                 return true;
             }
         }
