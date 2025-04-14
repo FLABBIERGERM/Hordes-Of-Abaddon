@@ -31,7 +31,10 @@ public class RoundManager : MonoBehaviour
     public void Start()
     {
         SpawnManager.Instance.enemySpawned.AddListener(OnenemySpawnedReceived);
-
+        if(currentRound != 1)
+        {
+            currentRound = 1;
+        }
         RoundStart();
     }
     public void RegisterEnemy(BaseStats enemyStats)
