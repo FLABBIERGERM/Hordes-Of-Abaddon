@@ -18,8 +18,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private CharacterInteractManager characterInteractManager;
 
     [SerializeField] private WeaponData gunData;
-    [SerializeField] private Transform muzzle;
+    [SerializeField] private Transform muzzle;// the muzzle is where the origin of the bullets comes from
+
     [SerializeField] private Transform rifle;
+    [SerializeField] private Transform gunBarrel;
+
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip reloadingSound;
 
@@ -52,8 +55,17 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         GameState.Instance.OnGamePaused.AddListener(OnGamePausedReceived);
-        GameState.Instance.OnGamePaused.AddListener(OnGameResumedReceived);
+        GameState.Instance.OnGameResumed.AddListener(OnGameResumedReceived);
         GameState.Instance.GameStarts.AddListener(OnGameStartsReceived);
+
+        if(gunData.reloading == true)
+        {
+            gunData.reloading = false;
+        }
+        if(gunData.currentAmmo < gunData.magSize)
+        {
+            gunData.currentAmmo = gunData.magSize;
+        }
 
     }
 
@@ -66,6 +78,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
+        Debug.Log("On disabled happened in player controller");
         UnsubscribeInputActions();
         SwitchActionMap();
     }
@@ -152,7 +165,7 @@ public class PlayerController : MonoBehaviour
                     damageable?.Damage(gunData.damage);
                 }
                 //Debug.Log("Miss");
-                Instantiate(gunFiredParticle,muzzle.position, Quaternion.identity);
+                Instantiate(gunFiredParticle,gunBarrel.position, Quaternion.identity);// this one is technically fixed/ done but if i get time tuesday will go back and do more.
                 gunData.currentAmmo--;
                 timeSinceLastShot = 0;
                 OnGunShot();
@@ -221,7 +234,7 @@ public class PlayerController : MonoBehaviour
     private void TogglePauseActionPerformed(InputAction.CallbackContext context)
     {
         Debug.Log("We are pushing the pause button");
-        GameManager.Instance.TogglePause();
+        GameManager.Instance.PauseGame();
     }
     private void OnGamePausedReceived()
     {
