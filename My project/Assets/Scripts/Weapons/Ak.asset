@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Automatic Rifle
   damage: 25
   maxDist: 350
-  currentAmmo: 30
+  currentAmmo: 29
   magSize: 30
   fireRate: 600
   reloadTime: 1.5
