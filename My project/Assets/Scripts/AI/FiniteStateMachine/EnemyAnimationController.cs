@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -32,12 +33,15 @@ public class EnemyAnimationController : MonoBehaviour
     {
         footstepSoundclip.PlayOneShot(stepin);
     }
-    public void Dead()
+    public void Dying()
     {
         aiStateController.aiBlackboard.dead = true;
     }
 
-
+    public void Slammed()
+    {
+        Instantiate(aiStateController.aiBlackboard.chargeCrash, aiStateController.aiBlackboard.chargeLocation, Quaternion.identity);
+    }
     public void SpawnEnd()
     {
         animator.SetBool("Spawned", true);
