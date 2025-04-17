@@ -125,6 +125,7 @@ public class CharacterMovement : BaseMovement
         }
     }
 
+
     public void PlayFootStep()
     {
         audioSource.PlayOneShot(footStepSoundClip);

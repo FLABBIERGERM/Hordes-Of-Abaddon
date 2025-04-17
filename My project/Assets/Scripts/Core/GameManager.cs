@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
 
         gameState = GameState.Instance;
         Debug.Log("Current HP:" + PlayerCurrentHP);
-        //ResumeGame();
+        ResumeGame();
     }
 
     private void Update()

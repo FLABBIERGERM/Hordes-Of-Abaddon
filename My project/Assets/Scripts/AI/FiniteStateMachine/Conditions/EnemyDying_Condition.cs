@@ -11,7 +11,7 @@ public class EnemyDying_Condition : Condition
         if (blackboard is AIBlackBoard aIblackboard)
         {
           
-            if(aIblackboard.dead)
+            if(aIblackboard.dead == true)
             {
                 return true;
             }

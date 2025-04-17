@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private ParticleSystem onHitParticle;
     [SerializeField] private ParticleSystem gunFiredParticle;
+    [SerializeField] private ParticleSystem onObjectHitParticle;
     public UnityEvent reloadingStarted;
     public UnityEvent reloadingFinished;    
 
@@ -158,14 +159,23 @@ public class PlayerController : MonoBehaviour
 
                 if (Physics.Raycast(muzzle.position, muzzle.forward, out RaycastHit hitInfo, gunData.maxDist))
                 {
-                    Instantiate(onHitParticle, hitInfo.point, Quaternion.identity);
-                    Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
+                    if (hitInfo.collider.CompareTag("Zombie") || hitInfo.collider.CompareTag("Mutant"))
+                    {
+                        Instantiate(onHitParticle, hitInfo.point, Quaternion.identity);
+                        Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
 
-                    IDamageAble damageable = hitInfo.transform.GetComponent<IDamageAble>();   
-                    damageable?.Damage(gunData.damage);
+                        IDamageAble damageable = hitInfo.transform.GetComponent<IDamageAble>();
+                        damageable?.Damage(gunData.damage);
+                    }
+                    else
+                    {
+                        Instantiate(onObjectHitParticle, hitInfo.point, Quaternion.identity);
+                        Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
+                    }
+
                 }
                 //Debug.Log("Miss");
-                Instantiate(gunFiredParticle,gunBarrel.position, Quaternion.identity);// this one is technically fixed/ done but if i get time tuesday will go back and do more.
+                Instantiate(gunFiredParticle,gunBarrel.position, Quaternion.identity);// went back and did more
                 gunData.currentAmmo--;
                 timeSinceLastShot = 0;
                 OnGunShot();

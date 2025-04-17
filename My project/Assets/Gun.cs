@@ -4,23 +4,11 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    [SerializeField] WeaponData weaponData;
 
-    private void Start()
+    [SerializeField] private Animator  gunAnimations;
+    public void RecoilEnd()
     {
-        PlayerController.Instance.reloadingFinished.AddListener(ReloadingFinishedReceived);
-        PlayerController.Instance.reloadingStarted.AddListener(ReloadingReceived);
-
-    }
-    private void ReloadingFinishedReceived()
-    {
-        gameObject.SetActive(true);
-
-    }
-    private void ReloadingReceived()
-    {
-        gameObject.SetActive(true);
-
+        gunAnimations.SetTrigger("RecoilEnd");
     }
     // this may be worthless maybeeeeeeeeeee.
 }

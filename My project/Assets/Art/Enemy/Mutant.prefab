@@ -462,10 +462,12 @@ MonoBehaviour:
     chargeAfkOver: 0
     chargeLocation: {x: 0, y: 0, z: 0}
     chargeOver: 1
-    chargeCrash: {fileID: 7811465529190906489, guid: f3925d47d2ecbab479068a21f15b275e,
+    chargeCrash: {fileID: 1025285306637258, guid: d8f0099df63275647a8bcf646df1ca00,
       type: 3}
     mSpeed: 6
+    mAccel: 3
     zSpeed: 7
+    zAccel: 5
     navMeshAgent: {fileID: 7054977551980847663}
     rigidBody: {fileID: 8223945946987765010}
     chaseTarget: {fileID: 0}
