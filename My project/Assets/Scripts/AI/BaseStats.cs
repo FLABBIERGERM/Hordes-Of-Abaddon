@@ -43,6 +43,7 @@ public class BaseStats : MonoBehaviour, IDamageAble
                 animator.SetBool("Dying",true);
                 NavAgent.speed = 0;
                 NavAgent.GetComponent<Collider>().enabled = false;
+                NavAgent.isStopped = true;
                 //gameObject.GetComponent<CapsuleCollider>().enabled = false; 
             }
         }

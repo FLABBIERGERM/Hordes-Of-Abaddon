@@ -23,7 +23,7 @@ public class ChargeOverAction : Action
             Debug.Log("So it is checking the distance from the charge location");
             aiBlackBoard.owningController.GetComponent<Animator>()?.SetTrigger("SlamAttack");
 
-            Instantiate(aiBlackBoard.chargeCrash,aiBlackBoard.chargeLocation, Quaternion.identity);
+           // Instantiate(aiBlackBoard.chargeCrash,aiBlackBoard.chargeLocation, Quaternion.identity);
             aiBlackBoard.chargeOver = true;
             aiBlackBoard.owningController.GetComponent<Animator>()?.SetBool("Stunned", true);
 
