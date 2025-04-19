@@ -11,8 +11,8 @@ public class RoundManager : MonoBehaviour
     // speaking of which you as in me will have to compile all of those huds sooner or later as theres no reason to have 1 for score, ammo, and rounds
     public RoundState currentRoundState;
 
-    [SerializeField] AudioClip Audioclip;
-    [SerializeField] AudioSource audioSorce;
+   // [SerializeField] AudioClip Audioclip;
+   // [SerializeField] AudioSource audioSorce;
     public int enemySpawned = 0;
     public int enemyAlive = 0;
     public int currentRound = 1;
@@ -31,12 +31,16 @@ public class RoundManager : MonoBehaviour
     public void Start()
     {
         SpawnManager.Instance.enemySpawned.AddListener(OnenemySpawnedReceived);
-
+        if(currentRound != 1)
+        {
+            currentRound = 1;
+        }
         RoundStart();
     }
     public void RegisterEnemy(BaseStats enemyStats)
     {
         enemyStats.enemyKilled.AddListener(RecivedOnEnemyKill);
+
     }
     private void FixedUpdate()
     {
@@ -44,18 +48,17 @@ public class RoundManager : MonoBehaviour
     }
     public void RoundStart()
     {
-        if (currentRound == 1)
-        {
-            audioSorce.PlayOneShot(Audioclip);
-        }
+        //if (currentRound == 1)
+        //{
+        //    audioSorce.PlayOneShot(Audioclip);
+        //}
         roundIncrease.Invoke();
-        Debug.Log("The current round is: " + currentRound + " total enemys are" + currentRound * 3);
-        totalEnemies = currentRound * 3;
+        Debug.Log("The current round is: " + currentRound + " total enemys are" + currentRound * 7);
+        totalEnemies = currentRound * 7;
         currentRoundState = RoundState.RoundBegin;  
         StartCoroutine(RoundWait());
 
     }
-
     public void RecivedOnEnemyKill()
     {
         enemyAlive -= 1;
@@ -70,18 +73,18 @@ public class RoundManager : MonoBehaviour
         enemySpawned += 1;
         Debug.Log("Onenemyspawned works" + enemySpawned);
     }
-
-
     public void RoundEnd()
     {
         currentRoundState = RoundState.RoundEnd;
 
-        Invoke(nameof(RoundStart), 2f);// adds a delay of 5 seconds between rounds or atleast should.
+        Invoke(nameof(RoundStart), 2f);// adds a delay of 5 seconds between rounds or atleast should. The wait is in the actual numerator so idk what the 2f is for honestly now that im looking back at it.
 
         currentRound++;
     }
     private IEnumerator RoundWait()
     {
+        //Add in a audio play here.
+        // audioSorce.PlayOneShot(newRoundClip);
         yield return new WaitForSeconds(5f);
         currentRoundState = RoundState.RoundPlaying;
         SpawnManager.Instance.StartSpawning(currentRound);

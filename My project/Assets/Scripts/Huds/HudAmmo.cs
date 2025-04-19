@@ -15,7 +15,7 @@ public class HudAmmo : MonoBehaviour
     public int totalAmmo;
     public int currentAmmo;
 
-    private void Awake()
+    private void Awake()    
     {
         uiDocument = GetComponent<UIDocument>();
 
@@ -29,11 +29,11 @@ public class HudAmmo : MonoBehaviour
 
     public void FixedUpdate()
     {
-        ammoUpdate();
+        AmmoUpdate();
         
         ammoAmount.text = ("Ammo:" + totalAmmo + ("/") + currentAmmo);
     }
-    private void ammoUpdate()
+    private void AmmoUpdate()
     {
         currentAmmo = gunData.currentAmmo;
     }

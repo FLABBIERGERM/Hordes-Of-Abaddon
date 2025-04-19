@@ -36,6 +36,11 @@ public class CharacterMovement : BaseMovement
 
     [SerializeField] private CinemachineCamera Camera1;
 
+    [SerializeField] private Animator gunAnimations;
+
+
+    [SerializeField] private AudioSource bulletAudioSource;
+
     [SerializeField] private AudioClip footStepSoundClip;
 
     [SerializeField] private AudioClip getsHit;
@@ -79,7 +84,7 @@ public class CharacterMovement : BaseMovement
     }
     public void GunShotNoise()
     {
-        audioSource.PlayOneShot(gunNoise);
+        bulletAudioSource.PlayOneShot(gunNoise);
     }
     void CalculateCameraRelativeInput()
     {
@@ -119,6 +124,7 @@ public class CharacterMovement : BaseMovement
             }
         }
     }
+
 
     public void PlayFootStep()
     {
@@ -236,5 +242,12 @@ public class CharacterMovement : BaseMovement
     {
         return new Vector3(rigidbody.velocity.x, 0f, rigidbody.velocity.z);
     }
-
+    public void GunRecoil()
+    {
+        gunAnimations.SetTrigger("RecoilTrigger");
+    }
+    public void ReloadingAnimation()
+    {
+        gunAnimations.SetTrigger("GunReloading");
+    }
 }

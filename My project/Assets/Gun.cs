@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    [SerializeField] WeaponData weaponData;
 
-    public void Shoot()
+    [SerializeField] private Animator  gunAnimations;
+    public void RecoilEnd()
     {
-
+        gunAnimations.SetTrigger("RecoilEnd");
     }
+    // this may be worthless maybeeeeeeeeeee.
 }

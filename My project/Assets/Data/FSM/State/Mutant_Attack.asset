@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ea083df1ca56c44b0acedcc41cd38c, type: 3}
+  m_Name: Mutant_Attack
+  m_EditorClassIdentifier: 
+  enterActions:
+  - {fileID: 11400000, guid: a20bdca0a2725f14b9d3b630714a92f4, type: 2}
+  updateActions:
+  - {fileID: 11400000, guid: ddabe81606137084c890634c3061c891, type: 2}
+  exitActions: []
+  transitions:
+  - condition: {fileID: 11400000, guid: 707fa9341c1bb06449659e0990890229, type: 2}
+    nextState: {fileID: 11400000, guid: 8c8cc4ac0820efe4da6560bf5b389d69, type: 2}
+  - condition: {fileID: 11400000, guid: c3600ac3083542b49a4f1a5fa3643bc3, type: 2}
+    nextState: {fileID: 11400000, guid: 201e8d034c4373541aba735e28d3bee1, type: 2}
+  - condition: {fileID: 11400000, guid: 40e4d5638ae934b40bacfe6c8603b12c, type: 2}
+    nextState: {fileID: 11400000}
