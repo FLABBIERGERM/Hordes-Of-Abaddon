@@ -21,6 +21,10 @@ public class MainMenu : MonoBehaviour
     private VisualElement HTPve;
     private VisualElement currentVE;
 
+    [SerializeField] private AudioSource mainMenuAudio;
+    [SerializeField] private List<AudioClip> mainMenuSongs;
+
+
     void Start()
     {
         root = GetComponent<UIDocument>().rootVisualElement;
@@ -46,7 +50,7 @@ public class MainMenu : MonoBehaviour
         HTPve.style.display = DisplayStyle.None;
 
         GameState.Instance.GameQuit.AddListener(ReceivedQuit);
-
+        
         if (currentVE == Mainm)
         {
             Back.style.display = DisplayStyle.None;
@@ -64,7 +68,22 @@ public class MainMenu : MonoBehaviour
 
     }
 
+     void Update()
+    {
+        NextSong();
+    }
+    void NextSong()
+    {
 
+        if(mainMenuAudio.isPlaying != true)
+        {
+            int SongChoice = Random.Range(0, mainMenuSongs.Count);
+
+            mainMenuAudio.PlayOneShot(mainMenuSongs[SongChoice]);
+            Debug.Log(("This is the song that is play:") + SongChoice);
+        }
+
+    }
     private void QuitGamePressed()
     {
         GameManager.Instance.GameQuit();
