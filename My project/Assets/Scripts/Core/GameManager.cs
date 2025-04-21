@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
     public int PlayerCurrentHP;
     public DamageOverlay damageOverlay;
 
+    [SerializeField] private AudioSource playerHurtAudioSource;
+    [SerializeField] private AudioSource playerHealingAudioSource;
+    [SerializeField] private AudioClip playerHealingAudioClip;
+    [SerializeField] private AudioClip getsHit;
     public static GameManager Instance
     {
         get { return _instance; }
@@ -72,7 +76,7 @@ public class GameManager : MonoBehaviour
         if (healthDelta < 0)
         {
             PlayerCurrentHP += healthDelta;
-          
+            playerHurtAudioSource.PlayOneShot(getsHit);
             damageOverlay.IncreaseVignette(0.2f);
             Debug.Log("Current Player Health" + PlayerCurrentHP);
         }
@@ -80,6 +84,7 @@ public class GameManager : MonoBehaviour
         {
             PlayerCurrentHP += healthDelta;
             damageOverlay.DecreaseVignette(0.2f);
+            playerHealingAudioSource.PlayOneShot(playerHealingAudioClip);
             Debug.Log("Current Player Health" + PlayerCurrentHP);
         }
         if (PlayerCurrentHP <= 0)

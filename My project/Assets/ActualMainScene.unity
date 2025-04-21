@@ -367,14 +367,14 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.4
-  m_Pitch: 1.8
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 200
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -412,7 +412,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1512,12 +1512,14 @@ MonoBehaviour:
   cameraTrasnform: {fileID: 860603927}
   Camera1: {fileID: 1885947924}
   gunAnimations: {fileID: 1733037382}
-  bulletAudioSource: {fileID: 259596430}
+  bulletAudioSource: {fileID: 2019489235}
+  hitMarkerAudioSource: {fileID: 0}
   footStepSoundClip: {fileID: 8300000, guid: be1f915c5c5150b44bcc6e57cb8f66ff, type: 3}
   getsHit: {fileID: 8300000, guid: 06f587a67220a3f449fe15fcb607c1e6, type: 3}
   jumpNoise: {fileID: 8300000, guid: 734af6450e1ad054bb13b977078587ff, type: 3}
   landingNoise: {fileID: 8300000, guid: 8c31788468600fe46a62909370d72cc4, type: 3}
   gunNoise: {fileID: 8300000, guid: 4baa8963591707945b135dd12475d167, type: 3}
+  hitIndicator: {fileID: 0}
 --- !u!114 &902663402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1537,7 +1539,7 @@ MonoBehaviour:
   muzzle: {fileID: 259596429}
   rifle: {fileID: 2019489234}
   gunBarrel: {fileID: 564703329}
-  audioSource: {fileID: 902663398}
+  weaponAudioSource: {fileID: 0}
   reloadingSound: {fileID: 8300000, guid: 31cfe5922eb5c114588d7fd037838c5a, type: 3}
   onHitParticle: {fileID: 5459231187281716093, guid: b4e1280e0dc28cb4aaebd633e4c92760,
     type: 3}

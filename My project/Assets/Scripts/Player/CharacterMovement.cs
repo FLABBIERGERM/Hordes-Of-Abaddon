@@ -40,17 +40,17 @@ public class CharacterMovement : BaseMovement
 
 
     [SerializeField] private AudioSource bulletAudioSource;
-
+    [SerializeField] private AudioSource hitMarkerAudioSource;
     [SerializeField] private AudioClip footStepSoundClip;
 
-    [SerializeField] private AudioClip getsHit;
+    //[SerializeField] private AudioClip getsHit;
 
     [SerializeField] private AudioClip jumpNoise;
 
     [SerializeField] private AudioClip landingNoise;
 
     [SerializeField] private AudioClip gunNoise; // change into a animation once thing later
-  //  [SerializeField] private AudioClip hitIndicator;
+    [SerializeField] private AudioClip hitIndicator;
 
     private void FixedUpdate()
     {
@@ -74,10 +74,10 @@ public class CharacterMovement : BaseMovement
         currentMaxSpeed = maxWalkSpeed;
    
     }
-    //public void HitMarkerNoise()
-    //{
-    //    audioSource.PlayOneShot(hitIndicator);
-    //}
+    public void HitMarkerNoise()
+    {
+        hitMarkerAudioSource.PlayOneShot(hitIndicator);
+    }
     public override void SetMovementInput(Vector2 moveInput)
     {
         base.SetMovementInput(moveInput);

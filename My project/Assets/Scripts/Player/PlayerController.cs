@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform rifle;
     [SerializeField] private Transform gunBarrel;
 
-    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource weaponAudioSource;
     [SerializeField] private AudioClip reloadingSound;
 
     [SerializeField] private ParticleSystem onHitParticle;
@@ -209,10 +209,11 @@ public class PlayerController : MonoBehaviour
         if(gunData.reloading == false && gunData.currentAmmo != gunData.magSize)
         {
             characterMovement.ReloadingAnimation();
-            audioSource.PlayOneShot(reloadingSound);
+            weaponAudioSource.PlayOneShot(reloadingSound);
             StartCoroutine(Reload());
         }
     }
+
     private void MoveAction(InputAction.CallbackContext context)
     {
         movementInput = context.ReadValue<Vector2>();
