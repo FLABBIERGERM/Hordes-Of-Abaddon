@@ -13,8 +13,24 @@ public class EnemyAnimationController : MonoBehaviour
     [SerializeField] private AudioClip stepin;
     [SerializeField] private AiStateController aiStateController;
 
+    [SerializeField] private AudioSource mutantAudioSource;
+    [SerializeField] private AudioSource zombieAudioSource;
+
+    [SerializeField] private AudioClip zombieSpawn;
+    [SerializeField] private AudioClip zombieAttack;
+    [SerializeField] private AudioClip zombieDeath;
+    [SerializeField] private List<AudioClip> zombieSounds;
+
     [SerializeField] private AudioClip mutantSpawn;
-    [SerializeField] private AudioClip gruntSpawn;
+    [SerializeField] private AudioClip mutantAttack;
+    [SerializeField] private AudioClip mutantDeath;
+    [SerializeField] private List<AudioClip> mutantSounds;
+
+    [SerializeField] private AudioClip chargeTaunt;
+    [SerializeField] private AudioClip chargeInAction;
+    [SerializeField] private AudioClip chargeSlam;
+    [SerializeField] private AudioClip chargeEnd;
+
 
     public bool spawned = false;
 
@@ -56,7 +72,7 @@ public class EnemyAnimationController : MonoBehaviour
         }
         else
         {
-            footstepSoundclip.PlayOneShot(gruntSpawn);
+            footstepSoundclip.PlayOneShot(zombieSpawn);
         }
     }
 }
