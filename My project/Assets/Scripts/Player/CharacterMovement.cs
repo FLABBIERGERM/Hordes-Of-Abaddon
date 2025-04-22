@@ -49,7 +49,7 @@ public class CharacterMovement : BaseMovement
 
     [SerializeField] private AudioClip landingNoise;
 
-    [SerializeField] private AudioClip gunNoise; // change into a animation once thing later
+    [SerializeField] private AudioClip gunNoise; // change into a animation once thing later, no idea what i ment by this maybe an animation event at the start of shooting but idk.
     [SerializeField] private AudioClip hitIndicator;
 
     private void FixedUpdate()
@@ -124,8 +124,6 @@ public class CharacterMovement : BaseMovement
             }
         }
     }
-
-
     public void PlayFootStep()
     {
         audioSource.PlayOneShot(footStepSoundClip);
