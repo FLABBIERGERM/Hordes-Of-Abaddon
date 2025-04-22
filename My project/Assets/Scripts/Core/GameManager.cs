@@ -17,8 +17,8 @@ public class GameManager : MonoBehaviour
     public int PlayerCurrentHP;
     public DamageOverlay damageOverlay;
 
-    [SerializeField] private AudioSource playerHurtAudioSource;
-    [SerializeField] private AudioSource playerHealingAudioSource;
+    [SerializeField] private AudioSource playerHPAudioSource;
+    [SerializeField] private AudioSource playerHealing; // this is its own thing as the healing is very loud and im not working on a mixer currently.
     [SerializeField] private AudioClip playerHealingAudioClip;
     [SerializeField] private AudioClip getsHit;
     public static GameManager Instance
@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
         if (healthDelta < 0)
         {
             PlayerCurrentHP += healthDelta;
-            playerHurtAudioSource.PlayOneShot(getsHit);
+            playerHPAudioSource.PlayOneShot(getsHit);
             damageOverlay.IncreaseVignette(0.2f);
             Debug.Log("Current Player Health" + PlayerCurrentHP);
         }
@@ -84,11 +84,12 @@ public class GameManager : MonoBehaviour
         {
             PlayerCurrentHP += healthDelta;
             damageOverlay.DecreaseVignette(0.2f);
-            playerHealingAudioSource.PlayOneShot(playerHealingAudioClip);
+            playerHealing.PlayOneShot(playerHealingAudioClip);
             Debug.Log("Current Player Health" + PlayerCurrentHP);
         }
         if (PlayerCurrentHP <= 0)
         {
+
             GameManager.Instance.PlayerLost();
         }
     }

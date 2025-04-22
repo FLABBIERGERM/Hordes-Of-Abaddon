@@ -327,15 +327,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 821219d7e31113946a54f112dd5f0b05, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c46114e962f18364cac80e417fc53937, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 96
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -403,7 +403,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.968
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -499,8 +499,21 @@ MonoBehaviour:
   footstepSoundclip: {fileID: 8773720404442361677}
   stepin: {fileID: 8300000, guid: be1f915c5c5150b44bcc6e57cb8f66ff, type: 3}
   aiStateController: {fileID: 658301661641084913}
-  mutantSpawn: {fileID: 0}
-  gruntSpawn: {fileID: 0}
+  mutantAudioSource: {fileID: 8773720404442361677}
+  zombieAudioSource: {fileID: 0}
+  zombieSpawn: {fileID: 0}
+  zombieAttack: {fileID: 0}
+  zombieDeath: {fileID: 0}
+  zombieSounds: []
+  mutantSpawn: {fileID: 8300000, guid: f4067b5ef4a8b78498ac633a6d9bf519, type: 3}
+  mutantAttack: {fileID: 0}
+  mutantDeath: {fileID: 8300000, guid: 9aa635e21a0833540994aa5f3c41aa5f, type: 3}
+  mutantSounds:
+  - {fileID: 8300000, guid: 8f859a103bd673648bd72963540241b8, type: 3}
+  chargeTaunt: {fileID: 8300000, guid: 162464cbbed5e054199bb6cbb7ebeb61, type: 3}
+  chargeInAction: {fileID: 8300000, guid: b398374f32681e54da318fb6aa4d4991, type: 3}
+  chargeSlam: {fileID: 8300000, guid: 420f851c1e222f4489338aeeea0c2f2a, type: 3}
+  chargeEnd: {fileID: 8300000, guid: 9fb648b7b32fa344b881066857eab47c, type: 3}
   spawned: 0
 --- !u!114 &2516724550255076623
 MonoBehaviour:

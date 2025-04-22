@@ -51,12 +51,22 @@ public class EnemyAnimationController : MonoBehaviour
     }
     public void Dying()
     {
+
         aiStateController.aiBlackboard.dead = true;
+        if (mutantSpawn != null)
+        {
+            mutantAudioSource.PlayOneShot(mutantDeath);
+        }
+        else
+        {
+            zombieAudioSource.PlayOneShot(zombieDeath);
+        }
     }
 
     public void Slammed()
     {
         Instantiate(aiStateController.aiBlackboard.chargeCrash, aiStateController.aiBlackboard.chargeLocation, Quaternion.identity);
+        mutantAudioSource.PlayOneShot(chargeSlam);
     }
     public void SpawnEnd()
     {
@@ -68,11 +78,11 @@ public class EnemyAnimationController : MonoBehaviour
     {
         if (mutantSpawn != null)
         {
-            footstepSoundclip.PlayOneShot(mutantSpawn);
+            mutantAudioSource.PlayOneShot(mutantSpawn);
         }
         else
         {
-            footstepSoundclip.PlayOneShot(zombieSpawn);
+            zombieAudioSource.PlayOneShot(zombieSpawn);
         }
     }
 }
