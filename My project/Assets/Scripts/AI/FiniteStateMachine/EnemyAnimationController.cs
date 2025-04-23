@@ -38,8 +38,17 @@ public class EnemyAnimationController : MonoBehaviour
     {
         animator.SetFloat("HorizontalSpeed", GetHorizontalAgentVelocity().magnitude);
         animator.SetBool("IsTraversingLink", navMeshAgent.isOnOffMeshLink);
+
         enemyRandomNoise();
 
+    }
+    public void chargeTauntAudio()
+    {
+        if(mutantAudioSource.isPlaying == true)
+        {
+            mutantAudioSource.Stop();
+        }
+        mutantAudioSource.PlayOneShot(chargeTaunt);
     }
     private void enemyRandomNoise()
     {
@@ -56,11 +65,19 @@ public class EnemyAnimationController : MonoBehaviour
 
     public void charginAttack()
     {
+        if (mutantAudioSource.isPlaying == true)
+        {
+            mutantAudioSource.Stop();
+        }
         mutantAudioSource.PlayOneShot(chargeInAction,2.0f);
     }
     public void chargeBreathing() 
     {
-            mutantAudioSource.PlayOneShot(chargeEnd,0.6f);
+        if (mutantAudioSource.isPlaying == true)
+        {
+            mutantAudioSource.Stop();
+        }
+        mutantAudioSource.PlayOneShot(chargeEnd,0.6f);
     }
     private Vector3 GetHorizontalAgentVelocity()
     {
@@ -76,10 +93,18 @@ public class EnemyAnimationController : MonoBehaviour
         aiStateController.aiBlackboard.dead = true;
         if (mutantSpawn != null)
         {
+            if (mutantAudioSource.isPlaying == true)
+            {
+                mutantAudioSource.Stop();
+            }
             mutantAudioSource.PlayOneShot(mutantDeath);
         }
         else
         {
+            if (zombieAudioSource.isPlaying == true)
+            {
+                zombieAudioSource.Stop();
+            }
             zombieAudioSource.PlayOneShot(zombieDeath);
         }
     }
@@ -99,11 +124,12 @@ public class EnemyAnimationController : MonoBehaviour
     {
         if (mutantSpawn != null)
         {
-            mutantAudioSource.PlayOneShot(mutantSpawn);
+
+            mutantAudioSource.PlayOneShot(mutantSpawn,0.8f);
         }
         else
         {
-            zombieAudioSource.PlayOneShot(zombieSpawn);
+            zombieAudioSource.PlayOneShot(zombieSpawn, 0.7f);
         }
     }
     private IEnumerator RandomNoiseMutant()
@@ -111,9 +137,12 @@ public class EnemyAnimationController : MonoBehaviour
         if (mutantAudioSource.isPlaying != true)
         {
             int SongChoice = Random.Range(0, mutantSounds.Count);
-
-            mutantAudioSource.PlayOneShot(mutantSounds[SongChoice]);
-            Debug.Log(("This is the song that is play:") + SongChoice);
+            if (mutantAudioSource.isPlaying == true)
+            {
+                mutantAudioSource.Stop();
+            }
+            mutantAudioSource.PlayOneShot(mutantSounds[SongChoice],0.60f);
+            Debug.Log(("This is the Mutant noise:") + SongChoice);
         }
         yield return new WaitForSeconds(Random.Range(4f,15f));
     }
@@ -123,9 +152,12 @@ public class EnemyAnimationController : MonoBehaviour
         if (zombieAudioSource.isPlaying != true)
         {
             int SongChoice = Random.Range(0, zombieSounds.Count);
-
-            zombieAudioSource.PlayOneShot(zombieSounds[SongChoice]);
-            Debug.Log(("This is the song that is play:") + SongChoice);
+            if (zombieAudioSource.isPlaying == true)
+            {
+                zombieAudioSource.Stop();
+            }
+            zombieAudioSource.PlayOneShot(zombieSounds[SongChoice],0.6f);
+            Debug.Log(("This is the zombie noise:") + SongChoice);
         }
         yield return new WaitForSeconds(Random.Range(4f, 15f));
     }

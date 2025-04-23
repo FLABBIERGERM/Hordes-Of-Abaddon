@@ -4059,7 +4059,7 @@ PrefabInstance:
     - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
         type: 3}
       propertyPath: NumOfEnemies
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
         type: 3}
@@ -4081,7 +4081,7 @@ PrefabInstance:
     - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
         type: 3}
       propertyPath: bruiserEnemyChance
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 256595187137345629, guid: 82543a80a5c6fde40a7243737837b76c,
         type: 3}
@@ -4354,6 +4354,11 @@ PrefabInstance:
       propertyPath: Audioclip
       value: 
       objectReference: {fileID: 8300000, guid: be1f915c5c5150b44bcc6e57cb8f66ff, type: 3}
+    - target: {fileID: 1264719999435861669, guid: 7d20f2aaea6574d48ab1b28dada1d1e4,
+        type: 3}
+      propertyPath: RoundAudio
+      value: 
+      objectReference: {fileID: 647129450}
     - target: {fileID: 1264719999435861669, guid: 7d20f2aaea6574d48ab1b28dada1d1e4,
         type: 3}
       propertyPath: audioSorce

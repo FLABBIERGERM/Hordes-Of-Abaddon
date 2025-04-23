@@ -269,10 +269,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 7
-  m_Acceleration: 5
+  m_Speed: 6
+  m_Acceleration: 3
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 180
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -313,7 +313,7 @@ MonoBehaviour:
     mAccel: 3
     zSpeed: 7
     zAccel: 5
-    enemyAnimationController: {fileID: 0}
+    enemyAnimationController: {fileID: 9195411467401301757}
     navMeshAgent: {fileID: 2839217772903072840}
     rigidBody: {fileID: 1935558372175683865}
     chaseTarget: {fileID: 0}
