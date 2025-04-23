@@ -13,6 +13,7 @@ public class ChargeAttack : Action
         if (blackboard is AIBlackBoard aiBlackboard)
         {
             Chargeattack(aiBlackboard);
+
         }
     }
     private void Chargeattack(AIBlackBoard aiBlackBoard)
@@ -27,9 +28,11 @@ public class ChargeAttack : Action
         //}
         if (!aiBlackBoard.chargeOver)
         {
+            aiBlackBoard.enemyAnimationController.charginAttack();
             aiBlackBoard.navMeshAgent.speed = originalSpeed * 3;
             aiBlackBoard.navMeshAgent.isStopped = false;
             aiBlackBoard.navMeshAgent.destination = aiBlackBoard.chargeLocation;
+            
         }
     }
 }

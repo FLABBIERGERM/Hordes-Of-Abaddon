@@ -313,6 +313,7 @@ MonoBehaviour:
     mAccel: 3
     zSpeed: 7
     zAccel: 5
+    enemyAnimationController: {fileID: 0}
     navMeshAgent: {fileID: 2839217772903072840}
     rigidBody: {fileID: 1935558372175683865}
     chaseTarget: {fileID: 0}
@@ -349,8 +350,12 @@ MonoBehaviour:
   zombieSpawn: {fileID: 8300000, guid: 36a6628731bce1445ad24409ba9c1e10, type: 3}
   zombieAttack: {fileID: 8300000, guid: 346f9d1eaa2df7049bb681afaf311ea5, type: 3}
   zombieDeath: {fileID: 8300000, guid: 6f5b959b78871f64ca050a63237a723e, type: 3}
-  zombieSounds: []
-  mutantSpawn: {fileID: 8300000, guid: 6f5b959b78871f64ca050a63237a723e, type: 3}
+  zombieSounds:
+  - {fileID: 8300000, guid: 35ca6443cf7844f4ca9610a760a0ab05, type: 3}
+  - {fileID: 8300000, guid: 08b8bb8ec68200642ab0c6d703d059b2, type: 3}
+  - {fileID: 8300000, guid: 0e7cce24865fbc94bb51f3ab7dd8ebb2, type: 3}
+  - {fileID: 8300000, guid: 207a1e58729e63e459303f1610b3a337, type: 3}
+  mutantSpawn: {fileID: 0}
   mutantAttack: {fileID: 0}
   mutantDeath: {fileID: 0}
   mutantSounds: []

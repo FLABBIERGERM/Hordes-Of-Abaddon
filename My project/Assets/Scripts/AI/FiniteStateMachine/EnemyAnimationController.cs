@@ -26,10 +26,10 @@ public class EnemyAnimationController : MonoBehaviour
     [SerializeField] private AudioClip mutantDeath;
     [SerializeField] private List<AudioClip> mutantSounds;
 
-    [SerializeField] private AudioClip chargeTaunt;
-    [SerializeField] private AudioClip chargeInAction;
-    [SerializeField] private AudioClip chargeSlam;
-    [SerializeField] private AudioClip chargeEnd;
+    [SerializeField] public AudioClip chargeTaunt;
+    [SerializeField] public AudioClip chargeInAction;
+    [SerializeField] public AudioClip chargeSlam;
+    [SerializeField] public AudioClip chargeEnd;
 
 
     public bool spawned = false;
@@ -38,9 +38,30 @@ public class EnemyAnimationController : MonoBehaviour
     {
         animator.SetFloat("HorizontalSpeed", GetHorizontalAgentVelocity().magnitude);
         animator.SetBool("IsTraversingLink", navMeshAgent.isOnOffMeshLink);
+        enemyRandomNoise();
 
     }
+    private void enemyRandomNoise()
+    {
+        if(mutantSpawn != null  && mutantAudioSource.isPlaying != true)
+        {
+            StartCoroutine(RandomNoiseMutant());
 
+        }
+        if (zombieSpawn != null  && zombieAudioSource.isPlaying != true)
+        {
+            StartCoroutine(RandomNoiseZombie());
+        }
+    }
+
+    public void charginAttack()
+    {
+        mutantAudioSource.PlayOneShot(chargeInAction,2.0f);
+    }
+    public void chargeBreathing() 
+    {
+            mutantAudioSource.PlayOneShot(chargeEnd,0.6f);
+    }
     private Vector3 GetHorizontalAgentVelocity()
     {
         return new Vector3(navMeshAgent.velocity.x, 0f, navMeshAgent.velocity.z);
@@ -84,5 +105,28 @@ public class EnemyAnimationController : MonoBehaviour
         {
             zombieAudioSource.PlayOneShot(zombieSpawn);
         }
+    }
+    private IEnumerator RandomNoiseMutant()
+    {
+        if (mutantAudioSource.isPlaying != true)
+        {
+            int SongChoice = Random.Range(0, mutantSounds.Count);
+
+            mutantAudioSource.PlayOneShot(mutantSounds[SongChoice]);
+            Debug.Log(("This is the song that is play:") + SongChoice);
+        }
+        yield return new WaitForSeconds(Random.Range(4f,15f));
+    }
+
+    private IEnumerator RandomNoiseZombie()
+    {
+        if (zombieAudioSource.isPlaying != true)
+        {
+            int SongChoice = Random.Range(0, zombieSounds.Count);
+
+            zombieAudioSource.PlayOneShot(zombieSounds[SongChoice]);
+            Debug.Log(("This is the song that is play:") + SongChoice);
+        }
+        yield return new WaitForSeconds(Random.Range(4f, 15f));
     }
 }

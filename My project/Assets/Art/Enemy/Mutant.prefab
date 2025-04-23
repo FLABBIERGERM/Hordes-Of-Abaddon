@@ -329,13 +329,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c46114e962f18364cac80e417fc53937, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0
+  m_Volume: 0.801
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 96
+  Priority: 104
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -403,7 +403,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.675
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -468,6 +468,7 @@ MonoBehaviour:
     mAccel: 3
     zSpeed: 7
     zAccel: 5
+    enemyAnimationController: {fileID: 4207489673034871273}
     navMeshAgent: {fileID: 7054977551980847663}
     rigidBody: {fileID: 8223945946987765010}
     chaseTarget: {fileID: 0}
@@ -509,7 +510,10 @@ MonoBehaviour:
   mutantAttack: {fileID: 0}
   mutantDeath: {fileID: 8300000, guid: 9aa635e21a0833540994aa5f3c41aa5f, type: 3}
   mutantSounds:
-  - {fileID: 8300000, guid: 8f859a103bd673648bd72963540241b8, type: 3}
+  - {fileID: 8300000, guid: 796c912947975a841a0ef4e94582d4dc, type: 3}
+  - {fileID: 8300000, guid: 3b0ed0706081e3a44be40ea68798d1da, type: 3}
+  - {fileID: 8300000, guid: 4c8da36f2fad1f541b95fd5b81a722ca, type: 3}
+  - {fileID: 8300000, guid: 710c8e583d2e8054ca50f615b45a79f9, type: 3}
   chargeTaunt: {fileID: 8300000, guid: 162464cbbed5e054199bb6cbb7ebeb61, type: 3}
   chargeInAction: {fileID: 8300000, guid: b398374f32681e54da318fb6aa4d4991, type: 3}
   chargeSlam: {fileID: 8300000, guid: 420f851c1e222f4489338aeeea0c2f2a, type: 3}

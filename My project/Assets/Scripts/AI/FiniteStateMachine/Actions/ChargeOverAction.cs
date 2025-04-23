@@ -29,7 +29,7 @@ public class ChargeOverAction : Action
 
             aiBlackBoard.navMeshAgent.speed = originalSpeed;
             aiBlackBoard.ChargingAfk();
-            aiBlackBoard.navMeshAgent.GetComponent<NavMeshAgent>().enabled = false;
+            //aiBlackBoard.navMeshAgent.GetComponent<NavMeshAgent>().enabled = false;
             Debug.Log("Original speed" + aiBlackBoard.navMeshAgent.speed);
         }
     }

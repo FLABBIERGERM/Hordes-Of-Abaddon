@@ -28,6 +28,7 @@ public class AIBlackBoard : Blackboard
 
     public float zSpeed = 6.0f;
     public float zAccel = 5.0f;
+    public EnemyAnimationController enemyAnimationController;
     public bool IsattackCDR()
     {
         return Time.time >= nextAttack;
