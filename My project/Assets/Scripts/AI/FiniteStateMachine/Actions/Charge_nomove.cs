@@ -12,10 +12,11 @@ public class Charge_nomove : Action
     {
         if(blackboard is AIBlackBoard aiBlackBoard)
         {
-            aiBlackBoard.navMeshAgent.GetComponent<NavMeshAgent>().enabled = true;
+            //aiBlackBoard.navMeshAgent.GetComponent<NavMeshAgent>().enabled = true;
 
             aiBlackBoard.navMeshAgent.speed = 0;
             aiBlackBoard.navMeshAgent.isStopped = true;
+            aiBlackBoard.enemyAnimationController.chargeBreathing();
         }
     }
 }
