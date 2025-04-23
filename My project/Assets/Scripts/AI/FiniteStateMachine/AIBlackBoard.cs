@@ -23,11 +23,11 @@ public class AIBlackBoard : Blackboard
 
     public Object chargeCrash;
 
-    public float mSpeed = 5.0f;
-    public float mAccel = 3.0f;
+    public float mSpeed = 4.0f;
+    public float mAccel = 2.0f;
 
     public float zSpeed = 6.0f;
-    public float zAccel = 5.0f;
+    public float zAccel = 3.0f;
     public EnemyAnimationController enemyAnimationController;
     public bool IsattackCDR()
     {
@@ -65,7 +65,7 @@ public class AIBlackBoard : Blackboard
 
     [Header("Chase AI")]
     [Tooltip("The transform of the object the AI is navigating towards")]
-    public Transform chaseTarget ; // gotta figure this bit out  for new instanced enemys. losing my got damn mind about it now to.
+    public Transform chaseTarget ; // gotta figure this bit out  for new instanced enemys. losing my got damn mind about it now to. well been a while but it works forgot to mention that.
 
     public float attackRange = 3.0f;
 
