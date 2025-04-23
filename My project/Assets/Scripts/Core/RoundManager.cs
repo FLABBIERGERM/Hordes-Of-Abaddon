@@ -11,8 +11,8 @@ public class RoundManager : MonoBehaviour
     // speaking of which you as in me will have to compile all of those huds sooner or later as theres no reason to have 1 for score, ammo, and rounds
     public RoundState currentRoundState;
 
-   // [SerializeField] AudioClip Audioclip;
-   // [SerializeField] AudioSource audioSorce;
+    [SerializeField] AudioClip NewRound;
+    [SerializeField] AudioSource RoundAudio;
     public int enemySpawned = 0;
     public int enemyAlive = 0;
     public int currentRound = 1;
@@ -48,11 +48,9 @@ public class RoundManager : MonoBehaviour
     }
     public void RoundStart()
     {
-        //if (currentRound == 1)
-        //{
-        //    audioSorce.PlayOneShot(Audioclip);
-        //}
+
         roundIncrease.Invoke();
+        RoundAudio.PlayOneShot(NewRound);
         Debug.Log("The current round is: " + currentRound + " total enemys are" + currentRound * 7);
         totalEnemies = currentRound * 7;
         currentRoundState = RoundState.RoundBegin;  
