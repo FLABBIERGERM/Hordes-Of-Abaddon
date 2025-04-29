@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using UnityEditor.UIElements;
 
 public class HudScore : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class HudScore : MonoBehaviour
 
     private UIDocument uiDocument;
     private VisualElement scoreBoard;
-    private VisualElement hitMarker;
+    //private VisualElement hitMarker;
     private VisualElement reticleMarker;
 
 
@@ -64,7 +65,7 @@ public class HudScore : MonoBehaviour
         roundLabel = scoreBoard.Q<Label>("Round-Holder");
         essenceLabel = scoreBoard.Q<Label>("Essence");
         ammoCount = scoreBoard.Q<Label>("Ammo");
-        hitMarker = uiDocument.rootVisualElement.Q<VisualElement>("Hit-Marker");
+        //hitMarker = uiDocument.rootVisualElement.Q<VisualElement>("Hit-Marker");
 
         currentAmmo = gunData.currentAmmo;
         totalAmmo = gunData.magSize;
@@ -72,7 +73,7 @@ public class HudScore : MonoBehaviour
         reloadingLabel = reticleMarker.Q<Label>("Reloading-Holder");
 
         reloadingLabel.style.display = DisplayStyle.None;
-        hitMarker.style.display = DisplayStyle.None;
+        //hitMarker.style.display = DisplayStyle.None;
         scoreBoard.style.display = DisplayStyle.Flex; // this is un needed as it never leaves but i want to leave it to potentially change later.
 
 
@@ -84,6 +85,8 @@ public class HudScore : MonoBehaviour
         PlayerController.Instance.reloadingFinished.AddListener(ReloadingFinishedReceived);
         RoundManager.Instance.roundIncrease.AddListener(RoundUp);
         GameState.Instance.OnPlayerLost.AddListener(RecivedOnGameLost);
+        GameState.Instance.OnGamePaused.AddListener(ReceivedOnGamePaused);
+        GameState.Instance.OnGameResumed.AddListener(ReceivedOnGameResumed);
         //UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         UnityEngine.Cursor.lockState = CursorLockMode.Confined;
 
@@ -93,7 +96,7 @@ public class HudScore : MonoBehaviour
     private void RecivedOnGameLost()
     {
         scoreBoard.style.display = DisplayStyle.Flex; // this is un needed as it never leaves but i want to leave it to potentially change later.
-        hitMarker.style.display = DisplayStyle.None;
+        //hitMarker.style.display = DisplayStyle.None;
         reloadingLabel.style.display = DisplayStyle.None;
         reticleMarker.style.display = DisplayStyle.None;
     }
@@ -116,7 +119,24 @@ public class HudScore : MonoBehaviour
     {
         currentAmmo = gunData.currentAmmo;
     }
+    private void ReceivedOnGamePaused()
+    {
+        //hitMarker.style.display = DisplayStyle.None;
+        reloadingLabel.style.display = DisplayStyle.None;
+        reticleMarker.style.display = DisplayStyle.None;
+        scoreBoard.style.display = DisplayStyle.None;
+    }
+    private void ReceivedOnGameResumed()
+    {
+       // hitMarker.style.display = DisplayStyle.Flex;
+        reticleMarker.style.display = DisplayStyle.Flex;
+        scoreBoard.style.display = DisplayStyle.Flex;
+        if (gunData.reloading)
+        {
+            reloadingLabel.style.display = DisplayStyle.Flex;
+        }
 
+    }
     private void RecivedOnEnemyHit()
     {
         StartCoroutine(HitMarker());
@@ -146,10 +166,12 @@ public class HudScore : MonoBehaviour
     }
     private IEnumerator HitMarker()
     {
-        hitMarker.style.display = DisplayStyle.Flex;
-        yield return new WaitForSeconds(0.1f); 
+        reticleMarker.style.unityBackgroundImageTintColor = Color.red;
+        //hitMarker.style.display = DisplayStyle.Flex;
+        yield return new WaitForSeconds(0.1f);
         //yield return new WaitForEndOfFrame();
-        hitMarker.style.display = DisplayStyle.None ;
+        //hitMarker.style.display = DisplayStyle.None ;
+        reticleMarker.style.unityBackgroundImageTintColor = Color.black;
 
 
     }

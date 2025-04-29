@@ -80,7 +80,7 @@ public class MainMenu : MonoBehaviour
             int SongChoice = Random.Range(0, mainMenuSongs.Count);
 
             mainMenuAudio.PlayOneShot(mainMenuSongs[SongChoice]);
-            Debug.Log(("This is the song that is play:") + SongChoice);
+            Debug.Log(("This is the song that is play:") + SongChoice);// add this to t
         }
 
     }
