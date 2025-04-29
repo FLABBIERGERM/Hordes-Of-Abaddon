@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -30,7 +31,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ParticleSystem gunFiredParticle;
     [SerializeField] private ParticleSystem onObjectHitParticle;
     public UnityEvent reloadingStarted;
-    public UnityEvent reloadingFinished;    
+    public UnityEvent reloadingFinished;
+    [SerializeField] private LayerMask ignoreMe;
 
     float timeSinceLastShot;
     private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate / 60f);
@@ -157,7 +159,7 @@ public class PlayerController : MonoBehaviour
             if (CanShoot())
             {
 
-                if (Physics.Raycast(muzzle.position, muzzle.forward, out RaycastHit hitInfo, gunData.maxDist))
+                if (Physics.Raycast(muzzle.position, muzzle.forward, out RaycastHit hitInfo, gunData.maxDist,7))
                 {
                     if (hitInfo.collider.CompareTag("Zombie") || hitInfo.collider.CompareTag("Mutant"))
                     {
@@ -175,7 +177,7 @@ public class PlayerController : MonoBehaviour
 
                 }
                 //Debug.Log("Miss");
-                Instantiate(gunFiredParticle,gunBarrel.position, Quaternion.identity);// went back and did more
+                Instantiate(gunFiredParticle,gunBarrel.position, Quaternion.identity,gunBarrel);// went back and did more
                 gunData.currentAmmo--;
                 timeSinceLastShot = 0;
                 OnGunShot();
