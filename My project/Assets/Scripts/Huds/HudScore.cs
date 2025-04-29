@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 using UnityEditor.UIElements;
+using UnityEngine.UI;
 
 public class HudScore : MonoBehaviour
 {
@@ -14,17 +15,20 @@ public class HudScore : MonoBehaviour
     private VisualElement scoreBoard;
     //private VisualElement hitMarker;
     private VisualElement reticleMarker;
-
+    private VisualElement AmmoContainer;
 
     private Label scoreLabel;
     private Label roundLabel;
     private Label essenceLabel;
     private Label ammoCount;
     private Label reloadingLabel;
+    private Label MagSize;
 
     public int totalAmmo;
     public int currentAmmo;
     private int roundNumber = 1;
+    private string currentMagAmmo;
+
 
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip hitNoise;
@@ -62,10 +66,14 @@ public class HudScore : MonoBehaviour
             Debug.LogError("Score Label Not found");
             return;
         }
+
+        AmmoContainer = uiDocument.rootVisualElement.Q<VisualElement>("Ammo-Container");
         roundLabel = scoreBoard.Q<Label>("Round-Holder");
         essenceLabel = scoreBoard.Q<Label>("Essence");
-        ammoCount = scoreBoard.Q<Label>("Ammo");
-        //hitMarker = uiDocument.rootVisualElement.Q<VisualElement>("Hit-Marker");
+
+        ammoCount = AmmoContainer.Q<Label>("Current-Ammo");
+        MagSize = AmmoContainer.Q<Label>("Mag-Size");
+
 
         currentAmmo = gunData.currentAmmo;
         totalAmmo = gunData.magSize;
@@ -99,6 +107,7 @@ public class HudScore : MonoBehaviour
         //hitMarker.style.display = DisplayStyle.None;
         reloadingLabel.style.display = DisplayStyle.None;
         reticleMarker.style.display = DisplayStyle.None;
+        AmmoContainer.style.display = DisplayStyle.None;
     }
     public void RegisterEnemy(BaseStats enemyStats)
     {
@@ -109,7 +118,8 @@ public class HudScore : MonoBehaviour
     {
         killHolder = kills;
         AmmoUpdate();
-        ammoCount.text = ("Ammo:" + totalAmmo + ("/" )+ currentAmmo);
+        ammoCount.text = (currentAmmo.ToString()); // this is the one for current ammo that updates
+        MagSize.text = (("/")+totalAmmo.ToString());
         scoreLabel.text = ("Kills:") + killHolder.ToString();
         roundLabel.text = ("Round: ") + roundNumber.ToString();
         essenceLabel.text = ("Essence: ") + essence.ToString();
@@ -118,6 +128,25 @@ public class HudScore : MonoBehaviour
     private void AmmoUpdate()
     {
         currentAmmo = gunData.currentAmmo;
+
+        if (currentAmmo <= 15 )
+        {
+            // change color here
+            ammoCount.style.color = Color.yellow;
+            if (currentAmmo <= 6)
+            {
+                // change color here
+                ammoCount.style.color = Color.red;
+            }
+        }
+        if (currentAmmo >= 16)
+        {
+            // change color here
+            ammoCount.style.color = Color.white;
+
+        }
+        currentMagAmmo = currentAmmo.ToString();
+
     }
     private void ReceivedOnGamePaused()
     {
