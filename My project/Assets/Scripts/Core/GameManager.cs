@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,8 +22,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private AudioSource playerHPAudioSource;
     [SerializeField] private AudioSource playerHealing; // this is its own thing as the healing is very loud and im not working on a mixer currently.
+    [SerializeField] private AudioSource UnderHalf;
     [SerializeField] private AudioClip playerHealingAudioClip;
     [SerializeField] private AudioClip getsHit;
+
     public static GameManager Instance
     {
         get { return _instance; }
@@ -41,6 +46,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+
         PlayerCurrentHP = playerMaxHp;
 
         gameState = GameState.Instance;
@@ -50,9 +56,29 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        CheckIfRegenAble();
+        if (SceneManager.GetActiveScene().name != "MainMenu")
+        {
+            CheckIfRegenAble();
+            CheckIfDying();
+        }
+
     }
 
+    public void CheckIfDying()
+    {
+        if (PlayerCurrentHP <= 7)
+        {
+            if(UnderHalf.isPlaying!= true)
+            {
+                UnderHalf.Play();
+            }
+            
+        }
+        if(PlayerCurrentHP > 7 && UnderHalf.isPlaying == true)
+        {
+            UnderHalf.Stop();
+        }
+    }
     private IEnumerator Iframes()
     {
         yield  return new  WaitForSeconds(ifTime);

@@ -24,10 +24,10 @@ public class AIBlackBoard : Blackboard
     public Object chargeCrash;
 
     public float mSpeed = 4.0f;
-    public float mAccel = 2.0f;
+    public float mAccel = 0.0f;
 
     public float zSpeed = 6.0f;
-    public float zAccel = 3.0f;
+    public float zAccel = 0.0f;
     public EnemyAnimationController enemyAnimationController;
     public bool IsattackCDR()
     {
