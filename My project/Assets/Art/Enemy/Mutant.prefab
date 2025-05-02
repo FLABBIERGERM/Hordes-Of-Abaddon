@@ -464,10 +464,10 @@ MonoBehaviour:
     chargeOver: 1
     chargeCrash: {fileID: 1025285306637258, guid: d8f0099df63275647a8bcf646df1ca00,
       type: 3}
-    mSpeed: 6
-    mAccel: 3
-    zSpeed: 7
-    zAccel: 5
+    mSpeed: 5
+    mAccel: 6
+    zSpeed: 6
+    zAccel: 7
     enemyAnimationController: {fileID: 4207489673034871273}
     navMeshAgent: {fileID: 7054977551980847663}
     rigidBody: {fileID: 8223945946987765010}

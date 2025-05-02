@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public float essence;
 
     private float RegenCD = 5.0f;
-    private int playerMaxHp = 15;
+    public  int playerMaxHp = 15;
     public int PlayerCurrentHP;
     public DamageOverlay damageOverlay;
 
