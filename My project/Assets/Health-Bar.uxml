@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:ProgressBar value="22" title="Health" name="Health-Bar" style="width: 991px; -unity-background-image-tint-color: rgb(255, 0, 0); background-color: rgb(255, 0, 0); font-size: 30px; -unity-font-definition: initial; -unity-font: url(&quot;project://database/Assets/Art/OverLays/CloisterBlackLight-axjg.ttf?fileID=12800000&amp;guid=b4bfddc248c4ff2479ea7f60917bd444&amp;type=3#CloisterBlackLight-axjg&quot;); -unity-font-style: bold; letter-spacing: 3px; -unity-text-align: middle-left; height: 17px;" />
+</ui:UXML>
