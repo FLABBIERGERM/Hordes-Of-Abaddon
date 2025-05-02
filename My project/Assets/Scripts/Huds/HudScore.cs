@@ -101,7 +101,8 @@ public class HudScore : MonoBehaviour
         hpBar.highValue = MaxHp;
         hpBar.value = CurrentHp;
 
-        
+        hpBar.style.color = Color.red;
+        hpBar.style.backgroundColor = Color.red;
 
         //essenceLabel.style.top;
     }
@@ -222,14 +223,14 @@ public class HudScore : MonoBehaviour
     private IEnumerator HitMarker()
     {
         reticleMarker.style.unityBackgroundImageTintColor = Color.red;
-        reticleMarker.style.maxWidth = 60f;
-        reticleMarker.style.maxHeight = 60f;
-
+        //reticleMarker.style.maxWidth = 60f;
+        //reticleMarker.style.maxHeight = 60f;
+        
         yield return new WaitForSeconds(0.1f);
         
         reticleMarker.style.unityBackgroundImageTintColor = Color.black;
-        reticleMarker.style.maxWidth = 50f;
-        reticleMarker.style.maxHeight = 50f;
+        //reticleMarker.style.maxWidth = 50f;
+        //reticleMarker.style.maxHeight = 50f;
     }
 
     private IEnumerator FloatingScore(VisualElement VE, float duration)
