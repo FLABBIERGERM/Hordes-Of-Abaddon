@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -13,6 +14,8 @@ public class PlayerController : MonoBehaviour
     [Header("PlayerInput")]
     private PlayerInputActions playerInputActions;
     private Vector2 movementInput;
+    [SerializeField] private CinemachineCamera PlayerCamera;
+
 
     [SerializeField] private BaseMovement baseMovement;
     [SerializeField] private CharacterMovement characterMovement;
@@ -135,12 +138,15 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("We are in the Player Action Map");
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
+                PlayerCamera.enabled = true;
                 break;
             case "UI":
                 playerInputActions.UI.Enable();
                 Debug.Log("We are in the UI Action Map");
 
+                PlayerCamera.enabled = false;
                 Cursor.visible = true;
+                
                 Cursor.lockState = CursorLockMode.None;
                 break;
             default:

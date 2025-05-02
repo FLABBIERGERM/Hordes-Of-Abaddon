@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEditor.SearchService;
 using UnityEngine;
@@ -165,6 +166,7 @@ public class GameManager : MonoBehaviour
         if (didResume)
         {
             Time.timeScale = 1;
+            
         }
     }
     public void TogglePause()
