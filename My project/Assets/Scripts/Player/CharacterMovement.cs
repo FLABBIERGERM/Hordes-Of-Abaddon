@@ -45,8 +45,9 @@ public class CharacterMovement : BaseMovement
 
     //[SerializeField] private AudioClip getsHit;
 
-    [SerializeField] private AudioClip jumpNoise;
+  //  [SerializeField] private AudioClip jumpNoise;
 
+    [SerializeField] private List<AudioClip> jumpNoises;
     [SerializeField] private AudioClip landingNoise;
 
     [SerializeField] private AudioClip gunNoise; // change into a animation once thing later, no idea what i ment by this maybe an animation event at the start of shooting but idk.
@@ -166,7 +167,7 @@ public class CharacterMovement : BaseMovement
         if(readyToJump &&(isGrounded || currentJump <= maxJumps))
         {
             animator.SetTrigger("Jump");
-            audioSource.PlayOneShot(jumpNoise);
+            JumpNoise();
             currentJump += 1;
             float adjustedJumpForce = jumpForce - rigidbody.velocity.y;
             rigidbody.AddForce(Vector3.up * adjustedJumpForce, ForceMode.VelocityChange);
@@ -174,6 +175,15 @@ public class CharacterMovement : BaseMovement
             StartCoroutine(JumpCooldownCoroutine());
 
         }
+    }
+    void JumpNoise()
+    {
+            int SongChoice = Random.Range(0, jumpNoises.Count);
+
+            audioSource.PlayOneShot(jumpNoises[SongChoice]);
+            Debug.Log(("JumpNoise that played is") + SongChoice);
+        
+
     }
     public override void CancelJump()
     {

@@ -171,7 +171,7 @@ public class PlayerController : MonoBehaviour
                 {
                     if (hitInfo.collider.CompareTag("Zombie") || hitInfo.collider.CompareTag("Mutant"))
                     {
-                        Instantiate(onHitParticle, hitInfo.point, Quaternion.identity);
+                        Instantiate(onHitParticle, hitInfo.point, Quaternion.identity,hitInfo.collider.transform);
                         Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
 
                         IDamageAble damageable = hitInfo.transform.GetComponent<IDamageAble>();
