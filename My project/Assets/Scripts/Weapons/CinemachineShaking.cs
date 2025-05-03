@@ -13,6 +13,7 @@ public class CinemachineShaking : MonoBehaviour
     private float shakeTimerTotal;
 
     [SerializeField] CinemachineImpulseSource CISource;
+    [SerializeField] CinemachineImpulseSource PlayerHurtSource;
     [SerializeField] float powerAmount;
 
     private void Awake()
@@ -32,7 +33,14 @@ public class CinemachineShaking : MonoBehaviour
     }
     public void ScreenShake(Vector3 dir) // this is the easiest way to do this rather than my other code.
     {
-        CISource.GenerateImpulseWithVelocity(dir);
+        CISource.GenerateImpulseWithForce(powerAmount);
+       // CISource.GenerateImpulseWithVelocity(dir);
+    }
+    public void PlayerDamageShake(Vector3 dir) 
+    {
+        PlayerHurtSource.GenerateImpulseWithVelocity(dir);
+       // PlayerHurtSource.GenerateImpulseWithForce(powerAmount);
+        
     }
     private void Update()
     {

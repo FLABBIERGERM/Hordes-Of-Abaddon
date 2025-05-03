@@ -24,8 +24,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioSource playerHPAudioSource;
     [SerializeField] private AudioSource playerHealing; // this is its own thing as the healing is very loud and im not working on a mixer currently.
     [SerializeField] private AudioSource UnderHalf;
+    [SerializeField] private AudioSource HeavyBreathingSource;// i will need to go back in later once i get more knowledge on audio mixers and actually mix these properly instead of just having a bunch of em
+
     [SerializeField] private AudioClip playerHealingAudioClip;
     [SerializeField] private AudioClip getsHit;
+    [SerializeField] private AudioClip HeavyBreathing;
+
+    // this is for ttaking damage
+    [SerializeField] private CinemachineShaking playerDShaking;
 
     public static GameManager Instance
     {
@@ -105,6 +111,7 @@ public class GameManager : MonoBehaviour
             PlayerCurrentHP += healthDelta;
             playerHPAudioSource.PlayOneShot(getsHit);
             damageOverlay.IncreaseVignette(0.2f);
+            playerDShaking.PlayerDamageShake(playerHPAudioSource.transform.forward);
             Debug.Log("Current Player Health" + PlayerCurrentHP);
         }
         if (healthDelta > 0)

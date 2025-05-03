@@ -13,6 +13,10 @@ public class RoundManager : MonoBehaviour
 
     [SerializeField] AudioClip NewRound;
     [SerializeField] AudioSource RoundAudio;
+
+    [SerializeField] private AudioSource GameplayAudio;
+    [SerializeField] private List<AudioClip> GamePlaySongs;
+
     public int enemySpawned = 0;
     public int enemyAlive = 0;
     public int currentRound = 1;
@@ -36,6 +40,8 @@ public class RoundManager : MonoBehaviour
             currentRound = 1;
         }
         RoundStart();
+        NextSong();
+
     }
     public void RegisterEnemy(BaseStats enemyStats)
     {
@@ -45,6 +51,7 @@ public class RoundManager : MonoBehaviour
     private void FixedUpdate()
     {
         enemyAlive = enemySpawned;
+        NextSong();
     }
     public void RoundStart()
     {
@@ -87,4 +94,20 @@ public class RoundManager : MonoBehaviour
         currentRoundState = RoundState.RoundPlaying;
         SpawnManager.Instance.StartSpawning(currentRound);
     }// new idea to just make a round wait for round start and then while playing have spawning.
+
+
+
+    void NextSong()
+    {
+
+        if (GameplayAudio.isPlaying != true)
+        {
+            int SongChoice = Random.Range(0, GamePlaySongs.Count);
+
+            GameplayAudio.PlayOneShot(GamePlaySongs[SongChoice]);
+            Debug.Log(("This is the song that is playing in game:") + SongChoice);// add this to t
+            
+        }
+
+    }
 }
