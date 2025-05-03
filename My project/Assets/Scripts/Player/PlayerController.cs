@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     public UnityEvent reloadingFinished;
     [SerializeField] private LayerMask ignoreMe;
 
+
+    [SerializeField] private CinemachineShaking shaking;
     float timeSinceLastShot;
     private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate / 60f);
 
@@ -174,15 +176,16 @@ public class PlayerController : MonoBehaviour
 
                         IDamageAble damageable = hitInfo.transform.GetComponent<IDamageAble>();
                         damageable?.Damage(gunData.damage);
+                        
                     }
                     else
                     {
                         Instantiate(onObjectHitParticle, hitInfo.point, Quaternion.identity);
                         Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
                     }
-
                 }
                 //Debug.Log("Miss");
+                shaking.ScreenShake(muzzle.forward);
                 Instantiate(gunFiredParticle,gunBarrel.position, Quaternion.identity,gunBarrel);// went back and did more
                 gunData.currentAmmo--;
                 timeSinceLastShot = 0;
@@ -198,7 +201,9 @@ public class PlayerController : MonoBehaviour
     {
         characterMovement.GunShotNoise();
         characterMovement.GunRecoil();
+        //CinemachineShaking.Instance.ShakeCamera(0.76f, 0.1f);
 
+        
         //Debug.Log("Gun has made it to the end of the if can shoot statement");
     }
     private IEnumerator Reload()
