@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private AudioClip playerHealingAudioClip;
     [SerializeField] private AudioClip getsHit;
-    [SerializeField] private AudioClip HeavyBreathing;
+
 
     // this is for ttaking damage
     [SerializeField] private CinemachineShaking playerDShaking;
@@ -79,11 +79,22 @@ public class GameManager : MonoBehaviour
             {
                 UnderHalf.Play();
             }
+            if (HeavyBreathingSource.isPlaying != true)
+            {
+                HeavyBreathingSource.Play();
+            }
             
         }
-        if(PlayerCurrentHP > 7 && UnderHalf.isPlaying == true)
+        if(PlayerCurrentHP > 7 )
         {
-            UnderHalf.Stop();
+            if (UnderHalf.isPlaying == true)
+            {
+                UnderHalf.Stop();
+            }
+            if(HeavyBreathingSource.isPlaying == true)
+            {
+                HeavyBreathingSource.Stop();
+            }
         }
     }
     private IEnumerator Iframes()
