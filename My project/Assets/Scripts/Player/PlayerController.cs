@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     public UnityEvent reloadingFinished;
     [SerializeField] private LayerMask ignoreMe;
 
+    [SerializeField] private Transform casingSpawnPoint;
+    [SerializeField] private GameObject bulletCasing;
 
     [SerializeField] private CinemachineShaking shaking;
     float timeSinceLastShot;
@@ -180,7 +182,7 @@ public class PlayerController : MonoBehaviour
                     }
                     else
                     {
-                        Instantiate(onObjectHitParticle, hitInfo.point, Quaternion.identity);
+                        Instantiate(onObjectHitParticle, hitInfo.point, Quaternion.identity, hitInfo.collider.transform);
                         Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
                     }
                 }
@@ -201,11 +203,33 @@ public class PlayerController : MonoBehaviour
     {
         characterMovement.GunShotNoise();
         characterMovement.GunRecoil();
+        BCspawning();
         //CinemachineShaking.Instance.ShakeCamera(0.76f, 0.1f);
-
-        
         //Debug.Log("Gun has made it to the end of the if can shoot statement");
     }
+
+    private void BCspawning()
+    {
+        // Quaternion storageAtempt = new Quaternion(-90f, casingSpawnPoint.rotation.y, casingSpawnPoint.rotation.z, 0f);
+        
+        GameObject BulletCasing = Instantiate(bulletCasing, casingSpawnPoint);
+         //BulletCasing.transform.rotation = Quaternion.Euler(-90f, casingSpawnPoint.rotation.y, casingSpawnPoint.rotation.z); // This is causing my rotation issues but is also the only way my rotations working.
+  
+        Rigidbody BCRB = BulletCasing.GetComponent<Rigidbody>();
+
+       
+        BCRB.velocity = BCRB.transform.TransformDirection(new Vector3(Random.Range(-3,-5f), Random.Range(3, 5f), 0.5f) );
+        
+
+        StartCoroutine(BulletDespawn(BulletCasing));
+    }
+
+    private IEnumerator BulletDespawn(GameObject BulletCasing)
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(BulletCasing);
+    }
+
     private IEnumerator Reload()
     {
         gunData.reloading = true;
