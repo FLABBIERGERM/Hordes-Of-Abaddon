@@ -19,6 +19,7 @@ public class Charge_AOE: MonoBehaviour
     {
         if (other.CompareTag(enemyTag))
         {
+            Debug.Log("Explosion should be doing damage");
             GameManager.Instance.TookDamage(-damage);
         }
 
