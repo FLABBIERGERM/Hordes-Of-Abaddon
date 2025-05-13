@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "FSM/AI/COnditions/DistanceConditions", fileName = "C_Distance")]
+[CreateAssetMenu(menuName = "FSM/AI/Conditions/DistanceConditions", fileName = "C_Distance")]
 public class DistanceCondition : Condition
 {
     [SerializeField] private float attackRange = 3.0f;

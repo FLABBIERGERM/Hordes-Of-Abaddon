@@ -48,6 +48,44 @@ public class PlayerController : MonoBehaviour
     {
         timeSinceLastShot += Time.deltaTime;
         Debug.DrawRay(muzzle.position,gunData.maxDist * muzzle.forward, Color.red );
+
+        if(playerInputActions.Player.Shoot.ReadValue<float>() > 0.1f)
+        {
+            if (gunData.currentAmmo > 0)
+            {
+                if (CanShoot())
+                {
+
+                    if (Physics.Raycast(muzzle.position, muzzle.forward, out RaycastHit hitInfo, gunData.maxDist, 7))
+                    {
+                        if (hitInfo.collider.CompareTag("Zombie") || hitInfo.collider.CompareTag("Mutant"))
+                        {
+                            Instantiate(onHitParticle, hitInfo.point, Quaternion.identity, hitInfo.collider.transform);
+                            Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
+
+                            IDamageAble damageable = hitInfo.transform.GetComponent<IDamageAble>();
+                            damageable?.Damage(gunData.damage);
+
+                        }
+                        else
+                        {
+                            Instantiate(onObjectHitParticle, hitInfo.point, Quaternion.identity, hitInfo.collider.transform);
+                            Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
+                        }
+                    }
+                    //Debug.Log("Miss");
+                    shaking.ScreenShake(muzzle.forward);
+                    Instantiate(gunFiredParticle, gunBarrel.position, Quaternion.identity, gunBarrel);// went back and did more
+                    gunData.currentAmmo--;
+                    timeSinceLastShot = 0;
+                    OnGunShot();
+                }
+            }
+            if(gunData.currentAmmo <= 0)
+            {
+                StartCoroutine(Reload());
+            }
+        }
     }
     private void Awake()
     {
@@ -108,7 +146,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-        playerInputActions.Player.Shoot.performed += Shoot;
+       // playerInputActions.Player.Shoot.performed += Shoot;
         playerInputActions.Player.Reload.performed += StartReload;
 
         playerInputActions.Player.Interact.performed += InteractActionPerformed;
@@ -126,7 +164,7 @@ public class PlayerController : MonoBehaviour
         playerInputActions.Player.TogglePause.performed -= TogglePauseActionPerformed;
         playerInputActions.UI.TogglePause.performed -= TogglePauseActionPerformed;
 
-        playerInputActions.Player.Shoot.performed -= Shoot;
+      //  playerInputActions.Player.Shoot.performed -= Shoot;
         playerInputActions.Player.Reload.performed -= StartReload;
 
         playerInputActions.Player.Interact.performed -= InteractActionPerformed;
@@ -161,44 +199,44 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private void Shoot(InputAction.CallbackContext context)
-    {
-        //Debug.Log("Gun is firing");
-        if(gunData.currentAmmo > 0)
-        {
-            if (CanShoot())
-            {
+    //private void Shoot(InputAction.CallbackContext context)
+    //{
+    //    //Debug.Log("Gun is firing");
+    //    if(gunData.currentAmmo > 0)
+    //    {
+    //        if (CanShoot())
+    //        {
 
-                if (Physics.Raycast(muzzle.position, muzzle.forward, out RaycastHit hitInfo, gunData.maxDist,7))
-                {
-                    if (hitInfo.collider.CompareTag("Zombie") || hitInfo.collider.CompareTag("Mutant"))
-                    {
-                        Instantiate(onHitParticle, hitInfo.point, Quaternion.identity,hitInfo.collider.transform);
-                        Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
+    //            if (Physics.Raycast(muzzle.position, muzzle.forward, out RaycastHit hitInfo, gunData.maxDist,7))
+    //            {
+    //                if (hitInfo.collider.CompareTag("Zombie") || hitInfo.collider.CompareTag("Mutant"))
+    //                {
+    //                    Instantiate(onHitParticle, hitInfo.point, Quaternion.identity,hitInfo.collider.transform);
+    //                    Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
 
-                        IDamageAble damageable = hitInfo.transform.GetComponent<IDamageAble>();
-                        damageable?.Damage(gunData.damage);
+    //                    IDamageAble damageable = hitInfo.transform.GetComponent<IDamageAble>();
+    //                    damageable?.Damage(gunData.damage);
                         
-                    }
-                    else
-                    {
-                        Instantiate(onObjectHitParticle, hitInfo.point, Quaternion.identity, hitInfo.collider.transform);
-                        Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
-                    }
-                }
-                //Debug.Log("Miss");
-                shaking.ScreenShake(muzzle.forward);
-                Instantiate(gunFiredParticle,gunBarrel.position, Quaternion.identity,gunBarrel);// went back and did more
-                gunData.currentAmmo--;
-                timeSinceLastShot = 0;
-                OnGunShot();
-            }
-        }
-        if(gunData.currentAmmo <= 0)
-        {
-            StartReload(context);
-        }
-    }
+    //                }
+    //                else
+    //                {
+    //                    Instantiate(onObjectHitParticle, hitInfo.point, Quaternion.identity, hitInfo.collider.transform);
+    //                    Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
+    //                }
+    //            }
+    //            //Debug.Log("Miss");
+    //            shaking.ScreenShake(muzzle.forward);
+    //            Instantiate(gunFiredParticle,gunBarrel.position, Quaternion.identity,gunBarrel);// went back and did more
+    //            gunData.currentAmmo--;
+    //            timeSinceLastShot = 0;
+    //            OnGunShot();
+    //        }
+    //    }
+    //    if(gunData.currentAmmo <= 0)
+    //    {
+    //        StartReload(context);
+    //    }
+    //}
     private void OnGunShot()
     {
         characterMovement.GunShotNoise();
@@ -217,10 +255,12 @@ public class PlayerController : MonoBehaviour
   
         Rigidbody BCRB = BulletCasing.GetComponent<Rigidbody>();
 
-       
-        BCRB.velocity = BCRB.transform.TransformDirection(new Vector3(Random.Range(-3,-5f), Random.Range(3, 5f), 0.5f) );
         
+       
+        BCRB.velocity = BCRB.transform.TransformDirection(new Vector3(Random.Range(-3,-5f), Random.Range(3, 5f), 0.5f));
 
+        //BCRB.AddForce(4f, BCRB.transform.position, 2f);
+        
         StartCoroutine(BulletDespawn(BulletCasing));
     }
 
@@ -234,6 +274,8 @@ public class PlayerController : MonoBehaviour
     {
         gunData.reloading = true;
         reloadingStarted.Invoke();
+        characterMovement.ReloadingAnimation();
+        weaponAudioSource.PlayOneShot(reloadingSound);
         yield return new WaitForSeconds(gunData.reloadTime);
         gunData.currentAmmo = gunData.magSize;
         gunData.reloading = false;
@@ -245,8 +287,7 @@ public class PlayerController : MonoBehaviour
         // Debug.Log("Gun is reloading");
         if(gunData.reloading == false && gunData.currentAmmo != gunData.magSize)
         {
-            characterMovement.ReloadingAnimation();
-            weaponAudioSource.PlayOneShot(reloadingSound);
+
             StartCoroutine(Reload());
         }
     }
