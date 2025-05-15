@@ -14,34 +14,40 @@ public class PlayerController : MonoBehaviour
     [Header("PlayerInput")]
     private PlayerInputActions playerInputActions;
     private Vector2 movementInput;
-    [SerializeField] private CinemachineCamera PlayerCamera;
 
-
+    [Header("Player Movement and Interactmanager")]
     [SerializeField] private BaseMovement baseMovement;
     [SerializeField] private CharacterMovement characterMovement;
     [SerializeField] private CharacterInteractManager characterInteractManager;
 
+    [Header("Player Weapon")]
     [SerializeField] private WeaponData gunData;
     [SerializeField] private Transform muzzle;// the muzzle is where the origin of the bullets comes from
-
     [SerializeField] private Transform rifle;
     [SerializeField] private Transform gunBarrel;
+    float timeSinceLastShot;
+    public UnityEvent reloadingStarted;
+    public UnityEvent reloadingFinished;
 
+    [Header("Player Weapon Audio")]
     [SerializeField] private AudioSource weaponAudioSource;
     [SerializeField] private AudioClip reloadingSound;
 
+    [Header("Player Weapon particle effects")]
     [SerializeField] private ParticleSystem onHitParticle;
     [SerializeField] private ParticleSystem gunFiredParticle;
     [SerializeField] private ParticleSystem onObjectHitParticle;
-    public UnityEvent reloadingStarted;
-    public UnityEvent reloadingFinished;
-    [SerializeField] private LayerMask ignoreMe;
 
+    [SerializeField] private LayerMask ignoreMe;
+    [Header("Player Weapon Casings")]
     [SerializeField] private Transform casingSpawnPoint;
     [SerializeField] private GameObject bulletCasing;
 
+    [Header("Player Camera ")]
+    [SerializeField] private CinemachineCamera PlayerCamera;
     [SerializeField] private CinemachineShaking shaking;
-    float timeSinceLastShot;
+
+    
     private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate / 60f);
 
     private void Update()
@@ -81,7 +87,7 @@ public class PlayerController : MonoBehaviour
                     OnGunShot();
                 }
             }
-            if(gunData.currentAmmo <= 0)
+            if (gunData.currentAmmo <= 0 && gunData.reloading != true)
             {
                 StartCoroutine(Reload());
             }
@@ -257,9 +263,8 @@ public class PlayerController : MonoBehaviour
 
         
        
-        BCRB.velocity = BCRB.transform.TransformDirection(new Vector3(Random.Range(-3,-5f), Random.Range(3, 5f), 0.5f));
-
-        //BCRB.AddForce(4f, BCRB.transform.position, 2f);
+        BCRB.velocity = BCRB.transform.TransformDirection(new Vector3(Random.Range(-2f,-5f), Random.Range(-5f, 5f), 0.06f));
+        BCRB.AddRelativeTorque(Random.Range(-5000, -15000f), Random.Range(-5000, -15000f), Random.Range(-5000, -15000f));
         
         StartCoroutine(BulletDespawn(BulletCasing));
     }
