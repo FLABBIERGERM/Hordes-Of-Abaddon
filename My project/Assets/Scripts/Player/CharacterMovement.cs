@@ -6,55 +6,58 @@ using UnityEngine.InputSystem;
 using Unity.IO.LowLevel.Unsafe;
 public class CharacterMovement : BaseMovement
 {
+    [Header("Player Movement Values")]
     [SerializeField] private float accelerationRate = 60f;
     [SerializeField] private float deccelerationRate = 30f;
     [SerializeField] private float maxWalkSpeed = 7f;
     [SerializeField] private float maxSprintSpeed = 15f;
     [SerializeField] private float maxVerticleSpeed = 25f;
 
+
     private bool isSprinting = false;
 
+    [Header("Player Jump Values")]
     [SerializeField] private int maxJumps = 1;
-
-    private int currentJump = 0;
-
     [SerializeField] private float jumpCooldown = 0.25f;
     [SerializeField] private float airControllMultiplier = 0.4f;
-    private bool readyToJump = true;
-
     [SerializeField] private float groundRotationRate = 10f;
     [SerializeField] private float airRotationRate = 3f;
-
-
     [SerializeField] private float groundCheckDistance = 0.1f;
     [SerializeField] private LayerMask enviormentLayerMask;
-
+    private bool readyToJump = true;
+    private int currentJump = 0;
     private bool wasGroundedLastFrame = false;
     private bool isGrounded = false; // this is needed for animator
 
+    [Header("Player Camera")]
     [SerializeField] private Transform cameraTrasnform; // fix this word
-
     [SerializeField] private CinemachineCamera Camera1;
 
+    [Header("Player Gun Animator")]
     [SerializeField] private Animator gunAnimations;
 
-
+    [Header("Player Audio")]
     [SerializeField] private AudioSource bulletAudioSource;
     [SerializeField] private AudioSource hitMarkerAudioSource;
     [SerializeField] private AudioClip footStepSoundClip;
-
-    //[SerializeField] private AudioClip getsHit;
-
-  //  [SerializeField] private AudioClip jumpNoise;
-
     [SerializeField] private List<AudioClip> jumpNoises;
     [SerializeField] private AudioClip landingNoise;
-
     [SerializeField] private AudioClip gunNoise; // change into a animation once thing later, no idea what i ment by this maybe an animation event at the start of shooting but idk.
     [SerializeField] private AudioClip hitIndicator;
 
+    [Header("Player Steps Value")]// this means like going up steps
+    [SerializeField] private GameObject stepRayUpper;
+    [SerializeField] private GameObject stepRayLower;
+    [SerializeField] private float stepHeight = 0.3f;
+    [SerializeField] private float stepSmooth = 2f;
+    private void Awake()
+    {
+          
+    }
     private void FixedUpdate()
     {
+        //StepClimb();
+
         CheckIsGrounded();
         MoveCharacter();
         LimitVelocity();
@@ -62,6 +65,7 @@ public class CharacterMovement : BaseMovement
     }
     private void Update()
     {
+        StepClimb();
         CalculateCameraRelativeInput();
 
         RotateCharacter();
@@ -72,6 +76,10 @@ public class CharacterMovement : BaseMovement
 
     private void Start()
     {
+
+        //Debug.Log("This is the stepheight transform" + stepHeight);
+        //stepRayUpper.transform.position = new Vector3(0, stepHeight, 0);
+        //Debug.Log("This is the top transform" + stepRayUpper.transform.position.ToString());
         currentMaxSpeed = maxWalkSpeed;
    
     }
@@ -245,6 +253,7 @@ public class CharacterMovement : BaseMovement
                 currentJump = 1;
             }
         }
+        
     }
     private Vector3 GetHorizontalRBVelocity()
     {
@@ -257,5 +266,36 @@ public class CharacterMovement : BaseMovement
     public void ReloadingAnimation()
     {
         gunAnimations.SetTrigger("GunReloading");
+    }
+
+    public void StepClimb()
+    {
+        RaycastHit hitLower;
+        if (Physics.Raycast(stepRayLower.transform.position, transform.TransformDirection(Vector3.forward), out hitLower, 0.3f, 7))
+        {
+            RaycastHit hitUpper;
+            if (!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(Vector3.forward), out hitUpper, 0.4f,7))
+            {
+                rigidbody.position -= new Vector3(0f, -stepSmooth * Time.deltaTime, 0f);
+            }
+        }
+        RaycastHit hitLower45;
+        if (Physics.Raycast(stepRayLower.transform.position, transform.TransformDirection(1.5f,0,1), out hitLower45, 0.3f,7))
+        {
+            RaycastHit hitUpper45;
+            if (!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(1.5f, 0, 1), out hitUpper45, 0.4f, 7))
+            {
+                rigidbody.position -= new Vector3(0f, -stepSmooth * Time.deltaTime, 0f);
+            }
+        }
+        RaycastHit negativehitLower45;
+        if (Physics.Raycast(stepRayLower.transform.position, transform.TransformDirection(-1.5f, 0, 1), out negativehitLower45, 0.3f,7))
+        {
+            RaycastHit negativehitUpper45;
+            if (!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(-1.5f, 0, 1), out negativehitUpper45, 0.4f, 7))
+            {
+                rigidbody.position -= new Vector3(0f, -stepSmooth * Time.deltaTime, 0f);
+            }
+        }
     }
 }

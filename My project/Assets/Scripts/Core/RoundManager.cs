@@ -58,8 +58,8 @@ public class RoundManager : MonoBehaviour
 
         roundIncrease.Invoke();
         RoundAudio.PlayOneShot(NewRound);
-        Debug.Log("The current round is: " + currentRound + " total enemys are" + currentRound * 7);
-        totalEnemies = currentRound * 7;
+        Debug.Log("The current round is: " + currentRound + " total enemys are" + currentRound * 10);
+        totalEnemies = currentRound * 10;
         currentRoundState = RoundState.RoundBegin;  
         StartCoroutine(RoundWait());
 

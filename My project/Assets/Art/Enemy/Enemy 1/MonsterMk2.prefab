@@ -407,7 +407,7 @@ MonoBehaviour:
   animator: {fileID: 4326850620983848455}
   NavAgent: {fileID: 2839217772903072840}
   zDamage: 5
-  zHealth: 75
+  zHealth: 100
   enemyKilled:
     m_PersistentCalls:
       m_Calls: []
