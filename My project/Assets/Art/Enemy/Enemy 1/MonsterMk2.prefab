@@ -316,7 +316,7 @@ MonoBehaviour:
     chargeCrash: {fileID: 0}
     mSpeed: 5
     mAccel: 6
-    zSpeed: 7
+    zSpeed: 6
     zAccel: 8
     enemyAnimationController: {fileID: 9195411467401301757}
     navMeshAgent: {fileID: 2839217772903072840}
