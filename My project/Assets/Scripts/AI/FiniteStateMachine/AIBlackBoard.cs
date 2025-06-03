@@ -99,8 +99,26 @@ public class AIBlackBoard : Blackboard
 
     public bool spawned = false;
 
-    public bool dead = false;   
+    public bool dead = false;
 
+    [Tooltip("Angel Section")]
+    public float currentPhase = 1;
+    public float aSpeed = 4.0f;
+    public float aAccel = 5.0f;
+    public float aMeleeDistance = 2f;
+   
+
+    public List<AngelBeamCannon> angelBeamCannons;
+    public Transform[] shootPoints;
+    public GameObject projectilePrefab;
+    public GameObject AOEPrefab;
+
+
+    [Header("Phase2 distance")]
+    
+    public float distanceFromPlayer = 15f;
+    public float errorRange = 2f;
+    public float aBigAoeCD = 25f; 
 
 }
 

@@ -3958,799 +3958,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/outter_torus/outter_torus_outter_halo_mat_0
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/outter_torus/outter_torus_outter_halo_mat_0
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/outter_torus/outter_torus_outter_halo_mat_0
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
     path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm
     classID: 4
     script: {fileID: 0}
@@ -4774,7 +3982,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
+    attribute: m_LocalEulerAngles.x
     path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm
     classID: 4
     script: {fileID: 0}
@@ -4786,8 +3994,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -4799,7 +4007,19 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -4811,7 +4031,175 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -4858,8 +4246,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -4871,19 +4259,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -4895,19 +4271,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -4919,7 +4283,643 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/outter_torus/outter_torus_outter_halo_mat_0
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/outter_torus/outter_torus_outter_halo_mat_0
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/outter_torus/outter_torus_outter_halo_mat_0
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09
     classID: 4
     script: {fileID: 0}
     flags: 0
