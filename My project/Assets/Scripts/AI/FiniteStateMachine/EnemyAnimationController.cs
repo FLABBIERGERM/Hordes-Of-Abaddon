@@ -13,9 +13,19 @@ public class EnemyAnimationController : MonoBehaviour
     [SerializeField] private AudioClip stepin;
     [SerializeField] private AiStateController aiStateController;
 
+    [Header("Angel Audio")]
+    [SerializeField] private AudioSource angelAudioSource;
+    [SerializeField] private AudioClip angelRangedAttack;
+    [SerializeField] private AudioClip angelMeleeAttack;
+    [SerializeField] private AudioClip angelFormChange;
+    [SerializeField] private AudioClip angelAOE;
+    [SerializeField] private AudioClip angelDeath;
+    [SerializeField] private AudioClip angelSpawn;
+    public Animator Aanimator => animator;
+
+    [Header("Mutant & Zombie Audio")]
     [SerializeField] private AudioSource mutantAudioSource;
     [SerializeField] private AudioSource zombieAudioSource;
-
     [SerializeField] private AudioClip zombieSpawn;
     [SerializeField] private AudioClip zombieAttack;
     [SerializeField] private AudioClip zombieDeath;
@@ -31,6 +41,7 @@ public class EnemyAnimationController : MonoBehaviour
     [SerializeField] public AudioClip chargeSlam;
     [SerializeField] public AudioClip chargeEnd;
 
+    [SerializeField] private List<AngelBeamCannon> angelBeamCannons;
 
     public bool spawned = false;
 
@@ -60,6 +71,10 @@ public class EnemyAnimationController : MonoBehaviour
         if (zombieSpawn != null  && zombieAudioSource.isPlaying != true)
         {
             StartCoroutine(RandomNoiseZombie());
+        }
+        if(angelSpawn != null && angelAudioSource.isPlaying != true)
+        {
+            // this is where the angel voice lines can go if i get to them.
         }
     }
 
@@ -120,6 +135,13 @@ public class EnemyAnimationController : MonoBehaviour
         aiStateController.aiBlackboard.spawned = true;
     }
 
+    // this is the angels giant AOE
+    public void heavensDescent()
+    {
+        animator.SetTrigger("Big_AOE");
+        animator.SetBool("AOE_Going", true);
+        angelAudioSource.PlayOneShot(angelAOE); 
+    }
     public void SpawnStart()
     {
         if (mutantSpawn != null)
@@ -160,5 +182,45 @@ public class EnemyAnimationController : MonoBehaviour
             Debug.Log(("This is the zombie noise:") + SongChoice);
         }
         yield return new WaitForSeconds(Random.Range(4f, 15f));
+    }
+
+    public void FireAngelBeamAtTarget()
+    {
+        if(angelBeamCannons == null || angelBeamCannons.Count == 0 || aiStateController == null)
+        {
+            return;
+        }
+        Transform target = aiStateController.aiBlackboard.chaseTarget;
+        if (target != null) { return; }
+
+       int handIndex = animator.GetInteger("HandIndex");
+       float handNum = (handIndex);
+       animator.SetFloat("HIblend", handNum);
+        //animator.SetInteger("HandIndex", handIndex);
+        //animator.SetFloat("HIblend", handIndex);
+
+        if(angelAudioSource!=null && angelRangedAttack != null)
+        {
+            angelAudioSource.PlayOneShot(angelRangedAttack);
+        }
+
+        angelBeamCannons[handIndex].FireAt(target);
+    }
+
+    public void RegisterEnemy(BaseStats enemyStats)
+    {
+        enemyStats.angelHalf.AddListener(ReceivedOnAngelHalfHealth);
+    }
+    private void ReceivedOnAngelHalfHealth()
+    {
+        Debug.Log("The angel has reached half hp and should go to phase 2");
+        aiStateController.aiBlackboard.currentPhase = 2;
+        animator.SetBool("Form_Change", true);
+        navMeshAgent.GetComponent<Collider>().enabled = false;
+    }
+    public void FormAnimationOver()
+    {
+        animator.SetBool("Form_Change", false);
+        navMeshAgent.GetComponent<Collider>().enabled = true;
     }
 }

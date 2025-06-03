@@ -35,12 +35,12 @@ public class AttackAction : Action
         {
             aiBlackboard.attackAudioSource.Play();
         }
-        if (aiBlackboard.owningController.GetComponent<Animator>().GetBool("Attacking"))
-        {
-            aiBlackboard.navMeshAgent.isStopped = true;
-            aiBlackboard.navMeshAgent.speed = 0;
-            aiBlackboard.navMeshAgent.acceleration = 0;
-        }
+        //if (aiBlackboard.owningController.GetComponent<Animator>().GetBool("Attacking"))
+        //{
+        //    aiBlackboard.navMeshAgent.isStopped = true;
+        //    aiBlackboard.navMeshAgent.speed = 0;
+        //    aiBlackboard.navMeshAgent.acceleration = 0;
+        //}
     
         //else
         //{
