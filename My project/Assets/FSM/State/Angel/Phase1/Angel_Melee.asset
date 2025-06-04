@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0ea083df1ca56c44b0acedcc41cd38c, type: 3}
-  m_Name: Angel_phase1
+  m_Name: Angel_Melee
   m_EditorClassIdentifier: 
-  enterActions: []
-  updateActions:
-  - {fileID: 11400000, guid: 714208d53f3362941ab856a00b3a6842, type: 2}
+  enterActions:
+  - {fileID: 11400000, guid: fe91a9593fe79fa488e9c55c0cb0c3a8, type: 2}
+  updateActions: []
   exitActions: []
   transitions:
   - condition: {fileID: 11400000, guid: 7e67f4707e8bfbc4e836029cae68e087, type: 2}
     nextState: {fileID: 11400000, guid: d73744d6c3285af48ad30445b20d447e, type: 2}
-  - condition: {fileID: 11400000, guid: 874e59b905ffdcf44a1850eb51276795, type: 2}
-    nextState: {fileID: 11400000, guid: ada38010e1d3ecc499be0cb285c9c34b, type: 2}
-  - condition: {fileID: 11400000, guid: 956ca31ce4a19e147a8807af64f5de51, type: 2}
-    nextState: {fileID: 11400000, guid: 026288415148eb04ebbb3e9baea32c2e, type: 2}
+  - condition: {fileID: 11400000, guid: 40e4d5638ae934b40bacfe6c8603b12c, type: 2}
+    nextState: {fileID: 11400000, guid: 30b95ffd64779e143a940f77b4af7a4d, type: 2}

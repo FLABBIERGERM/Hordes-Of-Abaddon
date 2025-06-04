@@ -15,7 +15,7 @@ public class BaseStats : MonoBehaviour, IDamageAble
     //public float aHealth;
 
 
-
+    public bool alreadyHalf = false;
     public float zDamage;
     public float zHealth;
     public UnityEvent enemyKilled;
@@ -39,9 +39,13 @@ public class BaseStats : MonoBehaviour, IDamageAble
         zHealth -= damage;
         enemyHit.Invoke();
         Debug.Log("Remaing Zombie HP" + zHealth);
-        if(zHealth <= (zHealth / 2) && (zHealth >0) && NavAgent.CompareTag("Angel") == true)
+        if(zHealth <= 500 && NavAgent.CompareTag("Angel") == true )
         {
-            angelHalf.Invoke();
+            if(!alreadyHalf) {
+                alreadyHalf = true;
+                angelHalf.Invoke();
+            }
+
         }
         if (zHealth <= 0)
         {

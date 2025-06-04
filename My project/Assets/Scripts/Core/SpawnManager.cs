@@ -14,6 +14,7 @@ public class SpawnManager : MonoBehaviour
 
     [SerializeField] private GameObject enemyMonster;
     [SerializeField] private GameObject bruiserEnemy;
+    [SerializeField] private GameObject angelEnemy;
 
     [SerializeField] public Transform playerToFollow;
 

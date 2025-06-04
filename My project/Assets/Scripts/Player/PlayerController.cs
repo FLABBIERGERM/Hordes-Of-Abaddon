@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
                     if (Physics.Raycast(muzzle.position, muzzle.forward, out RaycastHit hitInfo, gunData.maxDist, 7))
                     {
-                        if (hitInfo.collider.CompareTag("Zombie") || hitInfo.collider.CompareTag("Mutant"))
+                        if (hitInfo.collider.CompareTag("Zombie") || hitInfo.collider.CompareTag("Mutant") || hitInfo.collider.CompareTag("Angel"))
                         {
                             Instantiate(onHitParticle, hitInfo.point, Quaternion.identity, hitInfo.collider.transform);
                             Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it

@@ -10,6 +10,7 @@ public class AOE_Buildup : Action
     {
         if (blackboard is AIBlackBoard aiBlackboard)
         {
+            aiBlackboard.aoeOver = false;
             Babylon(aiBlackboard);
         }
     }
@@ -18,6 +19,11 @@ public class AOE_Buildup : Action
     {
         if(aiBlackBoard.aoeCharging == false )
         {
+            aiBlackBoard.owningController.GetComponent<Animator>()?.SetTrigger("Big_Aoe");
+            aiBlackBoard.owningController.GetComponent<Animator>()?.SetBool("AOE_Going", true);
+
+
+
             aiBlackBoard.aoeCharging = true;
             aiBlackBoard.navMeshAgent.isStopped = true;
             // maybe later on adding in audio calls here

@@ -12,7 +12,7 @@ public class EnemyAnimationController : MonoBehaviour
     [SerializeField] private AudioSource footstepSoundclip;
     [SerializeField] private AudioClip stepin;
     [SerializeField] private AiStateController aiStateController;
-
+    [SerializeField] private BaseStats baseStats;
     [Header("Angel Audio")]
     [SerializeField] private AudioSource angelAudioSource;
     [SerializeField] private AudioClip angelRangedAttack;
@@ -44,7 +44,10 @@ public class EnemyAnimationController : MonoBehaviour
     [SerializeField] private List<AngelBeamCannon> angelBeamCannons;
 
     public bool spawned = false;
-
+    private void Start()
+    {
+        RegisterEnemy(baseStats);
+    }
     private void Update()
     {
         animator.SetFloat("HorizontalSpeed", GetHorizontalAgentVelocity().magnitude);
@@ -122,6 +125,14 @@ public class EnemyAnimationController : MonoBehaviour
             }
             zombieAudioSource.PlayOneShot(zombieDeath);
         }
+        if(angelSpawn != null)
+        {
+            if(angelAudioSource.isPlaying == true)
+            {
+                angelAudioSource.Stop();
+            }
+            angelAudioSource.PlayOneShot(angelDeath);
+        }
 
     }
 
@@ -146,6 +157,8 @@ public class EnemyAnimationController : MonoBehaviour
     public void heavensExplosion()
     {
         Instantiate(aiStateController.aiBlackboard.AOEPrefab, navMeshAgent.transform.position, Quaternion.identity);
+        aiStateController.aiBlackboard.aoeOver = true;
+        //animator.SetTrigger("Aoe_Over");
         // gotta find and add in audio for the actuall effect im not sure on what i should do yet thinking a choir singing in unison
     }
     public void SpawnStart()
@@ -158,6 +171,10 @@ public class EnemyAnimationController : MonoBehaviour
         else
         {
             zombieAudioSource.PlayOneShot(zombieSpawn, 0.7f);
+        }
+        if (angelSpawn != null)
+        {
+            angelAudioSource.PlayOneShot(angelSpawn, 0.8f);
         }
     }
     private IEnumerator RandomNoiseMutant()
@@ -226,7 +243,8 @@ public class EnemyAnimationController : MonoBehaviour
     }
     public void FormAnimationOver()
     {
-        animator.SetBool("Form_Change", false);
+        animator.SetBool("FormFinished", true);
+        aiStateController.aiBlackboard.formChanged = true;
         navMeshAgent.GetComponent<Collider>().enabled = true;
     }
 }

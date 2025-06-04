@@ -15,7 +15,7 @@ public class AngelBeamCcannonFire : Action
                 aIblackboard.enemyAnimationController.FireAngelBeamAtTarget();
 
 
-                aIblackboard.ResetACD();
+                aIblackboard.ResetShootCD();
             }
         }
     }

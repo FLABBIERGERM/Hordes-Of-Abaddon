@@ -4,44 +4,29 @@ using UnityEngine;
 
 public class AngelBeamCannon : MonoBehaviour
 {
-    public LineRenderer beamRenderer;
+    public GameObject beamRenderer;
     public float beamLength = 75f;
-    public float beamDuration = 0.3f;
+    public float beamDuration = 1f;
     public float fireDelay = 0.4f;
     public string playerTag = "Player";
     public int damage = 2;
 
     public LayerMask hitMask;
     public float maxOffset = 2f; // test this
-
+    private LineRenderer activeBeam;
     public void FireAt(Transform target)
     {
-        Vector3 lockedTargetPosition = target.position;
+        if (beamRenderer == null)
+        {
+            Debug.LogError("BeamRenderer is not assigned!");
+        }
+        Vector3 lockedTargetPosition = target.position +new Vector3(0f,1.5f,0f);
 
         lockedTargetPosition += new Vector3(
             Random.Range(-maxOffset, maxOffset),
             0,
            Random.Range(-maxOffset, maxOffset));
         StartCoroutine(FireWithDelay(lockedTargetPosition));
-
-        //Vector3 targetPosition = target.position;
-        //Vector3 dir = (targetPosition - transform.position).normalized;
-        //Ray ray = new Ray(transform.position, dir);
-
-        //Vector3 endPoint = transform.position + dir * beamLength;
-
-        //if (Physics.Raycast(ray, out RaycastHit hit, beamLength, hitMask))
-        //{
-        //    endPoint = hit.point;
-
-        //    if (hit.collider.CompareTag("Player"))
-        //    {
-        //        Debug.Log("Hit Player With Beam!");
-        //        // add in the damage later
-        //    }
-        //}
-
-        //StartCoroutine(ShowBeam(endPoint));
     }
 
     private IEnumerator FireWithDelay(Vector3 lockedTargettPosition)
@@ -53,7 +38,7 @@ public class AngelBeamCannon : MonoBehaviour
 
         Vector3 endPoint = transform.position + dir * beamLength;
 
-        if (Physics.Raycast(ray, out RaycastHit hit, beamLength, hitMask))
+        if (Physics.Raycast(ray, out RaycastHit hit, beamLength))
         {
             endPoint = hit.point;
             StartCoroutine(ShowBeam(endPoint));
@@ -63,6 +48,8 @@ public class AngelBeamCannon : MonoBehaviour
                 // add in the damage later
                 GameManager.Instance.TookDamage(-damage);
             }
+            Debug.Log("what did we hit if anything?" + hit.collider.name);
+
         }
         else
         {
@@ -71,11 +58,17 @@ public class AngelBeamCannon : MonoBehaviour
     }
     private IEnumerator ShowBeam(Vector3 end)
     {
-        beamRenderer.SetPosition(0, transform.position);
-        beamRenderer.SetPosition(1, end);
-        beamRenderer.enabled = true;
+        if(activeBeam == null)
+        {
+            GameObject beamInstance = Instantiate(beamRenderer, transform.position, Quaternion.identity);
+            activeBeam = beamInstance.GetComponent<LineRenderer>();
+        }
+        activeBeam.SetPosition(0, transform.position);
+        activeBeam.SetPosition(1, end);
+        activeBeam.enabled = true;
 
         yield return new WaitForSeconds(beamDuration);
-        beamRenderer.enabled = false;
+        activeBeam.enabled = false;
+       // Destroy(activeBeam);
     }
 }
