@@ -12120,6 +12120,16 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 36a6628731bce1445ad24409ba9c1e10, type: 3}
+    - target: {fileID: 8175966908079445362, guid: 6f613d157569d4140b143c0f69858f18,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175966908079445362, guid: 6f613d157569d4140b143c0f69858f18,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 8415715685874150852, guid: 6f613d157569d4140b143c0f69858f18,
         type: 3}
       propertyPath: angelBeamCannons.Array.size

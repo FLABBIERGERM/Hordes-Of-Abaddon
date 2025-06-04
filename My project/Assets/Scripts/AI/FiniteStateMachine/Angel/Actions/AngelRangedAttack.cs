@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "AI/Actions/Angel_RangedAttack", fileName = "AP1_Ranged")]
+[CreateAssetMenu(menuName = "AI/Actions/Angel_RangedAttackPhase1", fileName = "AP1_Ranged")]
 public class AngelRangedAttack : Action
 {
     public override void Act(Blackboard blackboard)

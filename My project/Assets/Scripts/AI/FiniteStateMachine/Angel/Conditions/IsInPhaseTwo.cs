@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "AI/Conditions/IsInPhaseTwo")]
+[CreateAssetMenu(menuName = "AI/Conditions/IsInPhaseTwo", fileName = "Angel_PhaseTwo")]
 public class IsInPhaseTwo : Condition
 {
     public override bool Evaluate(Blackboard blackboard)

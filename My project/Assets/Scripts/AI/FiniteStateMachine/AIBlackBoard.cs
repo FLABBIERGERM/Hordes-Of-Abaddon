@@ -118,7 +118,24 @@ public class AIBlackBoard : Blackboard
     
     public float distanceFromPlayer = 15f;
     public float errorRange = 2f;
-    public float aBigAoeCD = 25f; 
 
+    [Header("Phase2 AOE")]
+    public float aBigAoeCD = 25f; // cooldown of aoe
+    public float aBigAoeNext = 0f; // the time until the next boom
+    public float aStunnedDuration = 2f;// idk if i even want it to be stunned not gonna lie
+    public bool aoeCharging = false;
+    public bool aoeActivated = false;
+    public bool aoeOver = true;
+
+   
+
+    public bool HeavensDescentCD()
+    {
+        return Time.time >= aBigAoeNext;
+    }
+    public void ResetHeavensDescentCD()
+    {
+        aBigAoeNext = Time.time + aBigAoeCD;
+    }
 }
 
