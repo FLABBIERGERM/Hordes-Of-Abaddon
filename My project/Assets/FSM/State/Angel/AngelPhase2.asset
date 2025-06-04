@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0ea083df1ca56c44b0acedcc41cd38c, type: 3}
-  m_Name: Angel_Spawn
+  m_Name: AngelPhase2
   m_EditorClassIdentifier: 
   enterActions: []
-  updateActions: []
+  updateActions:
+  - {fileID: 11400000, guid: 89036a94d5f6fe042948f264c273ef5e, type: 2}
   exitActions: []
   transitions:
-  - condition: {fileID: 11400000, guid: 3e20fdad2f3e21b48b0ff5359dd1f085, type: 2}
-    nextState: {fileID: 11400000, guid: 30b95ffd64779e143a940f77b4af7a4d, type: 2}
+  - condition: {fileID: 11400000, guid: 3174c85488b81064da911af67ec611c6, type: 2}
+    nextState: {fileID: 0}
+  - condition: {fileID: 0}
+    nextState: {fileID: 0}

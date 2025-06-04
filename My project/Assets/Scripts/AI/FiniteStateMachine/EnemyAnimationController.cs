@@ -122,6 +122,7 @@ public class EnemyAnimationController : MonoBehaviour
             }
             zombieAudioSource.PlayOneShot(zombieDeath);
         }
+
     }
 
     public void Slammed()
@@ -141,6 +142,11 @@ public class EnemyAnimationController : MonoBehaviour
         animator.SetTrigger("Big_AOE");
         animator.SetBool("AOE_Going", true);
         angelAudioSource.PlayOneShot(angelAOE); 
+    }
+    public void heavensExplosion()
+    {
+        Instantiate(aiStateController.aiBlackboard.AOEPrefab, navMeshAgent.transform.position, Quaternion.identity);
+        // gotta find and add in audio for the actuall effect im not sure on what i should do yet thinking a choir singing in unison
     }
     public void SpawnStart()
     {
