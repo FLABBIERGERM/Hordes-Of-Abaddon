@@ -1,0 +1,1327 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Angel
+  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Object_8
+    m_Weight: 1
+  - m_Path: Object_9
+    m_Weight: 1
+  - m_Path: Object_51
+    m_Weight: 1
+  - m_Path: Object_104
+    m_Weight: 1
+  - m_Path: Object_157
+    m_Weight: 1
+  - m_Path: Object_210
+    m_Weight: 1
+  - m_Path: Object_263
+    m_Weight: 1
+  - m_Path: Object_318
+    m_Weight: 1
+  - m_Path: Object_372
+    m_Weight: 1
+  - m_Path: Object_426
+    m_Weight: 1
+  - m_Path: Object_480
+    m_Weight: 1
+  - m_Path: Object_534
+    m_Weight: 1
+  - m_Path: Sketchfab_model
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/bg_plane
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/glow_bg
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/glow_bg/glow
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/glow_bg/glow/glow_skeleton_glow_mat_0
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/glow_bg/glow1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/glow_bg/glow1/glow1_skeleton_glow_mat_0
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/glow_bg/glow2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/glow_bg/glow2/glow2_skeleton_glow_mat_0
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_1/blood_drops_1_halo_mat_0
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/blood_drops_2/blood_drops_2_halo_mat_0
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/halo_outer_ring
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/halo_outer_ring/halo_outer_ring_halo_mat_0
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/inner_torus
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/inner_torus/inner_torus_inner_halo_mat_0
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/outter_torus
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/halo/outter_torus/outter_torus_outter_halo_mat_0
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:index_1_070
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:index_1_070/hand1:index_2_071
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:index_1_070/hand1:index_2_071/hand1:index_3_072
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:index_1_070/hand1:index_2_071/hand1:index_3_072/hand1:index_4_073
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:index_1_070/hand1:index_2_071/hand1:index_3_072/hand1:index_4_073/hand1:index_5_074
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:index_1_070/hand1:index_2_071/hand1:index_3_072/hand1:index_4_073/hand1:index_5_074/hand1:index_5_074_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:little_1_065
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:little_1_065/hand1:little_2_066
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:little_1_065/hand1:little_2_066/hand1:little_3_067
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:little_1_065/hand1:little_2_066/hand1:little_3_067/hand1:little_4_068
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:little_1_065/hand1:little_2_066/hand1:little_3_067/hand1:little_4_068/hand1:little_5_069
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:little_1_065/hand1:little_2_066/hand1:little_3_067/hand1:little_4_068/hand1:little_5_069/hand1:little_5_069_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:middle_1_055
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:middle_1_055/hand1:middle_2_056
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:middle_1_055/hand1:middle_2_056/hand1:middle_3_057
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:middle_1_055/hand1:middle_2_056/hand1:middle_3_057/hand1:middle_4_058
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:middle_1_055/hand1:middle_2_056/hand1:middle_3_057/hand1:middle_4_058/hand1:middle_5_059
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:middle_1_055/hand1:middle_2_056/hand1:middle_3_057/hand1:middle_4_058/hand1:middle_5_059/hand1:middle_5_059_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:ring_1_060
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:ring_1_060/hand1:ring_2_061
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:ring_1_060/hand1:ring_2_061/hand1:ring_3_062
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:ring_1_060/hand1:ring_2_061/hand1:ring_3_062/hand1:ring_4_063
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:ring_1_060/hand1:ring_2_061/hand1:ring_3_062/hand1:ring_4_063/hand1:ring_5_064
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:ring_1_060/hand1:ring_2_061/hand1:ring_3_062/hand1:ring_4_063/hand1:ring_5_064/hand1:ring_5_064_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:thumb_1_051
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:thumb_1_051/hand1:thumb_2_052
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:thumb_1_051/hand1:thumb_2_052/hand1:thumb_3_053
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:thumb_1_051/hand1:thumb_2_052/hand1:thumb_3_053/hand1:thumb_4_054
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/_rootJoint/hand1:arm_root_049/hand1:arm_wrist_050/hand1:thumb_1_051/hand1:thumb_2_052/hand1:thumb_3_053/hand1:thumb_4_054/hand1:thumb_4_054_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_mesh
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:index_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:index_control_1/hand1:index_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:index_control_1/hand1:index_control_2/hand1:index_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:index_control_1/hand1:index_control_2/hand1:index_control_3/hand1:index_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:little_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:little_control_1/hand1:little_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:little_control_1/hand1:little_control_2/hand1:little_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:little_control_1/hand1:little_control_2/hand1:little_control_3/hand1:little_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:middle_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:middle_control_1/hand1:middle_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:middle_control_1/hand1:middle_control_2/hand1:middle_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:middle_control_1/hand1:middle_control_2/hand1:middle_control_3/hand1:middle_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:ring_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:ring_control_1/hand1:ring_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:ring_control_1/hand1:ring_control_2/hand1:ring_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:ring_control_1/hand1:ring_control_2/hand1:ring_control_3/hand1:ring_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:thumb_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:thumb_control_1/hand1:thumb_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/hand1:arm_root_control/hand1:arm_wrist_control/hand1:thumb_control_1/hand1:thumb_control_2/hand1:thumb_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand1:arm/Object_101/Object_103
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:index_1_096
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:index_1_096/hand2:index_2_097
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:index_1_096/hand2:index_2_097/hand2:index_3_098
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:index_1_096/hand2:index_2_097/hand2:index_3_098/hand2:index_4_099
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:index_1_096/hand2:index_2_097/hand2:index_3_098/hand2:index_4_099/hand2:index_5_0100
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:index_1_096/hand2:index_2_097/hand2:index_3_098/hand2:index_4_099/hand2:index_5_0100/hand2:index_5_0100_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:little_1_091
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:little_1_091/hand2:little_2_092
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:little_1_091/hand2:little_2_092/hand2:little_3_093
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:little_1_091/hand2:little_2_092/hand2:little_3_093/hand2:little_4_094
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:little_1_091/hand2:little_2_092/hand2:little_3_093/hand2:little_4_094/hand2:little_5_095
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:little_1_091/hand2:little_2_092/hand2:little_3_093/hand2:little_4_094/hand2:little_5_095/hand2:little_5_095_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:middle_1_081
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:middle_1_081/hand2:middle_2_082
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:middle_1_081/hand2:middle_2_082/hand2:middle_3_083
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:middle_1_081/hand2:middle_2_082/hand2:middle_3_083/hand2:middle_4_084
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:middle_1_081/hand2:middle_2_082/hand2:middle_3_083/hand2:middle_4_084/hand2:middle_5_085
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:middle_1_081/hand2:middle_2_082/hand2:middle_3_083/hand2:middle_4_084/hand2:middle_5_085/hand2:middle_5_085_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:ring_1_086
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:ring_1_086/hand2:ring_2_087
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:ring_1_086/hand2:ring_2_087/hand2:ring_3_088
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:ring_1_086/hand2:ring_2_087/hand2:ring_3_088/hand2:ring_4_089
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:ring_1_086/hand2:ring_2_087/hand2:ring_3_088/hand2:ring_4_089/hand2:ring_5_090
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:ring_1_086/hand2:ring_2_087/hand2:ring_3_088/hand2:ring_4_089/hand2:ring_5_090/hand2:ring_5_090_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:thumb_1_077
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:thumb_1_077/hand2:thumb_2_078
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:thumb_1_077/hand2:thumb_2_078/hand2:thumb_3_079
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:thumb_1_077/hand2:thumb_2_078/hand2:thumb_3_079/hand2:thumb_4_080
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/_rootJoint/hand2:arm_root_075/hand2:arm_wrist_076/hand2:thumb_1_077/hand2:thumb_2_078/hand2:thumb_3_079/hand2:thumb_4_080/hand2:thumb_4_080_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_mesh
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:index_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:index_control_1/hand2:index_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:index_control_1/hand2:index_control_2/hand2:index_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:index_control_1/hand2:index_control_2/hand2:index_control_3/hand2:index_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:little_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:little_control_1/hand2:little_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:little_control_1/hand2:little_control_2/hand2:little_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:little_control_1/hand2:little_control_2/hand2:little_control_3/hand2:little_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:middle_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:middle_control_1/hand2:middle_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:middle_control_1/hand2:middle_control_2/hand2:middle_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:middle_control_1/hand2:middle_control_2/hand2:middle_control_3/hand2:middle_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:ring_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:ring_control_1/hand2:ring_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:ring_control_1/hand2:ring_control_2/hand2:ring_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:ring_control_1/hand2:ring_control_2/hand2:ring_control_3/hand2:ring_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:thumb_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:thumb_control_1/hand2:thumb_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/hand2:arm_root_control/hand2:arm_wrist_control/hand2:thumb_control_1/hand2:thumb_control_2/hand2:thumb_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand2:arm/Object_154/Object_156
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:index_1_0122
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:index_1_0122/hand3:index_2_0123
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:index_1_0122/hand3:index_2_0123/hand3:index_3_00
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:index_1_0122/hand3:index_2_0123/hand3:index_3_00/hand3:index_4_01
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:index_1_0122/hand3:index_2_0123/hand3:index_3_00/hand3:index_4_01/hand3:index_5_02
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:index_1_0122/hand3:index_2_0123/hand3:index_3_00/hand3:index_4_01/hand3:index_5_02/hand3:index_5_02_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:little_1_0117
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:little_1_0117/hand3:little_2_0118
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:little_1_0117/hand3:little_2_0118/hand3:little_3_0119
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:little_1_0117/hand3:little_2_0118/hand3:little_3_0119/hand3:little_4_0120
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:little_1_0117/hand3:little_2_0118/hand3:little_3_0119/hand3:little_4_0120/hand3:little_5_0121
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:little_1_0117/hand3:little_2_0118/hand3:little_3_0119/hand3:little_4_0120/hand3:little_5_0121/hand3:little_5_0121_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:middle_1_0107
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:middle_1_0107/hand3:middle_2_0108
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:middle_1_0107/hand3:middle_2_0108/hand3:middle_3_0109
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:middle_1_0107/hand3:middle_2_0108/hand3:middle_3_0109/hand3:middle_4_0110
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:middle_1_0107/hand3:middle_2_0108/hand3:middle_3_0109/hand3:middle_4_0110/hand3:middle_5_0111
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:middle_1_0107/hand3:middle_2_0108/hand3:middle_3_0109/hand3:middle_4_0110/hand3:middle_5_0111/hand3:middle_5_0111_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:ring_1_0112
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:ring_1_0112/hand3:ring_2_0113
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:ring_1_0112/hand3:ring_2_0113/hand3:ring_3_0114
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:ring_1_0112/hand3:ring_2_0113/hand3:ring_3_0114/hand3:ring_4_0115
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:ring_1_0112/hand3:ring_2_0113/hand3:ring_3_0114/hand3:ring_4_0115/hand3:ring_5_0116
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:ring_1_0112/hand3:ring_2_0113/hand3:ring_3_0114/hand3:ring_4_0115/hand3:ring_5_0116/hand3:ring_5_0116_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:thumb_1_0103
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:thumb_1_0103/hand3:thumb_2_0104
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:thumb_1_0103/hand3:thumb_2_0104/hand3:thumb_3_0105
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:thumb_1_0103/hand3:thumb_2_0104/hand3:thumb_3_0105/hand3:thumb_4_0106
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/_rootJoint/hand3:arm_root_0101/hand3:arm_wrist_0102/hand3:thumb_1_0103/hand3:thumb_2_0104/hand3:thumb_3_0105/hand3:thumb_4_0106/hand3:thumb_4_0106_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_mesh
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:index_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:index_control_1/hand3:index_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:index_control_1/hand3:index_control_2/hand3:index_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:index_control_1/hand3:index_control_2/hand3:index_control_3/hand3:index_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:little_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:little_control_1/hand3:little_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:little_control_1/hand3:little_control_2/hand3:little_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:little_control_1/hand3:little_control_2/hand3:little_control_3/hand3:little_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:middle_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:middle_control_1/hand3:middle_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:middle_control_1/hand3:middle_control_2/hand3:middle_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:middle_control_1/hand3:middle_control_2/hand3:middle_control_3/hand3:middle_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:ring_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:ring_control_1/hand3:ring_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:ring_control_1/hand3:ring_control_2/hand3:ring_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:ring_control_1/hand3:ring_control_2/hand3:ring_control_3/hand3:ring_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:thumb_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:thumb_control_1/hand3:thumb_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/hand3:arm_root_control/hand3:arm_wrist_control/hand3:thumb_control_1/hand3:thumb_control_2/hand3:thumb_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand3:arm/Object_207/Object_209
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:index_1_0146
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:index_1_0146/hand4:index_2_0147
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:index_1_0146/hand4:index_2_0147/hand4:index_3_0148
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:index_1_0146/hand4:index_2_0147/hand4:index_3_0148/hand4:index_4_0149
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:index_1_0146/hand4:index_2_0147/hand4:index_3_0148/hand4:index_4_0149/hand4:index_5_0129
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:index_1_0146/hand4:index_2_0147/hand4:index_3_0148/hand4:index_4_0149/hand4:index_5_0129/hand4:index_5_0129_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:little_1_0141
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:little_1_0141/hand4:little_2_0142
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:little_1_0141/hand4:little_2_0142/hand4:little_3_0143
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:little_1_0141/hand4:little_2_0142/hand4:little_3_0143/hand4:little_4_0144
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:little_1_0141/hand4:little_2_0142/hand4:little_3_0143/hand4:little_4_0144/hand4:little_5_0145
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:little_1_0141/hand4:little_2_0142/hand4:little_3_0143/hand4:little_4_0144/hand4:little_5_0145/hand4:little_5_0145_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:middle_1_0131
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:middle_1_0131/hand4:middle_2_0132
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:middle_1_0131/hand4:middle_2_0132/hand4:middle_3_0133
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:middle_1_0131/hand4:middle_2_0132/hand4:middle_3_0133/hand4:middle_4_0134
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:middle_1_0131/hand4:middle_2_0132/hand4:middle_3_0133/hand4:middle_4_0134/hand4:middle_5_0135
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:middle_1_0131/hand4:middle_2_0132/hand4:middle_3_0133/hand4:middle_4_0134/hand4:middle_5_0135/hand4:middle_5_0135_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:ring_1_0136
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:ring_1_0136/hand4:ring_2_0137
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:ring_1_0136/hand4:ring_2_0137/hand4:ring_3_0138
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:ring_1_0136/hand4:ring_2_0137/hand4:ring_3_0138/hand4:ring_4_0139
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:ring_1_0136/hand4:ring_2_0137/hand4:ring_3_0138/hand4:ring_4_0139/hand4:ring_5_0140
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:ring_1_0136/hand4:ring_2_0137/hand4:ring_3_0138/hand4:ring_4_0139/hand4:ring_5_0140/hand4:ring_5_0140_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:thumb_1_0126
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:thumb_1_0126/hand4:thumb_2_0127
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:thumb_1_0126/hand4:thumb_2_0127/hand4:thumb_3_0128
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:thumb_1_0126/hand4:thumb_2_0127/hand4:thumb_3_0128/hand4:thumb_4_0130
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/_rootJoint/hand4:arm_root_0124/hand4:arm_wrist_0125/hand4:thumb_1_0126/hand4:thumb_2_0127/hand4:thumb_3_0128/hand4:thumb_4_0130/hand4:thumb_4_0130_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_mesh
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:index_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:index_control_1/hand4:index_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:index_control_1/hand4:index_control_2/hand4:index_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:index_control_1/hand4:index_control_2/hand4:index_control_3/hand4:index_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:little_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:little_control_1/hand4:little_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:little_control_1/hand4:little_control_2/hand4:little_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:little_control_1/hand4:little_control_2/hand4:little_control_3/hand4:little_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:middle_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:middle_control_1/hand4:middle_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:middle_control_1/hand4:middle_control_2/hand4:middle_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:middle_control_1/hand4:middle_control_2/hand4:middle_control_3/hand4:middle_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:ring_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:ring_control_1/hand4:ring_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:ring_control_1/hand4:ring_control_2/hand4:ring_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:ring_control_1/hand4:ring_control_2/hand4:ring_control_3/hand4:ring_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:thumb_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:thumb_control_1/hand4:thumb_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/hand4:arm_root_control/hand4:arm_wrist_control/hand4:thumb_control_1/hand4:thumb_control_2/hand4:thumb_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand4:arm/Object_260/Object_262
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:index_1_0172
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:index_1_0172/hand5:index_2_0173
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:index_1_0172/hand5:index_2_0173/hand5:index_3_0174
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:index_1_0172/hand5:index_2_0173/hand5:index_3_0174/hand5:index_4_0175
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:index_1_0172/hand5:index_2_0173/hand5:index_3_0174/hand5:index_4_0175/hand5:index_5_0176
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:index_1_0172/hand5:index_2_0173/hand5:index_3_0174/hand5:index_4_0175/hand5:index_5_0176/hand5:index_5_0176_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:little_1_0167
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:little_1_0167/hand5:little_2_0168
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:little_1_0167/hand5:little_2_0168/hand5:little_3_0169
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:little_1_0167/hand5:little_2_0168/hand5:little_3_0169/hand5:little_4_0170
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:little_1_0167/hand5:little_2_0168/hand5:little_3_0169/hand5:little_4_0170/hand5:little_5_0171
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:little_1_0167/hand5:little_2_0168/hand5:little_3_0169/hand5:little_4_0170/hand5:little_5_0171/hand5:little_5_0171_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:middle_1_0157
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:middle_1_0157/hand5:middle_2_0158
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:middle_1_0157/hand5:middle_2_0158/hand5:middle_3_0159
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:middle_1_0157/hand5:middle_2_0158/hand5:middle_3_0159/hand5:middle_4_0160
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:middle_1_0157/hand5:middle_2_0158/hand5:middle_3_0159/hand5:middle_4_0160/hand5:middle_5_0161
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:middle_1_0157/hand5:middle_2_0158/hand5:middle_3_0159/hand5:middle_4_0160/hand5:middle_5_0161/hand5:middle_5_0161_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:ring_1_0162
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:ring_1_0162/hand5:ring_2_0163
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:ring_1_0162/hand5:ring_2_0163/hand5:ring_3_0164
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:ring_1_0162/hand5:ring_2_0163/hand5:ring_3_0164/hand5:ring_4_0150
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:ring_1_0162/hand5:ring_2_0163/hand5:ring_3_0164/hand5:ring_4_0150/hand5:ring_5_0166
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:ring_1_0162/hand5:ring_2_0163/hand5:ring_3_0164/hand5:ring_4_0150/hand5:ring_5_0166/hand5:ring_5_0166_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:thumb_1_0153
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:thumb_1_0153/hand5:thumb_2_0154
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:thumb_1_0153/hand5:thumb_2_0154/hand5:thumb_3_0155
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:thumb_1_0153/hand5:thumb_2_0154/hand5:thumb_3_0155/hand5:thumb_4_0156
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/_rootJoint/hand5:arm_root_0151/hand5:arm_wrist_0152/hand5:thumb_1_0153/hand5:thumb_2_0154/hand5:thumb_3_0155/hand5:thumb_4_0156/hand5:thumb_4_0156_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:index_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:index_control_1/hand5:index_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:index_control_1/hand5:index_control_2/hand5:index_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:index_control_1/hand5:index_control_2/hand5:index_control_3/hand5:index_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:little_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:little_control_1/hand5:little_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:little_control_1/hand5:little_control_2/hand5:little_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:little_control_1/hand5:little_control_2/hand5:little_control_3/hand5:little_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:middle_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:middle_control_1/hand5:middle_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:middle_control_1/hand5:middle_control_2/hand5:middle_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:middle_control_1/hand5:middle_control_2/hand5:middle_control_3/hand5:middle_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:ring_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:ring_control_1/hand5:ring_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:ring_control_1/hand5:ring_control_2/hand5:ring_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:ring_control_1/hand5:ring_control_2/hand5:ring_control_3/hand5:ring_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:thumb_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:thumb_control_1/hand5:thumb_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/hand5:arm_root_control/hand5:arm_wrist_control/hand5:thumb_control_1/hand5:thumb_control_2/hand5:thumb_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/group1/Object_315/Object_317
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand5:arm/hand5:arm_mesh
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:index_1_0198
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:index_1_0198/hand6:index_2_0199
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:index_1_0198/hand6:index_2_0199/hand6:index_3_0200
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:index_1_0198/hand6:index_2_0199/hand6:index_3_0200/hand6:index_4_0201
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:index_1_0198/hand6:index_2_0199/hand6:index_3_0200/hand6:index_4_0201/hand6:index_5_0182
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:index_1_0198/hand6:index_2_0199/hand6:index_3_0200/hand6:index_4_0201/hand6:index_5_0182/hand6:index_5_0182_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:little_1_0193
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:little_1_0193/hand6:little_2_0194
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:little_1_0193/hand6:little_2_0194/hand6:little_3_0195
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:little_1_0193/hand6:little_2_0194/hand6:little_3_0195/hand6:little_4_0196
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:little_1_0193/hand6:little_2_0194/hand6:little_3_0195/hand6:little_4_0196/hand6:little_5_0197
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:little_1_0193/hand6:little_2_0194/hand6:little_3_0195/hand6:little_4_0196/hand6:little_5_0197/hand6:little_5_0197_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:middle_1_0183
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:middle_1_0183/hand6:middle_2_0184
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:middle_1_0183/hand6:middle_2_0184/hand6:middle_3_0185
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:middle_1_0183/hand6:middle_2_0184/hand6:middle_3_0185/hand6:middle_4_0186
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:middle_1_0183/hand6:middle_2_0184/hand6:middle_3_0185/hand6:middle_4_0186/hand6:middle_5_0187
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:middle_1_0183/hand6:middle_2_0184/hand6:middle_3_0185/hand6:middle_4_0186/hand6:middle_5_0187/hand6:middle_5_0187_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:ring_1_0188
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:ring_1_0188/hand6:ring_2_0189
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:ring_1_0188/hand6:ring_2_0189/hand6:ring_3_0190
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:ring_1_0188/hand6:ring_2_0189/hand6:ring_3_0190/hand6:ring_4_0191
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:ring_1_0188/hand6:ring_2_0189/hand6:ring_3_0190/hand6:ring_4_0191/hand6:ring_5_0192
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:ring_1_0188/hand6:ring_2_0189/hand6:ring_3_0190/hand6:ring_4_0191/hand6:ring_5_0192/hand6:ring_5_0192_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:thumb_1_0179
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:thumb_1_0179/hand6:thumb_2_0180
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:thumb_1_0179/hand6:thumb_2_0180/hand6:thumb_3_0181
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:thumb_1_0179/hand6:thumb_2_0180/hand6:thumb_3_0181/hand6:thumb_4_0165
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/_rootJoint/hand6:arm_root_0177/hand6:arm_wrist_0178/hand6:thumb_1_0179/hand6:thumb_2_0180/hand6:thumb_3_0181/hand6:thumb_4_0165/hand6:thumb_4_0165_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:index_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:index_control_1/hand6:index_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:index_control_1/hand6:index_control_2/hand6:index_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:index_control_1/hand6:index_control_2/hand6:index_control_3/hand6:index_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:little_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:little_control_1/hand6:little_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:little_control_1/hand6:little_control_2/hand6:little_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:little_control_1/hand6:little_control_2/hand6:little_control_3/hand6:little_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:middle_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:middle_control_1/hand6:middle_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:middle_control_1/hand6:middle_control_2/hand6:middle_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:middle_control_1/hand6:middle_control_2/hand6:middle_control_3/hand6:middle_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:ring_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:ring_control_1/hand6:ring_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:ring_control_1/hand6:ring_control_2/hand6:ring_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:ring_control_1/hand6:ring_control_2/hand6:ring_control_3/hand6:ring_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:thumb_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:thumb_control_1/hand6:thumb_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/hand6:arm_root_control/hand6:arm_wrist_control/hand6:thumb_control_1/hand6:thumb_control_2/hand6:thumb_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/group2/Object_369/Object_371
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand6:arm/hand6:arm_mesh
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:index_1_0223
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:index_1_0223/hand7:index_2_0224
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:index_1_0223/hand7:index_2_0224/hand7:index_3_0225
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:index_1_0223/hand7:index_2_0224/hand7:index_3_0225/hand7:index_4_0226
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:index_1_0223/hand7:index_2_0224/hand7:index_3_0225/hand7:index_4_0226/hand7:index_5_0227
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:index_1_0223/hand7:index_2_0224/hand7:index_3_0225/hand7:index_4_0226/hand7:index_5_0227/hand7:index_5_0227_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:little_1_0218
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:little_1_0218/hand7:little_2_0219
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:little_1_0218/hand7:little_2_0219/hand7:little_3_0220
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:little_1_0218/hand7:little_2_0219/hand7:little_3_0220/hand7:little_4_0221
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:little_1_0218/hand7:little_2_0219/hand7:little_3_0220/hand7:little_4_0221/hand7:little_5_0222
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:little_1_0218/hand7:little_2_0219/hand7:little_3_0220/hand7:little_4_0221/hand7:little_5_0222/hand7:little_5_0222_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:middle_1_0209
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:middle_1_0209/hand7:middle_2_0210
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:middle_1_0209/hand7:middle_2_0210/hand7:middle_3_0211
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:middle_1_0209/hand7:middle_2_0210/hand7:middle_3_0211/hand7:middle_4_0212
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:middle_1_0209/hand7:middle_2_0210/hand7:middle_3_0211/hand7:middle_4_0212/hand7:middle_5_0213
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:middle_1_0209/hand7:middle_2_0210/hand7:middle_3_0211/hand7:middle_4_0212/hand7:middle_5_0213/hand7:middle_5_0213_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:ring_1_0214
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:ring_1_0214/hand7:ring_2_0215
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:ring_1_0214/hand7:ring_2_0215/hand7:ring_3_0216
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:ring_1_0214/hand7:ring_2_0215/hand7:ring_3_0216/hand7:ring_4_0217
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:ring_1_0214/hand7:ring_2_0215/hand7:ring_3_0216/hand7:ring_4_0217/hand7:ring_5_0202
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:ring_1_0214/hand7:ring_2_0215/hand7:ring_3_0216/hand7:ring_4_0217/hand7:ring_5_0202/hand7:ring_5_0202_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:thumb_1_0205
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:thumb_1_0205/hand7:thumb_2_0206
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:thumb_1_0205/hand7:thumb_2_0206/hand7:thumb_3_0207
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:thumb_1_0205/hand7:thumb_2_0206/hand7:thumb_3_0207/hand7:thumb_4_0208
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/_rootJoint/hand7:arm_root_0203/hand7:arm_wrist_0204/hand7:thumb_1_0205/hand7:thumb_2_0206/hand7:thumb_3_0207/hand7:thumb_4_0208/hand7:thumb_4_0208_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:index_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:index_control_1/hand7:index_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:index_control_1/hand7:index_control_2/hand7:index_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:index_control_1/hand7:index_control_2/hand7:index_control_3/hand7:index_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:little_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:little_control_1/hand7:little_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:little_control_1/hand7:little_control_2/hand7:little_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:little_control_1/hand7:little_control_2/hand7:little_control_3/hand7:little_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:middle_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:middle_control_1/hand7:middle_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:middle_control_1/hand7:middle_control_2/hand7:middle_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:middle_control_1/hand7:middle_control_2/hand7:middle_control_3/hand7:middle_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:ring_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:ring_control_1/hand7:ring_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:ring_control_1/hand7:ring_control_2/hand7:ring_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:ring_control_1/hand7:ring_control_2/hand7:ring_control_3/hand7:ring_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:thumb_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:thumb_control_1/hand7:thumb_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/hand7:arm_root_control/hand7:arm_wrist_control/hand7:thumb_control_1/hand7:thumb_control_2/hand7:thumb_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/group3/Object_423/Object_425
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand7:arm/hand7:arm_mesh
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:index_1_0250
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:index_1_0250/hand8:index_2_0251
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:index_1_0250/hand8:index_2_0251/hand8:index_3_0252
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:index_1_0250/hand8:index_2_0251/hand8:index_3_0252/hand8:index_4_0253
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:index_1_0250/hand8:index_2_0251/hand8:index_3_0252/hand8:index_4_0253/hand8:index_5_0234
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:index_1_0250/hand8:index_2_0251/hand8:index_3_0252/hand8:index_4_0253/hand8:index_5_0234/hand8:index_5_0234_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:little_1_0245
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:little_1_0245/hand8:little_2_0246
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:little_1_0245/hand8:little_2_0246/hand8:little_3_0247
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:little_1_0245/hand8:little_2_0246/hand8:little_3_0247/hand8:little_4_0248
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:little_1_0245/hand8:little_2_0246/hand8:little_3_0247/hand8:little_4_0248/hand8:little_5_0249
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:little_1_0245/hand8:little_2_0246/hand8:little_3_0247/hand8:little_4_0248/hand8:little_5_0249/hand8:little_5_0249_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:middle_1_0235
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:middle_1_0235/hand8:middle_2_0236
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:middle_1_0235/hand8:middle_2_0236/hand8:middle_3_0237
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:middle_1_0235/hand8:middle_2_0236/hand8:middle_3_0237/hand8:middle_4_0238
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:middle_1_0235/hand8:middle_2_0236/hand8:middle_3_0237/hand8:middle_4_0238/hand8:middle_5_0239
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:middle_1_0235/hand8:middle_2_0236/hand8:middle_3_0237/hand8:middle_4_0238/hand8:middle_5_0239/hand8:middle_5_0239_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:ring_1_0240
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:ring_1_0240/hand8:ring_2_0241
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:ring_1_0240/hand8:ring_2_0241/hand8:ring_3_0242
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:ring_1_0240/hand8:ring_2_0241/hand8:ring_3_0242/hand8:ring_4_0243
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:ring_1_0240/hand8:ring_2_0241/hand8:ring_3_0242/hand8:ring_4_0243/hand8:ring_5_0244
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:ring_1_0240/hand8:ring_2_0241/hand8:ring_3_0242/hand8:ring_4_0243/hand8:ring_5_0244/hand8:ring_5_0244_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:thumb_1_0231
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:thumb_1_0231/hand8:thumb_2_0232
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:thumb_1_0231/hand8:thumb_2_0232/hand8:thumb_3_0233
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:thumb_1_0231/hand8:thumb_2_0232/hand8:thumb_3_0233/hand8:thumb_4_0228
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/_rootJoint/hand8:arm_root_0229/hand8:arm_wrist_0230/hand8:thumb_1_0231/hand8:thumb_2_0232/hand8:thumb_3_0233/hand8:thumb_4_0228/hand8:thumb_4_0228_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:index_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:index_control_1/hand8:index_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:index_control_1/hand8:index_control_2/hand8:index_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:index_control_1/hand8:index_control_2/hand8:index_control_3/hand8:index_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:little_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:little_control_1/hand8:little_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:little_control_1/hand8:little_control_2/hand8:little_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:little_control_1/hand8:little_control_2/hand8:little_control_3/hand8:little_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:middle_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:middle_control_1/hand8:middle_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:middle_control_1/hand8:middle_control_2/hand8:middle_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:middle_control_1/hand8:middle_control_2/hand8:middle_control_3/hand8:middle_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:ring_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:ring_control_1/hand8:ring_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:ring_control_1/hand8:ring_control_2/hand8:ring_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:ring_control_1/hand8:ring_control_2/hand8:ring_control_3/hand8:ring_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:thumb_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:thumb_control_1/hand8:thumb_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/hand8:arm_root_control/hand8:arm_wrist_control/hand8:thumb_control_1/hand8:thumb_control_2/hand8:thumb_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/group4/Object_477/Object_479
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand8:arm/hand8:arm_mesh
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:index_1_0275
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:index_1_0275/hand9:index_2_0276
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:index_1_0275/hand9:index_2_0276/hand9:index_3_0277
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:index_1_0275/hand9:index_2_0276/hand9:index_3_0277/hand9:index_4_0278
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:index_1_0275/hand9:index_2_0276/hand9:index_3_0277/hand9:index_4_0278/hand9:index_5_0279
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:index_1_0275/hand9:index_2_0276/hand9:index_3_0277/hand9:index_4_0278/hand9:index_5_0279/hand9:index_5_0279_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:little_1_0270
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:little_1_0270/hand9:little_2_0271
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:little_1_0270/hand9:little_2_0271/hand9:little_3_0272
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:little_1_0270/hand9:little_2_0271/hand9:little_3_0272/hand9:little_4_0273
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:little_1_0270/hand9:little_2_0271/hand9:little_3_0272/hand9:little_4_0273/hand9:little_5_0274
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:little_1_0270/hand9:little_2_0271/hand9:little_3_0272/hand9:little_4_0273/hand9:little_5_0274/hand9:little_5_0274_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:middle_1_0261
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:middle_1_0261/hand9:middle_2_0262
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:middle_1_0261/hand9:middle_2_0262/hand9:middle_3_0263
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:middle_1_0261/hand9:middle_2_0262/hand9:middle_3_0263/hand9:middle_4_0264
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:middle_1_0261/hand9:middle_2_0262/hand9:middle_3_0263/hand9:middle_4_0264/hand9:middle_5_0265
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:middle_1_0261/hand9:middle_2_0262/hand9:middle_3_0263/hand9:middle_4_0264/hand9:middle_5_0265/hand9:middle_5_0265_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:ring_1_0266
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:ring_1_0266/hand9:ring_2_0267
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:ring_1_0266/hand9:ring_2_0267/hand9:ring_3_0268
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:ring_1_0266/hand9:ring_2_0267/hand9:ring_3_0268/hand9:ring_4_0269
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:ring_1_0266/hand9:ring_2_0267/hand9:ring_3_0268/hand9:ring_4_0269/hand9:ring_5_0254
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:ring_1_0266/hand9:ring_2_0267/hand9:ring_3_0268/hand9:ring_4_0269/hand9:ring_5_0254/hand9:ring_5_0254_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:thumb_1_0257
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:thumb_1_0257/hand9:thumb_2_0258
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:thumb_1_0257/hand9:thumb_2_0258/hand9:thumb_3_0259
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:thumb_1_0257/hand9:thumb_2_0258/hand9:thumb_3_0259/hand9:thumb_4_0260
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/_rootJoint/hand9:arm_root_0255/hand9:arm_wrist_0256/hand9:thumb_1_0257/hand9:thumb_2_0258/hand9:thumb_3_0259/hand9:thumb_4_0260/hand9:thumb_4_0260_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:index_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:index_control_1/hand9:index_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:index_control_1/hand9:index_control_2/hand9:index_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:index_control_1/hand9:index_control_2/hand9:index_control_3/hand9:index_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:little_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:little_control_1/hand9:little_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:little_control_1/hand9:little_control_2/hand9:little_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:little_control_1/hand9:little_control_2/hand9:little_control_3/hand9:little_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:middle_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:middle_control_1/hand9:middle_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:middle_control_1/hand9:middle_control_2/hand9:middle_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:middle_control_1/hand9:middle_control_2/hand9:middle_control_3/hand9:middle_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:ring_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:ring_control_1/hand9:ring_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:ring_control_1/hand9:ring_control_2/hand9:ring_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:ring_control_1/hand9:ring_control_2/hand9:ring_control_3/hand9:ring_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:thumb_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:thumb_control_1/hand9:thumb_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/hand9:arm_root_control/hand9:arm_wrist_control/hand9:thumb_control_1/hand9:thumb_control_2/hand9:thumb_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/group5/Object_531/Object_533
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand9:arm/hand9:arm_mesh
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:index_1_044
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:index_1_044/hand:index_2_045
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:index_1_044/hand:index_2_045/hand:index_3_046
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:index_1_044/hand:index_2_045/hand:index_3_046/hand:index_4_047
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:index_1_044/hand:index_2_045/hand:index_3_046/hand:index_4_047/hand:index_5_048
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:index_1_044/hand:index_2_045/hand:index_3_046/hand:index_4_047/hand:index_5_048/hand:index_5_048_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:little_1_039
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:little_1_039/hand:little_2_040
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:little_1_039/hand:little_2_040/hand:little_3_041
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:little_1_039/hand:little_2_040/hand:little_3_041/hand:little_4_042
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:little_1_039/hand:little_2_040/hand:little_3_041/hand:little_4_042/hand:little_5_043
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:little_1_039/hand:little_2_040/hand:little_3_041/hand:little_4_042/hand:little_5_043/hand:little_5_043_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:middle_1_029
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:middle_1_029/hand:middle_2_030
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:middle_1_029/hand:middle_2_030/hand:middle_3_031
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:middle_1_029/hand:middle_2_030/hand:middle_3_031/hand:middle_4_032
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:middle_1_029/hand:middle_2_030/hand:middle_3_031/hand:middle_4_032/hand:middle_5_033
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:middle_1_029/hand:middle_2_030/hand:middle_3_031/hand:middle_4_032/hand:middle_5_033/hand:middle_5_033_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:ring_1_034
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:ring_1_034/hand:ring_2_035
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:ring_1_034/hand:ring_2_035/hand:ring_3_036
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:ring_1_034/hand:ring_2_035/hand:ring_3_036/hand:ring_4_037
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:ring_1_034/hand:ring_2_035/hand:ring_3_036/hand:ring_4_037/hand:ring_5_038
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:ring_1_034/hand:ring_2_035/hand:ring_3_036/hand:ring_4_037/hand:ring_5_038/hand:ring_5_038_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:thumb_1_025
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:thumb_1_025/hand:thumb_2_026
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:thumb_1_025/hand:thumb_2_026/hand:thumb_3_027
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:thumb_1_025/hand:thumb_2_026/hand:thumb_3_027/hand:thumb_4_028
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/_rootJoint/hand:arm_root_023/hand:arm_wrist_024/hand:thumb_1_025/hand:thumb_2_026/hand:thumb_3_027/hand:thumb_4_028/hand:thumb_4_028_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_mesh
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:index_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:index_control_1/hand:index_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:index_control_1/hand:index_control_2/hand:index_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:index_control_1/hand:index_control_2/hand:index_control_3/hand:index_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:little_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:little_control_1/hand:little_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:little_control_1/hand:little_control_2/hand:little_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:little_control_1/hand:little_control_2/hand:little_control_3/hand:little_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:middle_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:middle_control_1/hand:middle_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:middle_control_1/hand:middle_control_2/hand:middle_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:middle_control_1/hand:middle_control_2/hand:middle_control_3/hand:middle_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:ring_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:ring_control_1/hand:ring_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:ring_control_1/hand:ring_control_2/hand:ring_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:ring_control_1/hand:ring_control_2/hand:ring_control_3/hand:ring_control_4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:thumb_control_1
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:thumb_control_1/hand:thumb_control_2
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/hand:arm_root_control/hand:arm_wrist_control/hand:thumb_control_1/hand:thumb_control_2/hand:thumb_control_3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/hand:arm/Object_48/Object_50
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:leg_l_020
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:leg_l_020/skeleton:knee_l_021
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:leg_l_020/skeleton:knee_l_021/skeleton:foot_l_022
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:leg_l_020/skeleton:knee_l_021/skeleton:foot_l_022/skeleton:foot_l_022_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:leg_r_017
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:leg_r_017/skeleton:knee_r_018
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:leg_r_017/skeleton:knee_r_018/skeleton:foot_r_019
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:leg_r_017/skeleton:knee_r_018/skeleton:foot_r_019/skeleton:foot_r_019_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09/skeleton:head_top_010
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09/skeleton:head_top_010/skeleton:head_top_010_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09/skeleton:jaw_011
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09/skeleton:jaw_011/skeleton:jow_top_012
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:neck_base_07/skeleton:nack_mid_08/skeleton:head_09/skeleton:jaw_011/skeleton:jow_top_012/skeleton:jow_top_012_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:shoulder_l_015
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:shoulder_l_015/skeleton:arm_l_016
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:shoulder_l_015/skeleton:arm_l_016/skeleton:arm_l_016_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:shoulder_r_013
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:shoulder_r_013/skeleton:arm_r_014
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/_rootJoint/skeleton:root_pelvis_03/skeleton:spine_mid_04/skeleton:spine_high_05/skeleton:chest_06/skeleton:shoulder_r_013/skeleton:arm_r_014/skeleton:arm_r_014_end
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/Object_7
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:foot_l_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:foot_l_control/skeleton:ikHandle3
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:foot_l_control/skeleton:pole_l_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:foot_r_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:foot_r_control/skeleton:ikHandle4
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:foot_r_control/skeleton:pole_r_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:pelvis_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:pelvis_control/skeleton:spine_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:pelvis_control/skeleton:spine_control/skeleton:chest_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:pelvis_control/skeleton:spine_control/skeleton:chest_control/skeleton:neck_base_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:pelvis_control/skeleton:spine_control/skeleton:chest_control/skeleton:neck_base_control/skeleton:neck_middle_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:pelvis_control/skeleton:spine_control/skeleton:chest_control/skeleton:neck_base_control/skeleton:neck_middle_control/skeleton:head_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:pelvis_control/skeleton:spine_control/skeleton:chest_control/skeleton:neck_base_control/skeleton:neck_middle_control/skeleton:head_control/skeleton:jaw_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:pelvis_control/skeleton:spine_control/skeleton:chest_control/skeleton:shoulder_l_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:root_control/skeleton:pelvis_control/skeleton:spine_control/skeleton:chest_control/skeleton:shoulder_r_control
+    m_Weight: 1
+  - m_Path: Sketchfab_model/af2389e38ac94dd7969ba31a201058f2.fbx/Object_2/RootNode/skeleton:skeleton/Object_5/skeleton:skeleton.001
+    m_Weight: 1

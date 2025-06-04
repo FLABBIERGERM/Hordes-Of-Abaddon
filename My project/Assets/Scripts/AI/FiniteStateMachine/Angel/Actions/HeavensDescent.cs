@@ -18,6 +18,10 @@ public class HeavensDescent : Action
     {
         // this is where the code will go to fully blow up the build up is in the action called AOE_buildup
 
-
+        
+        aiBlackboard.owningController.GetComponent<Animator>()?.SetBool("AOE_Going", false);
+        aiBlackboard.owningController.GetComponent<Animator>()?.SetTrigger("Aoe_Over");
+        aiBlackboard.aoeOver = true;
+        aiBlackboard.aoeStun();
     }
 }

@@ -103,16 +103,19 @@ public class AIBlackBoard : Blackboard
 
     [Tooltip("Angel Section")]
     public float currentPhase = 1;
+    public bool formChanged = false;
     public float aSpeed = 4.0f;
     public float aAccel = 5.0f;
     public float aMeleeDistance = 2f;
-   
+    public float shotCD = 3f;
+    public float resetShotCD = 0f;
 
     public List<AngelBeamCannon> angelBeamCannons;
     public Transform[] shootPoints;
     public GameObject projectilePrefab;
     public GameObject AOEPrefab;
 
+    public Transform modelTransform;
 
     [Header("Phase2 distance")]
     
@@ -123,12 +126,20 @@ public class AIBlackBoard : Blackboard
     public float aBigAoeCD = 25f; // cooldown of aoe
     public float aBigAoeNext = 0f; // the time until the next boom
     public float aStunnedDuration = 2f;// idk if i even want it to be stunned not gonna lie
+    public float aStunnedTime = 0f;
     public bool aoeCharging = false;
     public bool aoeActivated = false;
     public bool aoeOver = true;
 
    
-
+    public bool angelShootCD()
+    {
+        return Time.time >= resetShotCD;
+    }
+    public void ResetShootCD()
+    {
+        resetShotCD = Time.time + shotCD;
+    }
     public bool HeavensDescentCD()
     {
         return Time.time >= aBigAoeNext;
@@ -136,6 +147,16 @@ public class AIBlackBoard : Blackboard
     public void ResetHeavensDescentCD()
     {
         aBigAoeNext = Time.time + aBigAoeCD;
+    }
+    public bool afterAoeAFK()
+    {
+        return Time.time >= aStunnedTime;
+
+    }
+    public void aoeStun()
+    {
+        aStunnedTime = Time.time + aStunnedTime;
+
     }
 }
 

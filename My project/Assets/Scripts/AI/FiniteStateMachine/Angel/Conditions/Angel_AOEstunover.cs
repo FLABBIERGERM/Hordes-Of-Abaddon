@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Angel_AOEstunover : MonoBehaviour
+[CreateAssetMenu(menuName = "AI/Conditions/AngelStunOver", fileName = "Angel_STunOver")]
+public class Angel_AOEstunover : Condition
 {
-    // Start is called before the first frame update
-    void Start()
+    public override bool Evaluate(Blackboard blackboard)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (blackboard is AIBlackBoard aIblackboard)
+        {
+            if (aIblackboard.afterAoeAFK())
+            {
+                aIblackboard.navMeshAgent.isStopped = false;
+                return true;
+            }
+        }
+        return false;
     }
 }

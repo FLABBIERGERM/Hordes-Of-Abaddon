@@ -13,6 +13,10 @@ public class MaintainDistanceAndRoam : Action
     {
         if (blackboard is AIBlackBoard aiBlackboard)
         {
+            Vector3 aiPosition = aiBlackboard.navMeshAgent.transform.position;
+            Vector3 playerPosition = aiBlackboard.chaseTarget.position;
+
+
             float distance = Vector3.Distance(aiBlackboard.navMeshAgent.transform.position, aiBlackboard.chaseTarget.position);
             Vector3 toPlayer = (aiBlackboard.navMeshAgent.transform.position- aiBlackboard.chaseTarget.position).normalized;
            
@@ -21,11 +25,11 @@ public class MaintainDistanceAndRoam : Action
 
             if (distance < aiBlackboard.distanceFromPlayer - aiBlackboard.errorRange)
             {
-                desiredPosition = aiBlackboard.navMeshAgent.transform.position - toPlayer * 5f;
+                desiredPosition = aiPosition - toPlayer * 5f;
             }
             else if(distance > aiBlackboard.distanceFromPlayer + aiBlackboard.errorRange) 
             {
-                desiredPosition = aiBlackboard.navMeshAgent.transform.position + toPlayer * 5f;
+                desiredPosition = aiPosition + toPlayer * 5f;
             }
             else if(Time.time >= nextRoamTime)
             {
@@ -36,12 +40,21 @@ public class MaintainDistanceAndRoam : Action
             }
             else
             {
-                return;
+                desiredPosition = aiPosition;
             }
 
             if(NavMesh.SamplePosition(desiredPosition,out NavMeshHit hit, 3f, NavMesh.AllAreas))
-                {
+            {
                 aiBlackboard.navMeshAgent.SetDestination(hit.position);
+            }
+            Vector3 lookDirection = playerPosition - aiPosition;
+            lookDirection.y = 0f;
+            if(lookDirection != Vector3.zero)
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(lookDirection);
+                aiBlackboard.modelTransform.transform.rotation = Quaternion.Slerp(aiBlackboard.modelTransform.rotation,
+                    targetRotation,
+                    Time.deltaTime * 5f);
             }
         }
 

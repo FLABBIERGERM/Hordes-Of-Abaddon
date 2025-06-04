@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0ea083df1ca56c44b0acedcc41cd38c, type: 3}
   m_Name: AngelPhase2
   m_EditorClassIdentifier: 
-  enterActions: []
-  updateActions:
+  enterActions:
   - {fileID: 11400000, guid: 89036a94d5f6fe042948f264c273ef5e, type: 2}
-  exitActions: []
+  updateActions: []
+  exitActions:
+  - {fileID: 11400000, guid: dd39127881b1dd54691fda24ce542786, type: 2}
   transitions:
   - condition: {fileID: 11400000, guid: 3174c85488b81064da911af67ec611c6, type: 2}
-    nextState: {fileID: 0}
-  - condition: {fileID: 0}
-    nextState: {fileID: 0}
+    nextState: {fileID: 11400000, guid: 8c8cc4ac0820efe4da6560bf5b389d69, type: 2}
+  - condition: {fileID: 11400000, guid: 932b9d959f79b784a9d49a406dc41724, type: 2}
+    nextState: {fileID: 11400000, guid: 60a99cecfc5023f4ab7682dc594b2884, type: 2}
+  - condition: {fileID: 11400000, guid: d4efd41339334d143b347de32038c384, type: 2}
+    nextState: {fileID: 11400000}

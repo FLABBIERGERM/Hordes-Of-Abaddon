@@ -660,6 +660,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0f77d4309361a2f4485ae2ec22fb6957,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f77d4309361a2f4485ae2ec22fb6957,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f77d4309361a2f4485ae2ec22fb6957,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f77d4309361a2f4485ae2ec22fb6957,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -463.9519
       objectReference: {fileID: 0}
@@ -707,6 +722,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f77d4309361a2f4485ae2ec22fb6957,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8675536409882832382, guid: 0f77d4309361a2f4485ae2ec22fb6957,
         type: 3}
@@ -4463,7 +4483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46022f9e6e8f8bd42a529d3824bacea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 0}
+  currentState: {fileID: 11400000, guid: 8d88f8a46c03d974a8504f801f7a7600, type: 2}
   blackboard:
     owningController: {fileID: 0}
     stateTimeElapsed: 0
@@ -4526,10 +4546,17 @@ MonoBehaviour:
     - {fileID: 7713833421120830990}
     projectilePrefab: {fileID: 4961107791662864890, guid: 590408f6f4b42cd4eab6db5026f866d7,
       type: 3}
-    AOEPrefab: {fileID: 0}
+    AOEPrefab: {fileID: 4868467107808593284, guid: 1685c7b8ee96fb54287d48c872a57bf8,
+      type: 3}
     distanceFromPlayer: 15
     errorRange: 2
     aBigAoeCD: 25
+    aBigAoeNext: 0
+    aStunnedDuration: 2
+    aStunnedTime: 0
+    aoeCharging: 0
+    aoeActivated: 0
+    aoeOver: 1
 --- !u!114 &8415715685874150852
 MonoBehaviour:
   m_ObjectHideFlags: 0

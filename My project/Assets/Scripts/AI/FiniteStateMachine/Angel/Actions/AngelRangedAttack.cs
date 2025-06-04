@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "AI/Actions/Angel_RangedAttackPhase1", fileName = "AP1_Ranged")]
@@ -26,10 +27,11 @@ public class AngelRangedAttack : Action
         if(aiBlackboard.angelBeamCannons.Count > 1)
         {
             aiBlackboard.angelBeamCannons[0]?.FireAt(aiBlackboard.chaseTarget);
-            aiBlackboard.angelBeamCannons[1]?.FireAt(aiBlackboard.chaseTarget);
+            aiBlackboard.angelBeamCannons[8]?.FireAt(aiBlackboard.chaseTarget);
 
         }
-        aiBlackboard.ResetACD();
+        aiBlackboard.ResetShootCD();
+
     }
 
 }
