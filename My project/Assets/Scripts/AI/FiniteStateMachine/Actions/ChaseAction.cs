@@ -31,6 +31,11 @@ public class ChaseAction : Action
                 aIBlackBoard.navMeshAgent.speed = aIBlackBoard.mSpeed;
                 aIBlackBoard.navMeshAgent.acceleration = aIBlackBoard.mAccel;
             }
+            if (aIBlackBoard.navMeshAgent.CompareTag("Angel"))
+            {
+                aIBlackBoard.navMeshAgent.speed = aIBlackBoard.aSpeed;
+                aIBlackBoard.navMeshAgent.acceleration = aIBlackBoard.aAccel;
+            }
         }
     }
 }

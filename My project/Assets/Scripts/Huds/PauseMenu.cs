@@ -10,13 +10,18 @@ public class PauseMenu : MonoBehaviour
     private VisualElement root;
     private Button resumeButton;
     private Button quitButton;
+    private Button fontChange;
+    [SerializeField] private Font gothic;
+    [SerializeField] private Font basic;
+    private bool fonton = true;
     void Start()
     {
         root = GetComponent<UIDocument>().rootVisualElement;
 
         resumeButton = root.Q<Button>("resume-button");
         quitButton = root.Q<Button>("quit-button");
-
+        fontChange = root.Q<Button>("Font_Change");
+        fontChange.clicked += fontChangeClicked;
         resumeButton.clicked += ResumeButtonPressed;
         quitButton.clicked += QuitButtonPressed;
 
@@ -30,7 +35,7 @@ public class PauseMenu : MonoBehaviour
     {
         resumeButton.clicked -= ResumeButtonPressed;
         quitButton.clicked -= QuitButtonPressed;
-
+        fontChange.clicked -= fontChangeClicked;
         GameState.Instance.OnGamePaused.RemoveListener(ReceivedOnGamePaused);
         GameState.Instance.OnGameResumed.RemoveListener(ReceivedOnGameResumed);
     }
@@ -40,7 +45,25 @@ public class PauseMenu : MonoBehaviour
         GameManager.Instance.ResumeGame();
 
     }
+    private void fontChangeClicked()
+    {
+        fonton = !fonton;
+        Font selectedFont = fonton ? gothic : basic;
+        root.style.unityFont = selectedFont;
+        fontSetter(resumeButton, selectedFont);
+        fontSetter(quitButton, selectedFont);
+        fontSetter(fontChange, selectedFont);
 
+    }
+    private void fontSetter(Button button, Font font)
+    {
+        var label = button.Q<Label>();
+        if (label != null)
+        {
+            label.style.unityFont = font;
+        }
+
+    }
     private void QuitButtonPressed()
     {
         SceneManager.LoadScene("MainMenu");

@@ -14,6 +14,8 @@ public enum InteractionVariation
 }
 public class Interactibles : MonoBehaviour, iinteractible
 {
+    [SerializeField] private GameObject bossSpawn;
+    [SerializeField] private Transform bossSpawnLocation;
     [SerializeField] private AudioSource myAudio = null;
     public InteractionVariation InteractionVariation;
 
@@ -53,6 +55,12 @@ public class Interactibles : MonoBehaviour, iinteractible
     }
     private void Buy() // needs code for this
     {
-
+        Debug.Log("You are trying to buy the boss");
+        if(HudScore.Instance.essence >= 5000f)
+        {
+            HudScore.Instance.essence -= 5000f;
+            Instantiate(bossSpawn, bossSpawnLocation.position, Quaternion.identity);
+        }
+        Debug.Log("But you are way to poor");
     }
 }

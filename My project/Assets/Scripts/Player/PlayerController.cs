@@ -346,4 +346,6 @@ public class PlayerController : MonoBehaviour
             gunData.currentAmmo = gunData.magSize;
         }
     }
+ 
+
 }

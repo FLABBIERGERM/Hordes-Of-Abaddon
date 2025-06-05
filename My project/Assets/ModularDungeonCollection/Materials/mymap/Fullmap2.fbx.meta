@@ -1,0 +1,1114 @@
+fileFormatVersion: 2
+guid: c8e8e5c49881bfa44a928571ca785624
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.001
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.002
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.003
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.004
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.005
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.006
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.007
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.008
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.009
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.010
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.011
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.012
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.013
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.014
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.015
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.016
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.017
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.018
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.019
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.020
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.021
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.022
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.023
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.024
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.025
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ceiling_01.026
+    second: {fileID: 2100000, guid: 1eccd1d07aea4194f95daec7a0493e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Door_01
+    second: {fileID: 2100000, guid: 8725a32c44b817943ad34debf882ebd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Door_01.001
+    second: {fileID: 2100000, guid: 54c9da59e2a92b14fa5b5863a53a6aad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Doorway_Pillar_01
+    second: {fileID: 2100000, guid: 537fec6925661324fae33ad31c3e90b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Doorway_Pillar_01.003
+    second: {fileID: 2100000, guid: 537fec6925661324fae33ad31c3e90b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Doorway_Pillar_01_Lrg
+    second: {fileID: 2100000, guid: 537fec6925661324fae33ad31c3e90b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.001
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.002
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.003
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.005
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.006
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.007
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.008
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.009
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.010
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.011
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.012
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.013
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.014
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.015
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.016
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.018
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.019
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.020
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.021
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.022
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.023
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.024
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.025
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.026
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.031
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.032
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.033
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor_Flagstone_01.034
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.001
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.002
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.004
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.005
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.006
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.007
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.008
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.010
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.011
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.012
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.013
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.014
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.015
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.017
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.018
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.019
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Smooth_Master_01.020
+    second: {fileID: 2100000, guid: d8b0b05ca2a002a49ae149b590b300b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stairs_01_Sml.001
+    second: {fileID: 2100000, guid: 5eb5276e74e43d84fb2b8698fb576cf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stairs_01_Sml.002
+    second: {fileID: 2100000, guid: 5eb5276e74e43d84fb2b8698fb576cf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stairs_01_Sml.003
+    second: {fileID: 2100000, guid: 5eb5276e74e43d84fb2b8698fb576cf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stairs_01_Sml.004
+    second: {fileID: 2100000, guid: 5eb5276e74e43d84fb2b8698fb576cf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stairs_01_Sml.005
+    second: {fileID: 2100000, guid: 5eb5276e74e43d84fb2b8698fb576cf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.001
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.002
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.003
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.004
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.005
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.006
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.007
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.008
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.009
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.010
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.011
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.012
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.013
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.014
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.015
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.017
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.018
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.019
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.020
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.021
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.022
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.023
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.024
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.025
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.026
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.027
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.028
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.029
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.030
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.031
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.032
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.033
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.034
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.035
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.036
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.037
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.038
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.039
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.040
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.041
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.042
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.043
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.044
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.045
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.046
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.047
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.048
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.049
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.050
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.051
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.052
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.053
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.054
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.055
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.056
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.057
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.058
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.059
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.060
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.061
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.062
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.063
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.064
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.065
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.066
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.067
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.068
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.069
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.070
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.071
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.072
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.073
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.074
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.075
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.076
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.077
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.078
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.079
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.080
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.081
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.082
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.083
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.084
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.085
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.086
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.087
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.088
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.089
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.090
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.091
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.092
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.093
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.094
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.095
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.096
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.097
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.098
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.099
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.100
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.101
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.102
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.103
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.104
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.105
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.106
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.107
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.108
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.109
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.110
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.111
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.112
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.113
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.114
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.115
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.116
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.117
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.118
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.119
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.120
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone_Wall_01_Master.121
+    second: {fileID: 2100000, guid: 7acc8b7db9017de4489d54f061ff7ba3, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

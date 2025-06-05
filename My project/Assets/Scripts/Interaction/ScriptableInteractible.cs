@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScriptableInteractible : MonoBehaviour
+public class ScriptableInteractible : MonoBehaviour, iinteractible
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private InteractBehaviorSO interactBehavior;
+    public void Interact(CharacterInteractManager characterInteractManager, CharacterMovement character)
     {
-        
+        interactBehavior.Interact(characterInteractManager, character);
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
