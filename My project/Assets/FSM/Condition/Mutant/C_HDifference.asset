@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04451f18f8dcf3942912999ebb48a2fa, type: 3}
   m_Name: C_HDifference
   m_EditorClassIdentifier: 
-  heightDifference: 5
+  heightDifference: 7
