@@ -11,17 +11,24 @@ public class BaseStats : MonoBehaviour, IDamageAble
 
     [SerializeField] Animator animator;
     [SerializeField] NavMeshAgent NavAgent;
-    //public float aDamage;
-    //public float aHealth;
 
 
+
+    //already half is just for the boss checking basically if it goes into a next state based on hp.
     public bool alreadyHalf = false;
+    public UnityEvent angelHalf;
+    //base hp and damage enemies deal
     public float zDamage;
     public float zHealth;
+
+    //killed and hit events that ping out when a enemy gets hit / dies.
     public UnityEvent enemyKilled;
     public UnityEvent enemyHit;
-    public UnityEvent angelHalf;
+
+
+    
     public bool dead = false;
+    // is alive should be the main thing comparing if the enemy is dead or not
     public bool IsAlive => zHealth > 0;
 
 
@@ -38,7 +45,10 @@ public class BaseStats : MonoBehaviour, IDamageAble
     {
         zHealth -= damage;
         enemyHit.Invoke();
+        animator.SetTrigger("GetsShot");
         Debug.Log("Remaing Zombie HP" + zHealth);
+
+
         if(zHealth <= 500 && NavAgent.CompareTag("Angel") == true )
         {
             if(!alreadyHalf) {

@@ -7,6 +7,7 @@ public class GameState : MonoBehaviour
 {
     private static GameState _instance;
 
+    // has the mainmenu scenes name actually be main menu
     [SerializeField] private string mainMenuSceneName = "MainMenu";
 
     public static GameState Instance
@@ -27,9 +28,10 @@ public class GameState : MonoBehaviour
     public UnityEvent GameStarts;
     public UnityEvent GameQuit;
 
-
+    // pings out damage taken this will be changed.
     public UnityEvent damageTaken;
 
+    // makes sure its the one and only then calls resetgamestate then loads the scene.
     private void Awake()
     {
         if (_instance == null)
@@ -44,9 +46,10 @@ public class GameState : MonoBehaviour
         ResetGameState();
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
-
+    // honestly forget i think its just checking if its paused and returning true / false based on it.
     public bool IsPaused => CurrentGameStatus == GameStatus.Paused;
 
+    // this updates the game status from any of the conditions like paused or playing or dead.
     public bool UpdateGameStatus(GameStatus newGameStatus)
     {
         if (newGameStatus == CurrentGameStatus) { return false; }
@@ -84,6 +87,7 @@ public class GameState : MonoBehaviour
     }
 
 
+    // this removes all the listeners reseting the game status.
     public void ResetGameState()
     {
         Debug.Log("Reseting Game state");
@@ -97,6 +101,8 @@ public class GameState : MonoBehaviour
         damageTaken.RemoveAllListeners();
         GameStarts.RemoveAllListeners(); 
     }
+
+    // when called it checks if we go to the main menu in which case it resets the game state to have no listeners and if not just updates the game state to gamestart .
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if(scene.name == mainMenuSceneName)
@@ -109,6 +115,7 @@ public class GameState : MonoBehaviour
         }
     }
 }
+// the gamestatuses
 public enum GameStatus
 {
     Playing,
