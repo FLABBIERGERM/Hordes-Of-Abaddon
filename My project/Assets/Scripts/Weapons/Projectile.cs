@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
 
             if (holder != null)
             {
-                holder.Damage(Damage);
+                holder.Damage(Damage,"dave");
                 Destroy(gameObject);
             }
         }

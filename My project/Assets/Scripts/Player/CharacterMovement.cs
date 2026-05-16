@@ -42,6 +42,8 @@ public class CharacterMovement : BaseMovement
     [SerializeField] private AudioClip footStepSoundClip;
     [SerializeField] private List<AudioClip> jumpNoises;
     [SerializeField] private AudioClip landingNoise;
+
+
     [SerializeField] private AudioClip gunNoise; // change into a animation once thing later, no idea what i ment by this maybe an animation event at the start of shooting but idk.
     [SerializeField] private AudioClip hitIndicator;
 
@@ -91,10 +93,13 @@ public class CharacterMovement : BaseMovement
     {
         base.SetMovementInput(moveInput);
     }
+
+    // dont think i need with new script
     public void GunShotNoise()
     {
         bulletAudioSource.PlayOneShot(gunNoise);
     }
+
     void CalculateCameraRelativeInput()
     {
         Vector3 cameraForward = cameraTrasnform.forward;
@@ -189,9 +194,7 @@ public class CharacterMovement : BaseMovement
             int SongChoice = Random.Range(0, jumpNoises.Count);
 
             audioSource.PlayOneShot(jumpNoises[SongChoice]);
-            Debug.Log(("JumpNoise that played is") + SongChoice);
-        
-
+           // Debug.Log(("JumpNoise that played is") + SongChoice);
     }
     public override void CancelJump()
     {
@@ -259,6 +262,7 @@ public class CharacterMovement : BaseMovement
     {
         return new Vector3(rigidbody.velocity.x, 0f, rigidbody.velocity.z);
     }
+    // dont think i need either of these anymore either.
     public void GunRecoil()
     {
         gunAnimations.SetTrigger("RecoilTrigger");

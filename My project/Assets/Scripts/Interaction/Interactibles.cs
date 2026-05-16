@@ -10,17 +10,22 @@ public enum InteractionVariation
     Playsound,
     Destroy,
     Fix,
-    Purchase
+    Purchase,
+    primaryUnlock
 }
 public class Interactibles : MonoBehaviour, iinteractible
 {
     [SerializeField] private GameObject bossSpawn;
     [SerializeField] private Transform bossSpawnLocation;
     [SerializeField] private AudioSource myAudio = null;
+    [SerializeField] private PlayerController playerController;
     public InteractionVariation InteractionVariation;
+    [SerializeField] public GameObject rifle;
 
+    [SerializeField] private string roomToUnlockString;
+    [SerializeField] private Room_Manager.Room roomToUnlock;
 
-
+    private bool used = false;
     public void Interact(CharacterInteractManager characterInteractManager, CharacterMovement character)
     {
         switch (InteractionVariation)
@@ -37,7 +42,10 @@ public class Interactibles : MonoBehaviour, iinteractible
             case InteractionVariation.Purchase:
                 Buy();
                 break;
-            
+
+            case InteractionVariation.primaryUnlock:
+                buyGunOne();
+                break;
         }
     }
 
@@ -47,11 +55,42 @@ public class Interactibles : MonoBehaviour, iinteractible
     }
     private void DoorOpen()
     {
+        if (used) return;
+        used = true;
+        if(HudScore.Instance.essence < 1250)
+        {
+            return;
+        }
+        if(HudScore.Instance.essence >= 1250)
+        {
+            HudScore.Instance.essence -= 1250;
+            Room_Manager.Instance.Unlockroom(roomToUnlockString);
+            Destroy(gameObject);
+        }
+      
+    }
+    private IEnumerator DestroyNextFrame()
+    {
+        yield return null;
         Destroy(gameObject);
+    }
+    private void buyGunOne()
+    {
+        if (HudScore.Instance.essence >= 2500 && playerController.primary != rifle)
+        {
+            HudScore.Instance.essence -= 2500;
+            playerController.primary = rifle;
+        }
     }
     private void Repair()
     {
-        // decide if i want this later
+        // decide if i want this later, i think i do but for now its gonna be buy wall weapon
+
+        if(HudScore.Instance.essence >= 2000)
+        {
+            HudScore.Instance.essence -= 2000;
+            playerController.currentActive.GetComponent<SideArm>().totalAmmo += 40;
+        }
     }
     private void Buy() // needs code for this
     {

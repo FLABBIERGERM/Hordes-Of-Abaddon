@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Cinemachine;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -21,18 +22,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private CharacterInteractManager characterInteractManager;
 
     [Header("Player Weapon")]
+    public bool fullyAuto = false;
     [SerializeField] private WeaponData gunData;
     [SerializeField] private Transform muzzle;// the muzzle is where the origin of the bullets comes from
     [SerializeField] private Transform rifle;
     [SerializeField] private Transform gunBarrel;
+
+
     [SerializeField] private KnifeAttack knifeAttack;
-    float timeSinceLastShot;
-    public UnityEvent reloadingStarted;
-    public UnityEvent reloadingFinished;
-    [SerializeField] private GameObject primary;
+    //float timeSinceLastShot;
+
+    [SerializeField] public GameObject primary;
     [SerializeField] private GameObject secondary;
     public GameObject currentActive;
-
+    public bool suppressingFire = false;
     [Header("Player Weapon Audio")]
     [SerializeField] private AudioSource weaponAudioSource;
     [SerializeField] private AudioClip reloadingSound;
@@ -52,51 +55,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private CinemachineShaking shaking;
 
     
-    private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate / 60f);
+    //private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate / 60f);
 
-    private void Update()
-    {
-        //timeSinceLastShot += Time.deltaTime;
-        //Debug.DrawRay(muzzle.position,gunData.maxDist * muzzle.forward, Color.red );
-
-        //if(playerInputActions.Player.Shoot.ReadValue<float>() > 0.1f)
-        //{
-        //    if (gunData.currentAmmo > 0)
-        //    {
-        //        if (CanShoot())
-        //        {
-
-        //            if (Physics.Raycast(muzzle.position, muzzle.forward, out RaycastHit hitInfo, gunData.maxDist, 7))
-        //            {
-        //                if (hitInfo.collider.CompareTag("Zombie") || hitInfo.collider.CompareTag("Mutant") || hitInfo.collider.CompareTag("Angel"))
-        //                {
-        //                    Instantiate(onHitParticle, hitInfo.point, Quaternion.identity, hitInfo.collider.transform);
-        //                    Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
-
-        //                    IDamageAble damageable = hitInfo.transform.GetComponent<IDamageAble>();
-        //                    damageable?.Damage(gunData.damage);
-
-        //                }
-        //                else
-        //                {
-        //                    Instantiate(onObjectHitParticle, hitInfo.point, Quaternion.identity, hitInfo.collider.transform);
-        //                    Debug.Log(hitInfo.transform.name);// tells me what its hitting may need it later and didnt want to remove it
-        //                }
-        //            }
-        //            //Debug.Log("Miss");
-        //            shaking.ScreenShake(muzzle.forward);
-        //            Instantiate(gunFiredParticle, gunBarrel.position, Quaternion.identity, gunBarrel);// went back and did more
-        //            gunData.currentAmmo--;
-        //            timeSinceLastShot = 0;
-        //            OnGunShot();
-        //        }
-        //    }
-        //    if (gunData.currentAmmo <= 0 && gunData.reloading != true)
-        //    {
-        //        StartCoroutine(Reload());
-        //    }
-        //}
-    }
+ 
     private void Awake()
     {
         if (Instance == null)
@@ -117,6 +78,8 @@ public class PlayerController : MonoBehaviour
         GameState.Instance.GameStarts.AddListener(OnGameStartsReceived);
         currentActive = secondary;
         primary.SetActive(false);
+
+        // remove this last, since im no longer using a scriptable object its not longer trying to bind everything to that 1 so i dont beleive i will need this.
         if(gunData.reloading == true)
         {
             gunData.reloading = false;
@@ -142,7 +105,20 @@ public class PlayerController : MonoBehaviour
         SwitchActionMap();
     }
 
+    private void Update()
+    {
+        if(fullyAuto  && suppressingFire )
+        {
+            SideArm sideArm = currentActive.GetComponent<SideArm>();
+            //if ya do the top it fires all 8 bullets instantly
+            //currentActive.GetComponent<SideArm>().fireWeapon();
+            if (Time.time >= sideArm.nextShot)
+            {
+                sideArm.fireWeapon();
 
+            }
+        }
+    }
     private void SubscribeInputActions()
     {
         playerInputActions.Player.Move.started += MoveAction;
@@ -159,6 +135,7 @@ public class PlayerController : MonoBehaviour
         playerInputActions.Player.Primary.performed += PrimaryEquiped;
         playerInputActions.Player.Secondary.performed += SecondaryEquiped;
         playerInputActions.Player.Shoot.performed += Shoot;
+        playerInputActions.Player.Shoot.canceled += Shoot;
         playerInputActions.Player.Reload.performed += StartReload;
 
         playerInputActions.Player.Interact.performed += InteractActionPerformed;
@@ -192,6 +169,8 @@ public class PlayerController : MonoBehaviour
         playerInputActions.Player.Secondary.performed -= SecondaryEquiped;
 
         playerInputActions.Player.Shoot.performed -= Shoot;
+        playerInputActions.Player.Shoot.canceled -= Shoot;
+
         playerInputActions.Player.Reload.performed -= StartReload;
 
         playerInputActions.Player.Interact.performed -= InteractActionPerformed;
@@ -232,6 +211,8 @@ public class PlayerController : MonoBehaviour
         {
             SwapTo(primary, secondary);
             currentActive = primary;
+            CheckIfFullauto();
+
         }
     }
     private void SecondaryEquiped(InputAction.CallbackContext context)
@@ -240,6 +221,7 @@ public class PlayerController : MonoBehaviour
         {
             SwapTo(secondary, primary);
             currentActive = secondary;
+            CheckIfFullauto();
         }
 
     }
@@ -247,13 +229,31 @@ public class PlayerController : MonoBehaviour
     {
         active.SetActive(true);
         inactive.SetActive(false);
+
     }
 
 
     private void Shoot(InputAction.CallbackContext context)
     {
-        currentActive.GetComponent<SideArm>().fireWeapon();
+        if (context.performed)
+        {
+            if (fullyAuto == true)
+            {
+                suppressingFire = true;
+            }
+            else
+            {
+                currentActive.GetComponent<SideArm>().fireWeapon();
+
+            }
+
+        }
+        else if (context.canceled)
+        {
+            suppressingFire = false;
+        }
     }
+   
     private void OnGunShot()
     {
         characterMovement.GunShotNoise();
@@ -265,15 +265,11 @@ public class PlayerController : MonoBehaviour
 
     private void BCspawning()
     {
-        // Quaternion storageAtempt = new Quaternion(-90f, casingSpawnPoint.rotation.y, casingSpawnPoint.rotation.z, 0f);
-        
         GameObject BulletCasing = Instantiate(bulletCasing, casingSpawnPoint);
          //BulletCasing.transform.rotation = Quaternion.Euler(-90f, casingSpawnPoint.rotation.y, casingSpawnPoint.rotation.z); // This is causing my rotation issues but is also the only way my rotations working.
   
         Rigidbody BCRB = BulletCasing.GetComponent<Rigidbody>();
 
-        
-       
         BCRB.velocity = BCRB.transform.TransformDirection(new Vector3(Random.Range(-2f,-5f), Random.Range(-5f, 5f), 0.06f));
         BCRB.AddRelativeTorque(Random.Range(-5000, -15000f), Random.Range(-5000, -15000f), Random.Range(-5000, -15000f));
         
@@ -286,39 +282,24 @@ public class PlayerController : MonoBehaviour
         Destroy(BulletCasing);
     }
 
-    private IEnumerator Reload()
+private void CheckIfFullauto()
     {
-        gunData.reloading = true;
-        reloadingStarted.Invoke();
-        characterMovement.ReloadingAnimation();
-        weaponAudioSource.PlayOneShot(reloadingSound);
-        yield return new WaitForSeconds(gunData.reloadTime);
-        gunData.currentAmmo = gunData.magSize;
-        gunData.reloading = false;
-        reloadingFinished.Invoke();
+        fullyAuto = currentActive.GetComponent<SideArm>().fullAuto;
     }
 
     private void StartReload(InputAction.CallbackContext context)
     {
-        // Debug.Log("Gun is reloading");
-        if(gunData.reloading == false && gunData.currentAmmo != gunData.magSize)
-        {
-
-            StartCoroutine(Reload());
-        }
-        
+        currentActive.GetComponent<SideArm>().reloadingPublic();
     }
 
     private void MoveAction(InputAction.CallbackContext context)
     {
         movementInput = context.ReadValue<Vector2>();
-       // Debug.Log("We  are atempting the move action");
+
         baseMovement.SetMovementInput(movementInput);
     }
     private void JumpActionPerformed(InputAction.CallbackContext context)
     {
-      //  Debug.Log("Well we are actually jumping..");
-
         baseMovement.Jump();
     }
     private void InteractActionPerformed(InputAction.CallbackContext context)

@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 public class CharacterInteractManager : MonoBehaviour
 {
+
     List<iinteractible> interactableObjects = new List<iinteractible>();
 
     public CharacterMovement owningCharacter;
@@ -32,8 +33,18 @@ public class CharacterInteractManager : MonoBehaviour
 
     public void Interact()
     {
-        if (interactableObjects.Count == 0) { return; }
-        interactableObjects[0].Interact(this, owningCharacter);
+        interactableObjects.RemoveAll(x => x == null);
+
+        if (interactableObjects.Count <= 0) { return; }
+        
+        iinteractible target = interactableObjects[0];
+
+        interactableObjects.RemoveAt(0);
+
+        if (target != null)
+        {
+            target.Interact(this, owningCharacter);
+        }
     }
 
     public void TrackInteractable(iinteractible interactableToTrack)

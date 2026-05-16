@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
-
 using UnityEngine.UI;
 using UnityEngine.Splines;
 
@@ -36,11 +35,15 @@ public class HudScore : MonoBehaviour
 
     private string currentMagAmmo;
 
-   
+    public float pointToShow;
+    public float generalKill = 100f;
+    public float knifeKill = 200f;
+    [SerializeField] PlayerController playerController;
 
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip hitNoise;
     [SerializeField] private WeaponData gunData;
+
     public  float essence = 0;
 
     public int kills;
@@ -55,6 +58,10 @@ public class HudScore : MonoBehaviour
         {
             Destroy(gameObject);
             return;
+        }
+        if(playerController == null)
+        {
+            playerController = FindAnyObjectByType<PlayerController>();
         }
         uiDocument = GetComponent<UIDocument>();
         if(uiDocument == null)
@@ -86,8 +93,6 @@ public class HudScore : MonoBehaviour
         MagSize = AmmoContainer.Q<Label>("Mag-Size");
 
 
-        currentAmmo = gunData.currentAmmo;
-        totalAmmo = gunData.magSize;
         MaxHp = GameManager.Instance.playerMaxHp;
         CurrentHp = MaxHp;
         reticleMarker = uiDocument.rootVisualElement.Q<VisualElement>("Reticle");
@@ -109,8 +114,15 @@ public class HudScore : MonoBehaviour
 
     private void Start()
     {
-        PlayerController.Instance.reloadingStarted.AddListener(ReloadingReceived);
-        PlayerController.Instance.reloadingFinished.AddListener(ReloadingFinishedReceived);
+
+        currentAmmo = playerController.currentActive.GetComponent<SideArm>().currentAmmo;//gunData.currentAmmo;
+        totalAmmo = playerController.currentActive.GetComponent<SideArm>().magSize; // gunData.magSize;
+
+        PlayerController.Instance.currentActive.GetComponent<SideArm>().reloadingStarted.AddListener(ReloadingFinishedReceived);
+
+        // this listenins for reloading to finish
+        PlayerController.Instance.currentActive.GetComponent<SideArm>().reloadingFinished.AddListener(ReloadingFinishedReceived);
+
         RoundManager.Instance.roundIncrease.AddListener(RoundUp);
         GameState.Instance.OnPlayerLost.AddListener(RecivedOnGameLost);
         GameState.Instance.OnGamePaused.AddListener(ReceivedOnGamePaused);
@@ -132,8 +144,10 @@ public class HudScore : MonoBehaviour
     }
     public void RegisterEnemy(BaseStats enemyStats)
     {
-        enemyStats.enemyKilled.AddListener(RecivedOnEnemyKill);
+        //enemyStats.enemyKilled.AddListener(RecivedOnEnemyKill);
         enemyStats.enemyHit.AddListener(RecivedOnEnemyHit);
+
+        enemyStats.weaponKill.AddListener(RecivedOnEnemyKill);
     }
     public void FixedUpdate()
     {
@@ -150,19 +164,19 @@ public class HudScore : MonoBehaviour
 
     private void AmmoUpdate()
     {
-        currentAmmo = gunData.currentAmmo;
+        currentAmmo = playerController.currentActive.GetComponent<SideArm>().currentAmmo;
 
-        if (currentAmmo <= 15 )
+        if (currentAmmo <= (playerController.currentActive.GetComponent<SideArm>().magSize / 2) )
         {
             // change color here
             ammoCount.style.color = Color.yellow;
-            if (currentAmmo <= 6)
+            if (currentAmmo <= (playerController.currentActive.GetComponent<SideArm>().magSize / 4))
             {
                 // change color here
                 ammoCount.style.color = Color.red;
             }
         }
-        if (currentAmmo >= 16)
+        if (currentAmmo >= (playerController.currentActive.GetComponent<SideArm>().magSize / 2))
         {
             // change color here
             ammoCount.style.color = Color.white;
@@ -195,16 +209,26 @@ public class HudScore : MonoBehaviour
     {
         StartCoroutine(HitMarker());
         audioSource.PlayOneShot(hitNoise);
-        Debug.Log("Enemy hit");
+        //Debug.Log("Enemy hit");
         essence += 25;
         ShowFloatingScore("+25");
 ;    }
-    private void RecivedOnEnemyKill()
+    private void RecivedOnEnemyKill(string weapontype)
     {
-        Debug.Log("We are killing and recieving");
+       // Debug.Log("We are killing and recieving");
         kills += 1;
-        essence += 50;
-        ShowFloatingScore("+50");
+        //essence += 50;
+        if(weapontype == "Gun")
+        {
+            essence += generalKill;
+            pointToShow = generalKill;
+        }
+        if (weapontype == "Melee")
+        {
+            essence += knifeKill;
+            pointToShow = knifeKill;
+        }
+        ShowFloatingScore(pointToShow.ToString());
     }
     private void RoundUp()
     {
@@ -223,14 +247,10 @@ public class HudScore : MonoBehaviour
     private IEnumerator HitMarker()
     {
         reticleMarker.style.unityBackgroundImageTintColor = Color.red;
-        //reticleMarker.style.maxWidth = 60f;
-        //reticleMarker.style.maxHeight = 60f;
-        
+    
         yield return new WaitForSeconds(0.1f);
         
         reticleMarker.style.unityBackgroundImageTintColor = Color.black;
-        //reticleMarker.style.maxWidth = 50f;
-        //reticleMarker.style.maxHeight = 50f;
     }
 
     private IEnumerator FloatingScore(VisualElement VE, float duration)

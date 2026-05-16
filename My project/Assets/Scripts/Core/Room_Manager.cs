@@ -6,26 +6,20 @@ public class Room_Manager : MonoBehaviour
 {
     public static Room_Manager Instance { get; private set; }
 
-    [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private List<Room> rooms = new List<Room>();   
 
-    // where player spawns // 3 spawn points
-    [SerializeField] private Transform[] courtYard;
-
-    // left room from spawn // 2 spawn points
-    [SerializeField] private Transform[] schoolRoom;
-
-    //upstairs right side room // 1 spawn point
-    [SerializeField] private Transform[] bedRoom;
-
-    // past the bedroom or through big main doors around corner // 2 spawn points
-    [SerializeField] private Transform[] lunchRoom;
-
-    // located back right of the mess hall.
-    [SerializeField] private Transform[] kitchen;
-
-    // this is the halways that open once some doors are open// 
-    [SerializeField] private Transform[] hallWays;
-
+    public enum RoomState
+    {
+        Locked,
+        Unlocked
+    }
+    [System.Serializable]
+    public class Room
+    {
+        public string roomName;
+        public Transform[] spawnPoints;
+        public bool isUnlocked;
+    }
     private void Awake()
     {
         if(Instance == null)
@@ -38,5 +32,30 @@ public class Room_Manager : MonoBehaviour
         }
     }
 
+    public List<Transform> GetActiveSpawnPoints()
+    {
+        List<Transform> spawnPoints = new();
+
+        //List<Transform> spawnPoints = new List<Transform>();
+
+        foreach(var room in rooms)
+        {
+            if (!room.isUnlocked) continue;
+            spawnPoints.AddRange(room.spawnPoints);
+        }
+        return spawnPoints;
+    }
+
+    public void Unlockroom(string roomName)
+    {
+        foreach(var room in rooms)
+        {
+            if(room.roomName == roomName)
+            {
+                room.isUnlocked = true;
+                break;
+            }
+        }
+    }
 
 }

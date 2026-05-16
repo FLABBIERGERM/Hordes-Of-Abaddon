@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IDamageAble 
 {
-    public void Damage(float damage);
+    public void Damage(float damage,string weaponType);
 }
